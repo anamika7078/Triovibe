@@ -5,7 +5,7 @@ import { ChevronDown, Menu, X, MessageSquare, Download, Star, Check } from 'luci
 
 const Navbar = ({ currentPage, setCurrentPage }) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [selectedProduct, setSelectedProduct] = useState('TRIOVIBE');
+  const [selectedProduct, setSelectedProduct] = useState('triovibe');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
   const [isIndustriesDropdownOpen, setIsIndustriesDropdownOpen] = useState(false);
@@ -29,12 +29,13 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
   ];
 
   const products = [
-    { id: 'TRIOVIBE', name: 'TRIOVIBE', description: 'CAD/CAM for a new generation' },
-    { id: 'TRIOVIBE Robot', name: 'TRIOVIBE Robot', description: 'Advanced robotic programming' },
-    { id: 'TRIOVIBE Tuner', name: 'TRIOVIBE Tuner', description: 'Precision optimization tool' },
-    { id: 'TRIOVIBE Clouds', name: 'TRIOVIBE Clouds', description: 'Cloud-based collaboration' },
-    { id: 'MachineMaker', name: 'MachineMaker', description: 'Machine configuration software' },
-    { id: 'TRIOVIBE Hyper', name: 'TRIOVIBE Hyper', description: 'High-performance machining' },
+    { id: 'triovibex', name: 'TRIOVIBE X', description: 'Advanced CAD/CAM solution' },
+    { id: 'triovibe', name: 'TRIOVIBE', description: 'CAD/CAM for a new generation' },
+    { id: 'triovibe-robot', name: 'TRIOVIBE Robot', description: 'Advanced robotic programming' },
+    { id: 'triovibe-tuner', name: 'TRIOVIBE Tuner', description: 'Precision optimization tool' },
+    { id: 'triovibe-clouds', name: 'TRIOVIBE Clouds', description: 'Cloud-based collaboration' },
+    { id: 'triovibe-machinemaker', name: 'MachineMaker', description: 'Machine configuration software' },
+    { id: 'triovibe-hyper', name: 'TRIOVIBE Hyper', description: 'High-performance machining' },
   ];
 
   const TRIOVIBEApplications = [
@@ -260,7 +261,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                         <li>
                           <button
                             onClick={() => {
-                              setCurrentPage('TRIOVIBEx');
+                              setCurrentPage('triovibex');
                               setIsProductsDropdownOpen(false);
                             }}
                             className="text-sm font-bold text-gray-900 hover:text-teal-600 transition-colors"
@@ -303,23 +304,27 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                     <p className="text-gray-400 text-sm mb-4">The ultimate solution for advanced manufacturing.</p>
                     <button
                       onClick={() => {
-                        if (selectedProduct === 'TRIOVIBE') {
-                          setCurrentPage('TRIOVIBE');
+                        // Map product IDs to page routes
+                        if (selectedProduct === 'triovibex') {
+                          setCurrentPage('triovibex');
                           setIsProductsDropdownOpen(false);
-                        } else if (selectedProduct === 'TRIOVIBE Robot') {
-                          setCurrentPage('TRIOVIBE-robot');
+                        } else if (selectedProduct === 'triovibe') {
+                          setCurrentPage('triovibe');
                           setIsProductsDropdownOpen(false);
-                        } else if (selectedProduct === 'TRIOVIBE Tuner') {
-                          setCurrentPage('TRIOVIBE-tuner');
+                        } else if (selectedProduct === 'triovibe-robot') {
+                          setCurrentPage('triovibe-robot');
                           setIsProductsDropdownOpen(false);
-                        } else if (selectedProduct === 'TRIOVIBE Clouds') {
-                          setCurrentPage('TRIOVIBE-clouds');
+                        } else if (selectedProduct === 'triovibe-tuner') {
+                          setCurrentPage('triovibe-tuner');
                           setIsProductsDropdownOpen(false);
-                        } else if (selectedProduct === 'MachineMaker') {
-                          setCurrentPage('TRIOVIBE-machinemaker');
+                        } else if (selectedProduct === 'triovibe-clouds') {
+                          setCurrentPage('triovibe-clouds');
                           setIsProductsDropdownOpen(false);
-                        } else if (selectedProduct === 'TRIOVIBE Hyper') {
-                          setCurrentPage('TRIOVIBE-hyper');
+                        } else if (selectedProduct === 'triovibe-machinemaker') {
+                          setCurrentPage('triovibe-machinemaker');
+                          setIsProductsDropdownOpen(false);
+                        } else if (selectedProduct === 'triovibe-hyper') {
+                          setCurrentPage('triovibe-hyper');
                           setIsProductsDropdownOpen(false);
                         }
                       }}
@@ -329,7 +334,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                     </button>
                   </div>
                   <img
-                    src="https://TRIOVIBEcam.com/wp-content/uploads/2025/02/TRIOVIBE-X-scheme.svg"
+                    src="https://encycam.com/wp-content/uploads/2025/02/ENCY-X-scheme.svg"
                     alt={`${selectedProduct} Product Interface`}
                     className="max-w-full h-auto mt-4"
                   />

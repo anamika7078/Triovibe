@@ -105,14 +105,14 @@ const Products = ({ setCurrentPage }) => {
             description: 'Zero-code digital twin builder',
             detailedDescription: 'Build virtual CNC machines and robotic cells with an interactive, zero-code interface.',
             borderColor: 'bg-gradient-to-br from-orange-400 to-yellow-500',
-            bgImage: 'https://encycam.com/wp-content/uploads/2024/08/Build-virtual-CNC-machines-768x431.jpg'
+            bgImage: 'https://triovibe.com/wp-content/uploads/2024/08/Build-virtual-CNC-machines-768x431.jpg'
         },
         {
             title: 'Triovibe Hyper',
             description: 'A hybrid programming system for industrial robots',
             detailedDescription: 'Combining online and offline programming for flexible industrial automation solutions',
             borderColor: 'bg-gradient-to-br from-blue-400 to-teal-500',
-            bgImage: 'https://encycam.com/wp-content/uploads/2025/11/Touchscreen-optimized-interface-1024x576.jpg'
+            bgImage: 'https://triovibe.com/wp-content/uploads/2025/11/Touchscreen-optimized-interface-1024x576.jpg'
         }
     ];
 

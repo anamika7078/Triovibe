@@ -39,7 +39,7 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                         className="mb-8"
                     >
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-8">
-                            ENCY X: CAD/CAM ecosystem <br /> built to transform the way you work
+                            TRIOVIBE X: CAD/CAM ecosystem <br /> built to transform the way you work
                         </h1>
                     </motion.div>
 
@@ -50,7 +50,7 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                         className="mb-12"
                     >
                         <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                            The concept behind ENCY X is straightforward. We evaluate the broader context in which a CAD/CAM programmer operates, automating workflow elements beyond the software's direct use. We discovered that, aside from NC-code creation, communication and data exchange are the most time-consuming tasks. To address this, we developed ENCY Clouds, a cloud-based collaboration tool combining an online chat and a project library, seamlessly integrated into our software. This reduces clicks and ensures a smooth workflow.
+                            The concept behind TRIOVIBE X is straightforward. We evaluate the broader context in which a CAD/CAM programmer operates, automating workflow elements beyond the software's direct use. We discovered that, aside from NC-code creation, communication and data exchange are the most time-consuming tasks. To address this, we developed TRIOVIBE Clouds, a cloud-based collaboration tool combining an online chat and a project library, seamlessly integrated into our software. This reduces clicks and ensures a smooth workflow.
                         </p>
                     </motion.div>
 
@@ -73,7 +73,7 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                 </div>
             </section>
 
-            {/* What is ENCY X Section */}
+            {/* What is TRIOVIBE X Section */}
             <section className="bg-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto">
                     <motion.h2
@@ -83,7 +83,7 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12 sm:mb-16"
                     >
-                        What is ENCY X?
+                        What is TRIOVIBE X?
                     </motion.h2>
 
                     <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
@@ -99,14 +99,14 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                                 A new CNC machines and robots programming experience
                             </h3>
                             <p className="text-lg font-semibold text-gray-800 mb-8">
-                                ENCY Software CEO explains:
+                                TRIOVIBE Software CEO explains:
                             </p>
 
                             <ul className="space-y-6">
                                 <li className="flex items-start gap-4">
                                     <span className="flex-shrink-0 text-blue-600 text-2xl mt-1">↗</span>
                                     <p className="text-base leading-relaxed">
-                                        The concept behind ENCY X is straightforward. We evaluate the broader
+                                        The concept behind TRIOVIBE X is straightforward. We evaluate the broader
                                         context in which a CAD/CAM programmer operates, automating
                                         workflow elements beyond the software's direct use.
                                     </p>
@@ -116,7 +116,7 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                                     <p className="text-base leading-relaxed">
                                         We discovered that, aside from NC-code creation, communication and
                                         data exchange are the most time-consuming tasks. To address this, we
-                                        developed ENCY Clouds, a cloud-based collaboration tool combining an
+                                        developed TRIOVIBE Clouds, a cloud-based collaboration tool combining an
                                         online chat and a project library, seamlessly integrated into our software.
                                         This reduces clicks and ensures a smooth workflow.
                                     </p>
@@ -124,8 +124,8 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                                 <li className="flex items-start gap-4">
                                     <span className="flex-shrink-0 text-blue-600 text-2xl mt-1">📦</span>
                                     <p className="text-base leading-relaxed">
-                                        All our CAD/CAM products—ENCY, ENCY Robot, and ENCY Tuner—are
-                                        now connected through ENCY Clouds, forming the ENCY X platform. This
+                                        All our CAD/CAM products—TRIOVIBE, TRIOVIBE Robot, and TRIOVIBE Tuner—are
+                                        now connected through TRIOVIBE Clouds, forming the TRIOVIBE X platform. This
                                         creates a transparent environment for programmers, operators, experts,
                                         and engineers, providing ultra-fast communication and data exchange. As
                                         a cherry on top, we've injected an AI assistant into the collaboration chat
@@ -167,13 +167,13 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                                         playsInline
                                         controls
                                     >
-                                        <source src="https://encycam.com/wp-content/uploads/2024/09/ENCY_X.mp4" type="video/mp4" />
+                                        <source src="https://triovibe.com/wp-content/uploads/2024/09/TRIOVIBE_X.mp4" type="video/mp4" />
                                         Your browser does not support the video tag.
                                     </video>
                                 </div>
                                 <div className="p-6 bg-white">
                                     <h4 className="text-xl font-bold text-gray-900 mb-2">Andrei Kharatsidi</h4>
-                                    <p className="text-gray-600">CEO at ENCY Software</p>
+                                    <p className="text-gray-600">CEO at TRIOVIBE Software</p>
                                 </div>
                             </div>
                         </motion.div>
@@ -181,7 +181,7 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                 </div>
             </section>
 
-            {/* ENCY CAD/CAM Section */}
+            {/* TRIOVIBE CAD/CAM Section */}
             <section className="relative bg-[#1a1a2e] py-16 sm:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
                 {/* Decorative background elements */}
                 <div className="absolute top-0 left-0 w-full h-full z-0">
@@ -199,7 +199,7 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                     >
                         {/* Left Column - Text Content */}
                         <div className="lg:w-1/2 text-white">
-                            <h3 className="text-4xl font-bold mb-4">ENCY</h3>
+                            <h3 className="text-4xl font-bold mb-4">TRIOVIBE</h3>
                             <p className="text-xl font-semibold mb-6">CAD/CAM for a new generation</p>
                             <div className="w-24 h-1 bg-white mb-8"></div>
                             <ul className="space-y-4 text-lg">
@@ -242,8 +242,8 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                         <div className="lg:w-1/2">
                             <div className="relative">
                                 <img
-                                    src="https://encycam.com/wp-content/uploads/2024/08/State-of-art-UI.jpg"
-                                    alt="ENCY CAD/CAM Software Interface"
+                                    src="https://triovibe.com/wp-content/uploads/2024/08/State-of-art-UI.jpg"
+                                    alt="TRIOVIBE CAD/CAM Software Interface"
                                     className="w-full h-auto rounded-lg shadow-xl"
                                 />
                             </div>
@@ -252,7 +252,7 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                 </div>
             </section>
 
-            {/* ENCY Robot Section */}
+            {/* TRIOVIBE Robot Section */}
             <section className="relative bg-[#1a1a2e] py-16 sm:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
                 {/* Decorative background elements */}
                 <div className="absolute top-0 left-0 w-full h-full z-0">
@@ -270,7 +270,7 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                     >
                         {/* Left Column - Text Content */}
                         <div className="lg:w-1/2 text-white">
-                            <h3 className="text-4xl font-bold mb-4">ENCY Robot</h3>
+                            <h3 className="text-4xl font-bold mb-4">TRIOVIBE Robot</h3>
                             <p className="text-xl font-semibold mb-6">A complete offline robot programming solution</p>
                             <div className="w-24 h-1 bg-white mb-8"></div>
                             <ul className="space-y-4 text-lg">
@@ -305,8 +305,8 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                         <div className="lg:w-1/2">
                             <div className="relative">
                                 <img
-                                    src="https://encycam.com/wp-content/uploads/2024/08/State-of-art-UI-robot.jpg"
-                                    alt="ENCY Robot Software Interface"
+                                    src="https://triovibe.com/wp-content/uploads/2024/08/State-of-art-UI-robot.jpg"
+                                    alt="TRIOVIBE Robot Software Interface"
                                     className="w-full h-auto rounded-lg shadow-xl"
                                 />
                             </div>
@@ -315,7 +315,7 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                 </div>
             </section>
 
-            {/* ENCY Hyper Section */}
+            {/* TRIOVIBE Hyper Section */}
             <section className="relative bg-[#1a1a2e] py-16 sm:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
                 {/* Decorative background elements */}
                 <div className="absolute top-0 left-0 w-full h-full z-0">
@@ -333,7 +333,7 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                     >
                         {/* Left Column - Text Content */}
                         <div className="lg:w-1/2 text-white">
-                            <h3 className="text-4xl font-bold mb-4">ENCY Hyper</h3>
+                            <h3 className="text-4xl font-bold mb-4">TRIOVIBE Hyper</h3>
                             <p className="text-xl font-semibold mb-6">Advanced process optimization</p>
                             <div className="w-24 h-1 bg-white mb-8"></div>
                             <ul className="space-y-4 text-lg">
@@ -364,8 +364,8 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                         <div className="lg:w-1/2">
                             <div className="relative">
                                 <img
-                                    src="https://encycam.com/wp-content/uploads/2024/08/ENCY-Hyper.jpg"
-                                    alt="ENCY Hyper Software Interface"
+                                    src="https://triovibe.com/wp-content/uploads/2024/08/TRIOVIBE-Hyper.jpg"
+                                    alt="TRIOVIBE Hyper Software Interface"
                                     className="w-full h-auto rounded-lg shadow-xl"
                                 />
                             </div>
@@ -374,7 +374,7 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                 </div>
             </section>
 
-            {/* ENCY AI and ENCY Clouds Section */}
+            {/* TRIOVIBE AI and TRIOVIBE Clouds Section */}
             <section className="relative bg-[#1a1a2e] py-16 sm:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
                 {/* Decorative background elements */}
                 <div className="absolute top-0 left-0 w-full h-full z-0">
@@ -390,19 +390,19 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className="bg-[#2a2a3e] rounded-3xl p-8 lg:p-12 shadow-2xl flex flex-col lg:flex-row items-start justify-between gap-8"
                     >
-                        {/* ENCY AI Column */}
+                        {/* TRIOVIBE AI Column */}
                         <div className="lg:w-1/2 text-white p-6 border-r border-gray-700 lg:pr-12">
-                            <h3 className="text-4xl font-bold mb-4">ENCY AI</h3>
+                            <h3 className="text-4xl font-bold mb-4">TRIOVIBE AI</h3>
                             <p className="text-xl font-semibold mb-6">The magic of artificial intelligence for real manufacturing</p>
                             <div className="w-24 h-1 bg-white mb-8"></div>
                             <ul className="space-y-4 text-lg">
                                 <li className="flex items-start gap-3">
                                     <span className="text-white text-2xl">•</span>
-                                    An industry-leading support AI integrated into the ENCY software suite. Unlike other systems, ENCY AI does not need text prompts or queries – it analyses the 3D model and provides appropriate workflow recommendations, along with predictions of progress and outcomes of the machining project
+                                    An industry-leading support AI integrated into the TRIOVIBE software suite. Unlike other systems, TRIOVIBE AI does not need text prompts or queries – it analyses the 3D model and provides appropriate workflow recommendations, along with predictions of progress and outcomes of the machining project
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <span className="text-white text-2xl">•</span>
-                                    ENCY AI is targeted at supporting all skill levels, ranging from explanation of commands and canned cycles through to offering advanced optimization suggestions for experienced users
+                                    TRIOVIBE AI is targeted at supporting all skill levels, ranging from explanation of commands and canned cycles through to offering advanced optimization suggestions for experienced users
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <span className="text-white text-2xl">•</span>
@@ -415,9 +415,9 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                             </ul>
                         </div>
 
-                        {/* ENCY Clouds Column */}
+                        {/* TRIOVIBE Clouds Column */}
                         <div className="lg:w-1/2 text-white p-6 lg:pl-12">
-                            <h3 className="text-4xl font-bold mb-4">ENCY Clouds</h3>
+                            <h3 className="text-4xl font-bold mb-4">TRIOVIBE Clouds</h3>
                             <p className="text-xl font-semibold mb-6">Cloud-based collaboration platform</p>
                             <div className="w-24 h-1 bg-white mb-8"></div>
                             <ul className="space-y-4 text-lg">
@@ -431,7 +431,7 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <span className="text-white text-2xl">•</span>
-                                    All our CAD/CAM products—ENCY, ENCY Robot, and ENCY Tuner—are now connected through ENCY Clouds, forming the ENCY X platform
+                                    All our CAD/CAM products—TRIOVIBE, TRIOVIBE Robot, and TRIOVIBE Tuner—are now connected through TRIOVIBE Clouds, forming the TRIOVIBE X platform
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <span className="text-white text-2xl">•</span>
@@ -597,7 +597,7 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                         transition={{ duration: 0.6, ease: "easeOut" }}
                         className="text-4xl font-extrabold text-gray-900 mb-12"
                     >
-                        Get started with ENCY
+                        Get started with TRIOVIBE
                     </motion.h2>
 
                     <div className="flex flex-col lg:flex-row gap-8 justify-center items-stretch">
@@ -621,8 +621,8 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                                 </button>
                             </div>
                             <img
-                                src="https://encycam.com/wp-content/uploads/2025/08/State-of-art-UI-medium-480x270.png"
-                                alt="ENCY Software Interface"
+                                src="https://triovibe.com/wp-content/uploads/2025/08/State-of-art-UI-medium-480x270.png"
+                                alt="TRIOVIBE Software Interface"
                                 className="absolute bottom-0 right-0 opacity-80 rounded-lg"
                                 style={{
                                     transform: 'translateY(15%) translateX(10%)',

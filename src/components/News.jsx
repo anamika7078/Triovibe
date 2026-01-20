@@ -33,17 +33,17 @@ const News = () => {
         {
             date: '05 Jan 2026',
             title: 'TRIOVIBE lands in Japan with newly launched distributor CAMSUPS',
-            image: 'https://encycam.com/wp-content/uploads/2026/01/TRIOVIBE_Lands_in_Japan-640x360.png'
+            image: 'https://encycam.com/wp-content/uploads/2026/01/ENCY_Lands_in_Japan-640x360.png'
         },
         {
             date: '23 Dec 2025',
             title: 'Happy Holidays — see you in 2026 🎁',
-            image: 'https://encycam.com/wp-content/uploads/2025/12/Happy_Holidays_from_TRIOVIBE_-640x357.jpg'
+            image: 'https://encycam.com/wp-content/uploads/2025/12/Happy_Holidays_from_ENCY_-640x357.jpg'
         },
         {
             date: '09 Dec 2025',
             title: 'TRIOVIBE World Conference 2026: Find the Formula to Lead Your Industry',
-            image: 'https://encycam.com/wp-content/uploads/2025/12/TRIOVIBE-World-2026-2-640x329.jpg'
+            image: 'https://encycam.com/wp-content/uploads/2025/12/ENCY-World-2026-2-640x329.jpg'
         },
         {
             date: '05 Dec 2025',
