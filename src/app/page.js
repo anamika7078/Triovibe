@@ -17,6 +17,9 @@ import Events from '@/components/Events';
 import PoweredByTriovibe from '@/components/products/PoweredByTriovibe';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import AboutUs from '@/components/AboutUs';
+import PrivacyPolicy from '@/components/PrivacyPolicy';
+import TermsAndConditions from '@/components/TermsAndConditions';
 
 // Industry Imports
 import Aerospace from '@/components/industries/Aerospace';
@@ -103,7 +106,22 @@ export default function Home() {
       ) : currentPage === 'contact' ? (
         <>
           <Contact />
-          <Footer />
+          <Footer setCurrentPage={setCurrentPage} />
+        </>
+      ) : currentPage === 'about' ? (
+        <>
+          <AboutUs setCurrentPage={setCurrentPage} />
+          <Footer setCurrentPage={setCurrentPage} />
+        </>
+      ) : currentPage === 'privacy-policy' ? (
+        <>
+          <PrivacyPolicy setCurrentPage={setCurrentPage} />
+          <Footer setCurrentPage={setCurrentPage} />
+        </>
+      ) : currentPage === 'terms-and-conditions' ? (
+        <>
+          <TermsAndConditions setCurrentPage={setCurrentPage} />
+          <Footer setCurrentPage={setCurrentPage} />
         </>
       ) : (
         <>
@@ -114,7 +132,7 @@ export default function Home() {
           <Events />
           <PoweredByTriovibe />
           {/* <Contact /> */}
-          <Footer />
+          <Footer setCurrentPage={setCurrentPage} />
         </>
       )}
     </main>

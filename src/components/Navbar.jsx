@@ -23,6 +23,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
 
   const navLinks = [
     { name: 'Why TRIOVIBE?', href: '#' },
+    // { name: 'About Us', href: '#about' },
     { name: 'Products', href: '#', hasDropdown: true },
     { name: 'Industries', href: '#', hasDropdown: true },
     { name: 'Resources', href: '#', hasDropdown: true },
@@ -174,6 +175,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
               ) : (
                 <a
                   href={link.href}
+                  onClick={() => link.name === 'About Us' && setCurrentPage('about')}
                   className="text-sm font-semibold text-gray-800 flex items-center gap-1 hover:text-teal-600 transition-colors px-3 py-1.5"
                 >
                   {link.name}
@@ -217,7 +219,17 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
           >
             <div className="flex flex-col space-y-4">
               {navLinks.map((link) => (
-                <a key={link.name} href={link.href} className="text-lg font-bold text-gray-900">
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => {
+                    if (link.name === 'About Us') {
+                      setCurrentPage('about');
+                      setIsMobileMenuOpen(false);
+                    }
+                  }}
+                  className="text-lg font-bold text-gray-900"
+                >
                   {link.name}
                 </a>
               ))}
