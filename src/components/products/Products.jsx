@@ -10,13 +10,13 @@ const ProductCard = ({ title, description, detailedDescription, borderColor, bgI
             transition={{ duration: 0.5, delay: index * 0.1 }}
             className="group relative h-[400px] rounded-3xl overflow-hidden cursor-pointer"
             onClick={() => {
-                if (title === 'Triovibe Robot') setCurrentPage('triovibe-robot');
-                else if (title === 'Triovibe') setCurrentPage('triovibe');
-                else if (title === 'Triovibe X') setCurrentPage('triovibex');
-                else if (title === 'Triovibe Tuner') setCurrentPage('triovibe-tuner');
-                else if (title === 'Triovibe Clouds') setCurrentPage('triovibe-clouds');
-                else if (title === 'MachineMaker') setCurrentPage('triovibe-machinemaker');
-                else if (title === 'Triovibe Hyper') setCurrentPage('triovibe-hyper');
+                if (title === 'Ency Robot') setCurrentPage('ency-robot');
+                else if (title === 'Ency') setCurrentPage('ency');
+                else if (title === 'Ency X') setCurrentPage('encyx');
+                else if (title === 'Ency Tuner') setCurrentPage('ency-tuner');
+                else if (title === 'Ency Clouds') setCurrentPage('ency-clouds');
+                else if (title === 'MachineMaker') setCurrentPage('ency-machinemaker');
+                else if (title === 'Ency Hyper') setCurrentPage('ency-hyper');
             }}
         >
             {/* Colored Border */}
@@ -66,35 +66,35 @@ const ProductCard = ({ title, description, detailedDescription, borderColor, bgI
 const Products = ({ setCurrentPage }) => {
     const products = [
         {
-            title: 'Triovibe',
+            title: 'Ency',
             description: 'CAD/CAM for a new generation',
             detailedDescription: 'Delivering sophisticated CAM technology in a lightweight user interface and natural workflow',
             borderColor: 'bg-gradient-to-br from-teal-400 to-blue-500',
             bgImage: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80'
         },
         {
-            title: 'Triovibe Robot',
+            title: 'Ency Robot',
             description: 'A complete offline robot programming solution',
             detailedDescription: 'Advanced robotic programming with intuitive controls and real-time simulation capabilities',
             borderColor: 'bg-gradient-to-br from-orange-400 to-pink-500',
             bgImage: 'https://images.unsplash.com/photo-1563207153-f403bf289096?w=800&q=80'
         },
         {
-            title: 'Triovibe Tuner',
+            title: 'Ency Tuner',
             description: 'Shop-floor NC-code simulation software',
             detailedDescription: 'Real-time NC-code verification and optimization for maximum machining efficiency',
             borderColor: 'bg-gradient-to-br from-blue-400 to-indigo-600',
             bgImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80'
         },
         {
-            title: 'Triovibe X',
+            title: 'Ency X',
             description: 'Advanced manufacturing ecosystem',
             detailedDescription: 'The next generation foundation for all Triovibe products, featuring enhanced security and API.',
             borderColor: 'bg-gradient-to-br from-purple-400 to-indigo-600',
             bgImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80'
         },
         {
-            title: 'Triovibe Clouds',
+            title: 'Ency Clouds',
             description: 'Cloud-based collaboration',
             detailedDescription: 'Real-time project sharing and communication for CAD/CAM programmers.',
             borderColor: 'bg-gradient-to-br from-blue-300 to-teal-400',
@@ -108,7 +108,7 @@ const Products = ({ setCurrentPage }) => {
             bgImage: 'https://triovibe.com/wp-content/uploads/2024/08/Build-virtual-CNC-machines-768x431.jpg'
         },
         {
-            title: 'Triovibe Hyper',
+            title: 'Ency Hyper',
             description: 'A hybrid programming system for industrial robots',
             detailedDescription: 'Combining online and offline programming for flexible industrial automation solutions',
             borderColor: 'bg-gradient-to-br from-blue-400 to-teal-500',

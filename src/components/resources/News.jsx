@@ -31,44 +31,34 @@ const News = () => {
 
     const newsItems = [
         {
-            date: '05 Jan 2026',
-            title: 'TRIOVIBE lands in Japan with newly launched distributor CAMSUPS',
-            image: 'https://encycam.com/wp-content/uploads/2026/01/ENCY_Lands_in_Japan-640x360.png'
-        },
-        {
             date: '23 Dec 2025',
-            title: 'Happy Holidays — see you in 2026 🎁',
+            title: 'Happy Holidays — see you in 2026',
             image: 'https://encycam.com/wp-content/uploads/2025/12/Happy_Holidays_from_ENCY_-640x357.jpg'
         },
         {
             date: '09 Dec 2025',
-            title: 'TRIOVIBE World Conference 2026: Find the Formula to Lead Your Industry',
+            title: 'ENCY World Conference 2026: Find the Formula to Lead Your Industry',
             image: 'https://encycam.com/wp-content/uploads/2025/12/ENCY-World-2026-2-640x329.jpg'
         },
         {
             date: '05 Dec 2025',
-            title: 'Extrude and Sweep Along Trajectory',
+            title: 'New in ENCY 2.6: refined Design tools and over 100 fixes',
             image: 'https://encycam.com/wp-content/uploads/2025/12/Extrude-and-Sweep-Along-Trajectory-640x359.png'
         },
         {
-            date: '15 Nov 2025',
-            title: 'Robot Calibration Helper App',
+            date: '27 Nov 2025',
+            title: 'Robot Calibration Helper app for ENCY Robot users',
             image: 'https://encycam.com/wp-content/uploads/2025/11/Robot-Calibration-Helper-app-640x360.jpg'
         },
         {
-            date: '10 Nov 2025',
-            title: 'Painting Simulation',
+            date: '24 Nov 2025',
+            title: 'ENCY 2.5 — What\'s New',
             image: 'https://encycam.com/wp-content/uploads/2025/11/Painting-simulation_2-640x359.png'
         },
         {
-            date: '20 Oct 2025',
-            title: 'TRIOVIBE 2.0 Release',
+            date: '21 Nov 2025',
+            title: 'ENCY Software India Hosts Seminar with Reliable Solution in Pune',
             image: 'https://encycam.com/wp-content/uploads/2025/10/ency-2.0-640x360.jpg'
-        },
-        {
-            date: '15 Sep 2025',
-            title: 'TRIOVIBE Hyper News',
-            image: 'https://encycam.com/wp-content/uploads/2025/09/TRIOVIBE-Hyper-news-640x360.png'
         }
     ];
 

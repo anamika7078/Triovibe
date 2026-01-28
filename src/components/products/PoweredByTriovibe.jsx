@@ -29,25 +29,25 @@ const PostCard = ({ image, category, date, title, index }) => {
     );
 };
 
-const PoweredByEncy = () => {
+const PoweredByEncy = ({ setCurrentPage }) => {
     const posts = [
         {
-            image: 'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=80',
-            category: 'POWERED BY TRIOVIBE',
+            image: 'https://encycam.com/wp-content/uploads/pbe-rest-folder/tmpzdugecgy-480x853.jpg',
+            category: 'POWERED BY ENCY',
             date: '17 Dec 2025',
-            title: 'Large-Scale Robotic Additive Manufacturing in Architectural Panel Production'
+            title: 'Digital Sculpting and CNC Milling in Metal Art'
         },
         {
-            image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80',
-            category: 'POWERED BY TRIOVIBE',
+            image: 'https://encycam.com/wp-content/uploads/pbe-rest-folder/tmpp2df_t3a-480x640.jpg',
+            category: 'POWERED BY ENCY',
             date: '17 Dec 2025',
-            title: 'Robotic Non-Planar Additive Processes for Complex Curves and Structures'
+            title: 'Wooden Bat Making Process by ENCY'
         },
         {
-            image: 'https://images.unsplash.com/photo-1563207153-f403bf289096?w=800&q=80',
-            category: 'POWERED BY TRIOVIBE',
+            image: 'https://encycam.com/wp-content/uploads/pbe-rest-folder/tmpd8u4cg8f-480x852.jpg',
+            category: 'POWERED BY ENCY',
             date: '17 Dec 2025',
-            title: 'Multi-Axis Machining for Custom Parts in Job Shop Production'
+            title: 'Complex Part Manufacturing in a Job Shop Environment'
         }
     ];
 
@@ -56,15 +56,15 @@ const PoweredByEncy = () => {
             <div className="container mx-auto px-6">
                 <div className="flex items-center justify-between mb-10 pb-6 border-b border-gray-800">
                     <div>
-                        <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white">Powered by TRIOVIBE</h2>
-                        <p className="text-gray-400 text-sm">Daily posts from TRIOVIBE users all over the world</p>
+                        <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white">Powered by ENCY</h2>
+                        <p className="text-gray-400 text-sm">Daily posts from ENCY users all over the world</p>
                     </div>
-                    <a
-                        href="/powered-by-ency"
+                    <button
+                        onClick={() => setCurrentPage('powered-by-ency')}
                         className="text-sm font-semibold border border-gray-700 px-6 py-2 rounded-full hover:bg-gray-900 transition-colors text-gray-300"
                     >
                         View all
-                    </a>
+                    </button>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

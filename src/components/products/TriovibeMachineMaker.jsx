@@ -209,81 +209,6 @@ const TRIOVIBEMachineMaker = ({ setCurrentPage }) => {
                 </div>
             </section>
 
-            {/* Spacer for the overlapping hero image */}
-            <div className="h-32 md:h-64 bg-white" />
-
-            {/* Showcase / Slider Section */}
-            <section className="py-24 bg-white">
-                <div className="container mx-auto px-6">
-                    <div className="flex justify-between items-end mb-16">
-                        <div>
-                            <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">Powerful Features</h2>
-                            <p className="text-xl text-gray-500 max-w-xl">Everything you need to create perfect digital representations of your manufacturing setup.</p>
-                        </div>
-                        <div className="hidden md:flex gap-4">
-                            <button
-                                onClick={() => setSelectedSlider((prev) => (prev - 1 + sliderData.length) % sliderData.length)}
-                                className="p-4 rounded-full border-2 border-gray-100 hover:border-orange-500 hover:text-orange-600 transition-all"
-                            >
-                                <ChevronRight className="w-6 h-6 rotate-180" />
-                            </button>
-                            <button
-                                onClick={() => setSelectedSlider((prev) => (prev + 1) % sliderData.length)}
-                                className="p-4 rounded-full border-2 border-gray-100 hover:border-orange-500 hover:text-orange-600 transition-all"
-                            >
-                                <ChevronRight className="w-6 h-6" />
-                            </button>
-                        </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                        <div className="lg:col-span-4 space-y-4">
-                            {sliderData.map((item, idx) => (
-                                <motion.div
-                                    key={idx}
-                                    onMouseEnter={() => {
-                                        setSelectedSlider(idx);
-                                        setIsAutoPlaying(false);
-                                    }}
-                                    className={`p-6 rounded-2xl cursor-pointer transition-all duration-300 ${selectedSlider === idx ? 'bg-orange-50 shadow-lg border-l-4 border-orange-500' : 'hover:bg-gray-50'}`}
-                                >
-                                    <div className="flex items-center gap-4">
-                                        <div className={`p-3 rounded-xl ${selectedSlider === idx ? 'bg-orange-500 text-white' : 'bg-gray-100 text-gray-400'}`}>
-                                            <item.icon className="w-6 h-6" />
-                                        </div>
-                                        <h3 className={`text-lg font-bold ${selectedSlider === idx ? 'text-gray-900' : 'text-gray-500'}`}>
-                                            {item.title}
-                                        </h3>
-                                    </div>
-                                </motion.div>
-                            ))}
-                        </div>
-
-                        <div className="lg:col-span-8">
-                            <AnimatePresence mode="wait">
-                                <motion.div
-                                    key={selectedSlider}
-                                    initial={{ opacity: 0, x: 20 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    exit={{ opacity: 0, x: -20 }}
-                                    transition={{ duration: 0.5 }}
-                                    className="relative rounded-3xl overflow-hidden shadow-2xl bg-gray-50 p-4 border border-gray-100"
-                                >
-                                    <img
-                                        src={sliderData[selectedSlider].image}
-                                        alt={sliderData[selectedSlider].title}
-                                        className="w-full h-auto rounded-2xl shadow-inner shadow-black/10"
-                                    />
-                                    <div className="absolute bottom-10 left-10 right-10 p-8 bg-black/60 backdrop-blur-md rounded-2xl border border-white/10 text-white">
-                                        <h4 className="text-2xl font-bold mb-2">{sliderData[selectedSlider].title}</h4>
-                                        <p className="text-white/70">Create high-fidelity simulations with ease using our specialized tools.</p>
-                                    </div>
-                                </motion.div>
-                            </AnimatePresence>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             {/* Build Digital Twins Section */}
             <section className="py-24 bg-gray-50">
@@ -365,7 +290,7 @@ const TRIOVIBEMachineMaker = ({ setCurrentPage }) => {
                                     <Zap className="w-4 h-4 fill-orange-500" /> Key Features
                                 </div>
                                 <h2 className="text-4xl md:text-6xl font-black text-white mb-8 leading-tight">
-                                    Interactivity, ease of use and <span className="text-orange-500">valuable content</span>
+                                    Key features:  Interactivity, ease of use and <span className="text-orange-500">valuable content</span>
                                 </h2>
                                 <p className="text-xl text-gray-400 leading-relaxed mb-12">
                                     One of the most innovative digital tools for accurately moving your production equipment from the real world to the virtual world.
@@ -513,7 +438,7 @@ const TRIOVIBEMachineMaker = ({ setCurrentPage }) => {
                                     className="p-3 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 shadow-4xl"
                                 >
                                     <img
-                                        src="https://encycam.com/wp-content/uploads/2024/07/Hardware-acceleration-1-1024x576.png"
+                                        src="https://encycam.com/wp-content/uploads/2025/08/State-of-art-UI-medium-480x270.png"
                                         alt="Software Interface"
                                         className="rounded-2xl shadow-2xl"
                                     />

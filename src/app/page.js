@@ -12,14 +12,23 @@ import TriovibeTuner from '@/components/products/TriovibeTuner';
 import TriovibeClouds from '@/components/products/TriovibeClouds';
 import TriovibeMachineMaker from '@/components/products/TriovibeMachineMaker';
 import TriovibeHyper from '@/components/products/TriovibeHyper';
-import News from '@/components/News';
+import News from '@/components/resources/News';
 import Events from '@/components/Events';
 import PoweredByTriovibe from '@/components/products/PoweredByTriovibe';
+import PoweredByEncyPage from '@/components/products/PoweredByEncyPage';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import AboutUs from '@/components/AboutUs';
 import PrivacyPolicy from '@/components/PrivacyPolicy';
 import TermsAndConditions from '@/components/TermsAndConditions';
+import SoftwareProductsDownload from '@/components/resources/SoftwareProductsDownload';
+import NewsPage from '@/components/resources/NewsPage';
+import EventsPage from '@/components/resources/EventsPage';
+import UseCasesPage from '@/components/resources/UseCasesPage';
+import ArticlesPage from '@/components/resources/ArticlesPage';
+import BecomeADealer from '@/components/resources/BecomeADealer';
+import WhyTriovibe from '@/components/WhyTriovibe';
+import AllIndustries from '@/components/AllIndustries';
 
 // Industry Imports
 import Aerospace from '@/components/industries/Aerospace';
@@ -123,6 +132,45 @@ export default function Home() {
           <TermsAndConditions setCurrentPage={setCurrentPage} />
           <Footer setCurrentPage={setCurrentPage} />
         </>
+      ) : currentPage === 'software-products-download' ? (
+        <>
+          <SoftwareProductsDownload />
+          <Footer setCurrentPage={setCurrentPage} />
+        </>
+      ) : currentPage === 'news' ? (
+        <>
+          <NewsPage />
+          <Footer setCurrentPage={setCurrentPage} />
+        </>
+      ) : currentPage === 'events' ? (
+        <>
+          <EventsPage />
+          <Footer setCurrentPage={setCurrentPage} />
+        </>
+      ) : currentPage === 'use-cases' ? (
+        <>
+          <UseCasesPage />
+        </>
+      ) : currentPage === 'articles' ? (
+        <>
+          <ArticlesPage />
+        </>
+      ) : currentPage === 'become-dealer' ? (
+        <>
+          <BecomeADealer />
+        </>
+      ) : currentPage === 'why-triovibe' ? (
+        <>
+          <WhyTriovibe />
+        </>
+      ) : currentPage === 'all-industries' ? (
+        <>
+          <AllIndustries />
+        </>
+      ) : currentPage === 'powered-by-ency' ? (
+        <>
+          <PoweredByEncyPage setCurrentPage={setCurrentPage} />
+        </>
       ) : (
         <>
           <Hero />
@@ -130,7 +178,7 @@ export default function Home() {
           <Products setCurrentPage={setCurrentPage} />
           <News />
           <Events />
-          <PoweredByTriovibe />
+          <PoweredByTriovibe setCurrentPage={setCurrentPage} />
           {/* <Contact /> */}
           <Footer setCurrentPage={setCurrentPage} />
         </>

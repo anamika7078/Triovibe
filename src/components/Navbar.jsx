@@ -22,7 +22,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
   }, []);
 
   const navLinks = [
-    { name: 'Why TRIOVIBE?', href: '#' },
+    { name: 'Why TRIOVIBE?', href: '#', onClick: () => setCurrentPage('why-triovibe') },
     // { name: 'About Us', href: '#about' },
     { name: 'Products', href: '#', hasDropdown: true },
     { name: 'Industries', href: '#', hasDropdown: true },
@@ -30,13 +30,13 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
   ];
 
   const products = [
-    { id: 'triovibex', name: 'TRIOVIBE X', description: 'Advanced CAD/CAM solution' },
-    { id: 'triovibe', name: 'TRIOVIBE', description: 'CAD/CAM for a new generation' },
-    { id: 'triovibe-robot', name: 'TRIOVIBE Robot', description: 'Advanced robotic programming' },
-    { id: 'triovibe-tuner', name: 'TRIOVIBE Tuner', description: 'Precision optimization tool' },
-    { id: 'triovibe-clouds', name: 'TRIOVIBE Clouds', description: 'Cloud-based collaboration' },
+    { id: 'triovibex', name: 'Ency X', description: 'Advanced CAD/CAM solution' },
+    { id: 'triovibe', name: 'Ency', description: 'CAD/CAM for a new generation' },
+    { id: 'triovibe-robot', name: 'Ency Robot', description: 'Advanced robotic programming' },
+    { id: 'triovibe-tuner', name: 'Ency Tuner', description: 'Precision optimization tool' },
+    { id: 'triovibe-clouds', name: 'Ency Clouds', description: 'Cloud-based collaboration' },
     { id: 'triovibe-machinemaker', name: 'MachineMaker', description: 'Machine configuration software' },
-    { id: 'triovibe-hyper', name: 'TRIOVIBE Hyper', description: 'High-performance machining' },
+    { id: 'triovibe-hyper', name: 'Ency Hyper', description: 'High-performance machining' },
   ];
 
   const TRIOVIBEApplications = [
@@ -175,7 +175,13 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
               ) : (
                 <a
                   href={link.href}
-                  onClick={() => link.name === 'About Us' && setCurrentPage('about')}
+                  onClick={() => {
+                    if (link.name === 'About Us') {
+                      setCurrentPage('about');
+                    } else if (link.onClick) {
+                      link.onClick();
+                    }
+                  }}
                   className="text-sm font-semibold text-gray-800 flex items-center gap-1 hover:text-teal-600 transition-colors px-3 py-1.5"
                 >
                   {link.name}
@@ -225,6 +231,9 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                   onClick={() => {
                     if (link.name === 'About Us') {
                       setCurrentPage('about');
+                      setIsMobileMenuOpen(false);
+                    } else if (link.onClick) {
+                      link.onClick();
                       setIsMobileMenuOpen(false);
                     }
                   }}
@@ -278,7 +287,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                             }}
                             className="text-sm font-bold text-gray-900 hover:text-teal-600 transition-colors"
                           >
-                            TRIOVIBE X
+                            Ency X
                           </button>
                         </li>
                       </ul>
@@ -492,7 +501,10 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                     ))}
                     <div className="pt-4">
                       <button
-                        onClick={() => setIsIndustriesDropdownOpen(false)}
+                        onClick={() => {
+                          setCurrentPage('all-industries');
+                          setIsIndustriesDropdownOpen(false);
+                        }}
                         className="border border-gray-300 text-gray-500 rounded-full px-5 py-1.5 text-sm font-medium hover:border-teal-600 hover:text-teal-600 transition-all"
                       >
                         All industries
@@ -561,9 +573,273 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                       <Download size={18} className="text-gray-400 group-hover:text-teal-600" />
                       Start for free
                     </a>
-                    <a href="#" onClick={() => setIsIndustriesDropdownOpen(false)} className="flex items-center gap-3 text-gray-800 font-semibold hover:text-teal-600 transition-colors group">
+                    <a
+                      href="#"
+                      onClick={() => {
+                        setCurrentPage('why-triovibe');
+                        setIsIndustriesDropdownOpen(false);
+                      }}
+                      className="flex items-center gap-3 text-gray-800 font-semibold hover:text-teal-600 transition-colors group"
+                    >
                       <Star size={18} className="text-gray-400 group-hover:text-teal-600" />
                       Why TRIOVIBE?
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Resources Dropdown */}
+      <AnimatePresence>
+        {isResourcesDropdownOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            className="absolute top-full left-0 right-0 bg-white border-t border-gray-100 shadow-2xl z-50 overflow-hidden"
+            onMouseLeave={() => setIsResourcesDropdownOpen(false)}
+          >
+            <div className="container mx-auto px-6 py-10">
+              <div className="grid grid-cols-12 gap-8">
+                {/* Left Sections */}
+                <div className="col-span-8 grid grid-cols-4 gap-8">
+                  {/* Learn Section */}
+                  <div className="space-y-4">
+                    <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Learn</h3>
+                    <div className="bg-gradient-to-br from-teal-50 to-blue-50 rounded-lg p-4 border border-teal-100">
+                      <h4 className="font-bold text-gray-900 mb-2">Learn ENCY like a PRO!</h4>
+                      <button className="bg-teal-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-teal-700 transition-colors w-full">
+                        Start learning
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Download Section */}
+                  <div className="space-y-4">
+                    <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Download</h3>
+                    <ul className="space-y-2">
+                      <li>
+                        <button
+                          onClick={() => {
+                            setCurrentPage('software-products-download');
+                            setIsResourcesDropdownOpen(false);
+                          }}
+                          className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full"
+                        >
+                          Software Products
+                        </button>
+                      </li>
+                      <li>
+                        <button className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full">
+                          Component Library
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Support Section */}
+                  <div className="space-y-4">
+                    <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Support</h3>
+                    <div className="space-y-2">
+                      <h4 className="text-xs font-semibold text-gray-600 uppercase tracking-wider">USER MANUALS</h4>
+                      <ul className="space-y-1">
+                        <li>
+                          <button className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full">
+                            ENCY
+                          </button>
+                        </li>
+                        <li>
+                          <button className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full">
+                            ENCY Robot
+                          </button>
+                        </li>
+                        <li>
+                          <button className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full">
+                            ENCY Tuner
+                          </button>
+                        </li>
+                        <li>
+                          <button className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full">
+                            ENCY Hyper
+                          </button>
+                        </li>
+                        <li>
+                          <button className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full">
+                            MachineMaker for Robots
+                          </button>
+                        </li>
+                        <li>
+                          <button className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full">
+                            MachineMaker for CNC machines
+                          </button>
+                        </li>
+                      </ul>
+                      <div className="pt-2 space-y-1">
+                        <li>
+                          <button className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full">
+                            Postprocessor Generator
+                          </button>
+                        </li>
+                        <li>
+                          <button className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full">
+                            API Documentation
+                          </button>
+                        </li>
+                        <li>
+                          <button className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full">
+                            Interpreter development
+                          </button>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Company Section */}
+                  <div className="space-y-4">
+                    <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Company</h3>
+                    <ul className="space-y-2">
+                      <li>
+                        <button
+                          onClick={() => {
+                            setCurrentPage('about');
+                            setIsResourcesDropdownOpen(false);
+                          }}
+                          className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full"
+                        >
+                          About Us
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          onClick={() => {
+                            setCurrentPage('news');
+                            setIsResourcesDropdownOpen(false);
+                          }}
+                          className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full"
+                        >
+                          News
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          onClick={() => {
+                            setCurrentPage('events');
+                            setIsResourcesDropdownOpen(false);
+                          }}
+                          className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full"
+                        >
+                          Events
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          onClick={() => {
+                            setCurrentPage('use-cases');
+                            setIsResourcesDropdownOpen(false);
+                          }}
+                          className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full"
+                        >
+                          Use Cases
+                        </button>
+                      </li>
+                      <li>
+                        <button className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full">
+                          #powered-by-ency
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          onClick={() => {
+                            setCurrentPage('articles');
+                            setIsResourcesDropdownOpen(false);
+                          }}
+                          className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full"
+                        >
+                          Articles
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          onClick={() => {
+                            setCurrentPage('contact');
+                            setIsResourcesDropdownOpen(false);
+                          }}
+                          className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full"
+                        >
+                          Contact Us
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          onClick={() => {
+                            setCurrentPage('become-dealer');
+                            setIsResourcesDropdownOpen(false);
+                          }}
+                          className="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors text-left w-full"
+                        >
+                          Become a Dealer
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Right Panel */}
+                <div className="col-span-4 bg-gray-50 -my-10 p-10 border-l border-gray-100 flex flex-col gap-6">
+                  {/* Card */}
+                  <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                    <div className="p-5">
+                      <h4 className="text-[17px] font-bold text-teal-600 mb-4">What's new in ENCY 2.6</h4>
+                      <ul className="space-y-2.5 mb-5">
+                        {[
+                          "Helical lines in Design",
+                          "Extrude and Sweep Along the Trajectory",
+                          "Workflow improvements",
+                          "Stability & quality fixes"
+                        ].map((text, i) => (
+                          <li key={i} className="flex items-center gap-2.5 text-xs font-medium text-gray-500">
+                            <Check size={14} className="text-gray-400" />
+                            {text}
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="bg-[#0BB5AD] rounded-lg aspect-video flex items-center justify-center p-4 relative overflow-hidden">
+                        <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
+                        <img
+                          src="https://encycam.com/wp-content/uploads/2025/02/ENCY-X-scheme.svg"
+                          alt="New Features"
+                          className="w-full h-full object-contain filter brightness-0 invert opacity-90"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Links */}
+                  <div className="space-y-4">
+                    <button
+                      onClick={() => {
+                        setCurrentPage('contact');
+                        setIsResourcesDropdownOpen(false);
+                      }}
+                      className="flex items-center gap-3 text-gray-800 font-semibold hover:text-teal-600 transition-colors group text-left w-full"
+                    >
+                      <MessageSquare size={18} className="text-gray-400 group-hover:text-teal-600" />
+                      Contact sales
+                    </button>
+
+                    <a
+                      href="#"
+                      onClick={() => {
+                        setCurrentPage('why-triovibe');
+                        setIsResourcesDropdownOpen(false);
+                      }}
+                      className="flex items-center gap-3 text-gray-800 font-semibold hover:text-teal-600 transition-colors group"
+                    >
+                      <Star size={18} className="text-gray-400 group-hover:text-teal-600" />
+                      Why TRIOVIBE
                     </a>
                   </div>
                 </div>

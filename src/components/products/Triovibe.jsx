@@ -11,14 +11,14 @@ const TRIOVIBE = ({ setCurrentPage }) => {
     const intervalRef = useRef(null);
 
     const features = [
-        { icon: Zap, title: "3-axis-toolpath", description: "High-speed machining optimization", image: "TRIOVIBE2024/07/3-axis-1536x863.jpg", svg: "TRIOVIBE2024/08/3-axis.svg" },
-        { icon: Zap, title: "HSM", description: "High-speed machining optimization", image: "TRIOVIBE2024/07/HSM-1440x810.jpg", svg: "TRIOVIBE2024/08/HSM.svg" },
-        { icon: Layers, title: "Multiaxis", description: "Complex multi-axis operations", image: "TRIOVIBE2024/07/Multiaxis-1024x575.jpg", svg: "TRIOVIBE2024/08/Multiaxis.svg" },
-        { icon: Monitor, title: "State-of-art UI", description: "Modern intuitive interface", image: "TRIOVIBE2024/07/State-of-art-UI-1024x576.jpg", svg: "TRIOVIBE2024/08/State-of-art-UI.svg" },
-        { icon: Settings, title: "Mill-Turn", description: "Combined milling and turning", image: "TRIOVIBE2024/07/Mill-Turn-1024x576.jpg", svg: "TRIOVIBE2024/08/Mill-Turn.svg" },
-        { icon: Box, title: "Additive", description: "Hybrid manufacturing solutions", image: "TRIOVIBE2024/07/Additive-1024x576.jpg", svg: "TRIOVIBE2024/08/Additive.svg" },
-        { icon: Play, title: "Machine simulation", description: "Advanced simulation technology", image: "TRIOVIBE2024/07/Machine-simulation-1024x576.jpg", svg: "TRIOVIBE2024/08/Machine-simulation.svg" },
-        { icon: Cpu, title: "Material removal simulation", description: "Simulate material removal processes", image: "TRIOVIBE2024/07/Material-removal-simulation-1024x576.jpg", svg: "TRIOVIBE2024/08/Material-removal-simulation.svg" }
+        { icon: Zap, title: "3-axis-toolpath", description: "High-speed machining optimization", image: "https://encycam.com/wp-content/uploads/2024/07/3-axis-1024x576.jpg", svg: "TRIOVIBE2024/08/3-axis.svg" },
+        { icon: Zap, title: "HSM", description: "High-speed machining optimization", image: "https://encycam.com/wp-content/uploads/2024/07/HSM-1024x576.jpg", svg: "TRIOVIBE2024/08/HSM.svg" },
+        { icon: Layers, title: "Multiaxis", description: "Complex multi-axis operations", image: "https://encycam.com/wp-content/uploads/2024/07/Multiaxis-1024x575.jpg", svg: "TRIOVIBE2024/08/Multiaxis.svg" },
+        { icon: Monitor, title: "State-of-art UI", description: "Modern intuitive interface", image: "https://encycam.com/wp-content/uploads/2024/07/State-of-art-UI-1024x576.jpg 1024w", svg: "TRIOVIBE2024/08/State-of-art-UI.svg" },
+        { icon: Settings, title: "Mill-Turn", description: "Combined milling and turning", image: "https://encycam.com/wp-content/uploads/2024/07/Mill-Turn-1024x576.jpg", svg: "TRIOVIBE2024/08/Mill-Turn.svg" },
+        { icon: Box, title: "Additive", description: "Hybrid manufacturing solutions", image: "https://encycam.com/wp-content/uploads/2024/07/Additive-1024x576.jpg", svg: "TRIOVIBE2024/08/Additive.svg" },
+        { icon: Play, title: "Machine simulation", description: "Advanced simulation technology", image: "https://encycam.com/wp-content/uploads/2024/07/Machine-simulation-1024x576.jpg", svg: "TRIOVIBE2024/08/Machine-simulation.svg" },
+        { icon: Cpu, title: "Material removal simulation", description: "Simulate material removal processes", image: "	https://encycam.com/wp-content/uploads/2024/07/Material-removal-simulation-1024x576.jpg", svg: "TRIOVIBE2024/08/Material-removal-simulation.svg" }
     ];
 
     // Auto-slide functionality
@@ -79,7 +79,7 @@ const TRIOVIBE = ({ setCurrentPage }) => {
                         className="mb-8"
                     >
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-8">
-                            TRIOVIBE: CAD/CAM <br />for a new generation
+                            ENCY: CAD/CAM <br />for a new generation
                         </h1>
                     </motion.div>
 
@@ -337,7 +337,7 @@ const TRIOVIBE = ({ setCurrentPage }) => {
                                 </h3>
                             </div>
                             <img
-                                src="TRIOVIBE2025/01/A-wide-range-of-machining.png"
+                                src="https://encycam.com/wp-content/uploads/2025/01/A-wide-range-of-machining.png"
                                 alt="Machining strategies"
                                 className="absolute bottom-0 right-0 w-3/4 object-contain transition-transform duration-500 group-hover:scale-105"
                             />
@@ -355,7 +355,7 @@ const TRIOVIBE = ({ setCurrentPage }) => {
                                 <h3 className="text-xl font-semibold text-gray-800">Interactive</h3>
                             </div>
                             <img
-                                src="TRIOVIBE2024/07/Interactivity.png"
+                                src="https://encycam.com/wp-content/uploads/2024/07/Interactivity.png"
                                 alt="Interaction"
                                 className="absolute bottom-0 right-0 w-full h-3/4 object-cover object-left-top transition-transform duration-500 group-hover:scale-105"
                             />
@@ -373,7 +373,7 @@ const TRIOVIBE = ({ setCurrentPage }) => {
                                 <h3 className="text-xl font-semibold text-gray-800">State-of-art interface</h3>
                             </div>
                             <img
-                                src="TRIOVIBE2024/07/State-of-art-interface.png"
+                                src="https://encycam.com/wp-content/uploads/2024/07/State-of-art-interface.png"
                                 alt="Modern interface"
                                 className="absolute bottom-0 right-0 w-full h-[85%] object-cover object-top transition-transform duration-500 group-hover:scale-105"
                             />
@@ -391,7 +391,7 @@ const TRIOVIBE = ({ setCurrentPage }) => {
                                 <h3 className="text-xl font-semibold text-gray-800">Parametric CAD</h3>
                             </div>
                             <img
-                                src="TRIOVIBE2024/07/Parametric-CAD-300x169.png"
+                                src="https://encycam.com/wp-content/uploads/2024/07/G-code-simulation.svg"
                                 alt="Parametric CAD"
                                 className="absolute bottom-0 right-0 w-3/4 object-contain transition-transform duration-500 group-hover:scale-105"
                                 onError={(e) => { e.target.src = "https://picsum.photos/400/300?grayscale" }}
@@ -412,7 +412,7 @@ const TRIOVIBE = ({ setCurrentPage }) => {
                                 </h3>
                             </div>
                             <img
-                                src="TRIOVIBE2024/07/G-code-simulation.svg"
+                                src="https://encycam.com/wp-content/uploads/2024/07/G-code-simulation.svg"
                                 alt="NC Simulation"
                                 className="absolute bottom-4 right-4 w-1/2 object-contain transition-transform duration-500 group-hover:scale-105"
                             />
@@ -430,7 +430,7 @@ const TRIOVIBE = ({ setCurrentPage }) => {
                                 <h3 className="text-xl font-semibold text-gray-800">Crisp at 4K screens</h3>
                             </div>
                             <img
-                                src="TRIOVIBE2024/07/Crisp-and-crystal-clear-interface.png"
+                                src="https://encycam.com/wp-content/uploads/2024/07/Crisp-and-crystal-clear-interface.png"
                                 alt="4K Display"
                                 className="absolute bottom-0 right-0 w-full h-[60%] object-cover object-top transition-transform duration-500 group-hover:scale-105"
                             />
@@ -449,7 +449,7 @@ const TRIOVIBE = ({ setCurrentPage }) => {
                             </div>
                             <div className="absolute inset-0 flex items-center justify-center pt-8">
                                 <img
-                                    src="TRIOVIBE2024/07/Open-API.png"
+                                    src="https://encycam.com/wp-content/uploads/2024/07/Open-API.png"
                                     alt="API"
                                     className="w-4/5 object-contain transition-transform duration-500 group-hover:scale-105"
                                 />
@@ -468,7 +468,7 @@ const TRIOVIBE = ({ setCurrentPage }) => {
                                 <h3 className="text-xl font-semibold text-gray-800">Technological independence</h3>
                             </div>
                             <img
-                                src="TRIOVIBE2024/07/Technological-independence.jpg"
+                                src="https://encycam.com/wp-content/uploads/2024/07/Technological-independence.jpg"
                                 alt="Tech Independence"
                                 className="absolute bottom-0 right-0 w-full h-[70%] object-cover object-top transition-transform duration-500 group-hover:scale-105"
                             />
@@ -488,67 +488,67 @@ const TRIOVIBE = ({ setCurrentPage }) => {
                             {
                                 title: "2.5x and 3x mill",
                                 desc: "Production of molds & dies and any other parts on a 3-axis milling machine",
-                                img: "TRIOVIBE2024/08/2.5x-and-3x-Milling-480x480.png"
+                                img: "https://encycam.com/wp-content/uploads/2024/08/2.5x-and-3x-Milling-240x240.png"
                             },
                             {
                                 title: "Rotary",
                                 desc: "Production of screws, blades, gear wheels, balusters",
-                                img: "TRIOVIBE2024/08/Rotary-480x480.png"
+                                img: "https://encycam.com/wp-content/uploads/2024/08/Rotary-240x240.png"
                             },
                             {
                                 title: "Lathe",
                                 desc: "Turning and boring, threading, trimming, drilling, reaming",
-                                img: "TRIOVIBE2024/07/Lathe-480x490.png"
+                                img: "https://encycam.com/wp-content/uploads/2024/07/Lathe-240x245.png"
                             },
                             {
                                 title: "Mill-turn",
                                 desc: "Turning and milling combined in one setup",
-                                img: "TRIOVIBE2024/08/Mill-turn-480x480.png"
+                                img: "https://encycam.com/wp-content/uploads/2024/08/Mill-turn-240x240.png "
                             },
                             {
                                 title: "Multiaxis",
                                 desc: "Index (3+2) and simultaneous 5 axis milling. For turbine wheels, blades, ports",
-                                img: "TRIOVIBE2024/08/Multiaxis-480x480.png"
+                                img: "https://encycam.com/wp-content/uploads/2024/08/Multiaxis-240x240.png"
                             },
                             {
                                 title: "HSM and adaptive",
                                 desc: "High speed and adaptive toolpaths for quick material removal with extended tool life",
-                                img: "TRIOVIBE2024/07/HSM-and-adaptive-480x490.png"
+                                img: "https://encycam.com/wp-content/uploads/2024/07/HSM-and-adaptive-240x245.png"
                             },
                             {
                                 title: "Swiss and MTM",
                                 desc: "Swiss-type machines and MTM (multi-channel machining) with synchronization",
-                                img: "TRIOVIBE2024/07/Swiss-and-MTM-480x490.png"
+                                img: "https://encycam.com/wp-content/uploads/2024/07/Swiss-and-MTM-240x245.png"
                             },
                             {
                                 title: "5-6D cutting",
                                 desc: "CNC programming of cutting, trimming, 6D knife cutting. Mill, laser, water, plasma, knife",
-                                img: "TRIOVIBE2024/08/5-6D-cutting-480x480.png"
+                                img: "https://encycam.com/wp-content/uploads/2024/08/5-6D-cutting-240x240.png"
                             },
                             {
                                 title: "Additive",
                                 desc: "3—5D cladding with advanced layer thickness control",
-                                img: "TRIOVIBE2024/08/Additive-1-480x480.png"
+                                img: "https://encycam.com/wp-content/uploads/2024/08/Additive-1-240x240.png"
                             },
                             {
                                 title: "EDM",
                                 desc: "2 – 4 axis strategies for wire EDM machining",
-                                img: "TRIOVIBE2024/08/EDM-480x480.png"
+                                img: "https://encycam.com/wp-content/uploads/2024/08/EDM-240x240.png"
                             },
                             {
                                 title: "2D cutting",
                                 desc: "Programming of laser, waterjet, plasma, oxy-fuel cutting and knife cutting",
-                                img: "TRIOVIBE2024/07/2D-cutting-480x490.png"
+                                img: "https://encycam.com/wp-content/uploads/2024/07/2D-cutting-240x245.png"
                             },
                             {
                                 title: "G-code based simulation",
                                 desc: "G-code verification in TRIOVIBE CAM",
-                                img: "TRIOVIBE2024/08/G-code-based-simulation-480x480.png"
+                                img: "https://encycam.com/wp-content/uploads/2024/08/G-code-based-simulation-240x240.png"
                             },
                             {
                                 title: "Probing cycles",
                                 desc: "Probing cycles for Milling and Lathe Machines",
-                                img: "TRIOVIBE2024/08/Probing-480x480.png"
+                                img: "https://encycam.com/wp-content/uploads/2024/08/Probing-240x240.png"
                             }
                         ].map((app, idx) => (
                             <motion.div
@@ -586,8 +586,8 @@ const TRIOVIBE = ({ setCurrentPage }) => {
                 <div className="max-w-7xl mx-auto">
                     <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 pb-8 border-b border-white/10">
                         <div>
-                            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Powered by TRIOVIBE</h2>
-                            <p className="text-gray-400 text-lg">Daily posts from TRIOVIBE users all over the world</p>
+                            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Powered by ENCY</h2>
+                            <p className="text-gray-400 text-lg">Daily posts from ENCY users all over the world</p>
                         </div>
                         <button
                             onClick={() => setShowAllPosts(!showAllPosts)}
@@ -602,117 +602,117 @@ const TRIOVIBE = ({ setCurrentPage }) => {
                             {
                                 title: "Complex Part Manufacturing in a Job Shop Environment",
                                 date: "14 Jan 2026",
-                                image: "TRIOVIBEtmpnslu91ua-480x640.jpg"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmpr_oqyy5f-1024x576.jpg"
                             },
                             {
-                                title: "Multi-Axis Machining in Job Shop Environments",
+                                title: "Advance CAM Workflow Implementation In Job Shop Setting",
                                 date: "12 Jan 2026",
-                                image: "TRIOVIBEtmp8uow0hqj.jpg"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmp5l2_ox01-480x853.jpg"
                             },
                             {
                                 title: "Multi-Axis Robot Milling for Wooden Parts",
                                 date: "12 Jan 2026",
-                                image: "TRIOVIBEtmpji36pb45.jpg"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmpnslu91ua-480x640.jpg"
                             },
                             {
                                 title: "Advanced CAM Workflow Implementation in Job Shop Setting",
                                 date: "12 Jan 2026",
-                                image: "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmpg7d9m_9h.jpg"
                             },
                             {
                                 title: "Robotic Sanding of Wooden Products",
                                 date: "12 Jan 2026",
-                                image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmpp2df_t3a-480x640.jpg"
                             },
                             {
                                 title: "Advanced Machining for Polymer Components in Film Production",
                                 date: "12 Jan 2026",
-                                image: "https://images.unsplash.com/photo-1558901357-ca41e027244a?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmpovub2pg6.jpg"
                             },
                             {
-                                title: "Complex TRIOVIBE Robot Usage for Various Industries",
+                                title: "Complex ENCY Robot Usage for Various Industries",
                                 date: "12 Jan 2026",
-                                image: "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmplqr65as2-480x853.jpg"
                             },
                             {
                                 title: "MIG Welding Automation with TRIOVIBE",
                                 date: "26 Dec 2025",
-                                image: "https://images.unsplash.com/photo-1504917595217-d4dc5f9c4739?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmpungn9yt8-480x853.jpg"
                             },
                             {
                                 title: "Complex Milling of Custom Parts in Job Shop Environment",
                                 date: "25 Dec 2025",
-                                image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmp2jxhj463.jpg"
                             },
                             {
                                 title: "Large-Scale Foam Machining for Sculpture Prototyping",
                                 date: "23 Dec 2025",
-                                image: "https://images.unsplash.com/photo-1565514434942-5fd962f28f4b?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmpbdq0khso.jpg"
                             },
                             {
                                 title: "Complex Parts Programming in Job Shop Environment",
                                 date: "23 Dec 2025",
-                                image: "https://images.unsplash.com/photo-1581092162384-8987c1794714?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmpt91f10mk-480x853.jpg"
                             },
                             {
                                 title: "Complex Milling Achievements Highlighted in Job Shop Environment",
                                 date: "22 Dec 2025",
-                                image: "https://images.unsplash.com/photo-1590674000184-d2619f906561?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmp8uow0hqj.jpg"
                             },
                             {
                                 title: "Advanced Milling for Custom Components in Job Shops",
                                 date: "22 Dec 2025",
-                                image: "https://images.unsplash.com/photo-1618335829634-75685dfcf3b5?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmpji36pb45.jpg"
                             },
                             {
                                 title: "Efficient Workflow in Job Shop Machining",
                                 date: "19 Dec 2025",
-                                image: "https://images.unsplash.com/photo-1589793907316-f94025b46850?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmpgaka01zh-480x854.jpg"
                             },
                             {
                                 title: "Multi-Operation Workflow in Job Shop Machining",
                                 date: "18 Dec 2025",
-                                image: "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmphkpjdtut-480x853.jpg"
                             },
                             {
                                 title: "Efficient Toolpath Strategies for Job Shop Machining",
                                 date: "18 Dec 2025",
-                                image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmp8uzhswtl-1024x576.jpg"
                             },
                             {
                                 title: "Large-Scale Robotic Additive Manufacturing in Architectural Panel Production",
                                 date: "17 Dec 2025",
-                                image: "https://images.unsplash.com/photo-1504917595217-d4dc5f9c4739?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmpvqjp9t2f-480x853.jpg"
                             },
                             {
                                 title: "Robotic Non-Planar Additive Processes for Complex Curves and Structures",
                                 date: "17 Dec 2025",
-                                image: "https://images.unsplash.com/photo-1558901357-ca41e027244a?auto=format&fit=crop&q=80&w=1000"
+                                image: "	https://encycam.com/wp-content/uploads/pbe-rest-folder/tmpautno3r2-480x854.jpg"
                             },
                             {
                                 title: "Multi-Axis Machining for Custom Parts in Job Shop Production",
                                 date: "17 Dec 2025",
-                                image: "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmp5l2_ox01-480x853.jpg"
                             },
                             {
                                 title: "High-Quality 3D Milling on Aluminum: Job Shop Insights",
                                 date: "16 Dec 2025",
-                                image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmpcmcdmmy0-480x853.jpg"
                             },
                             {
                                 title: "Robotic Deburring and Inspection for Automotive Cylinder Heads",
                                 date: "16 Dec 2025",
-                                image: "https://images.unsplash.com/photo-1565514434942-5fd962f28f4b?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmplfveyasb-1024x578.jpg"
                             },
                             {
                                 title: "Advanced Multi-Axis Machining for Complex Aluminum Components",
                                 date: "10 Dec 2025",
-                                image: "https://images.unsplash.com/photo-1589793907316-f94025b46850?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmpzw04x0v9-480x853.jpg"
                             },
                             {
                                 title: "Multi-Axis Machining at Job Shops",
                                 date: "08 Dec 2025",
-                                image: "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&q=80&w=1000"
+                                image: "https://encycam.com/wp-content/uploads/pbe-rest-folder/tmpovgtc4w9-1024x576.jpg"
                             },
                             {
                                 title: "Complex Multi-Axis Machining of Metallic Components",
@@ -836,7 +836,7 @@ const TRIOVIBE = ({ setCurrentPage }) => {
                             </div>
                             <div className="relative mt-8 md:mt-0 md:ml-8 w-full md:w-[450px]">
                                 <img
-                                    src="TRIOVIBE2024/07/Hardware-acceleration-1-1024x576.png"
+                                    src="https://encycam.com/wp-content/uploads/2025/08/State-of-art-UI-medium-480x270.png"
                                     alt="Software Interface"
                                     className="rounded-xl shadow-2xl transition-transform duration-500 group-hover:scale-105"
                                 />

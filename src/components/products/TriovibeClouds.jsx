@@ -405,7 +405,7 @@ const TRIOVIBEClouds = ({ setCurrentPage }) => {
                             </div>
                             <div className="relative mt-8 md:mt-0 md:ml-8 w-full md:w-[450px]">
                                 <img
-                                    src="https://encycam.com/wp-content/uploads/2024/07/Hardware-acceleration-1-1024x576.png"
+                                    src="https://encycam.com/wp-content/uploads/2025/08/State-of-art-UI-medium-480x270.png"
                                     alt="Software Interface"
                                     className="rounded-xl shadow-2xl transition-transform duration-500 group-hover:scale-105"
                                 />

@@ -5,14 +5,14 @@ import { ShoppingBag, Coffee, Laptop, Smartphone } from 'lucide-react';
 
 const ConsumerProducts = ({ setCurrentPage }) => {
     const pageData = {
-        title: "TRIOVIBE Consumer Products",
+        title: "ENCY Consumer Products",
         subtitle: "Precision for everyday life.",
         heroImage: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1920&q=80",
         description: {
             title: "Manufacturing at Scale",
             text: "From smartphones to high-end home appliances, TRIOVIBE ensures the highest quality finishes and production efficiency for consumer goods."
         },
-        galleryTitle: "Key TRIOVIBE Components and Technologies",
+        galleryTitle: "Key ENCY Components and Technologies",
         gallerySubtitle: "A showcase of consumer products from key electronic devices, luxury appliances, home care products, to appeal to our products. These range from high-end to appeal to our products, electronics, or appeal to our everyday products. Often requiring precision machining for aesthetic quality, high-speed production for market demands, and sustainable practices for eco-friendly products.",
         gallery: [
             "https://encycam.com/wp-content/uploads/2024/08/Consumer-Products-1-300x205.jpg",
@@ -20,7 +20,7 @@ const ConsumerProducts = ({ setCurrentPage }) => {
             "https://encycam.com/wp-content/uploads/2024/08/Consumer-Products-3-300x205.jpg"
         ],
         featured: {
-            title: "TRIOVIBE for the TRIOVIBE Consumer Products Industry",
+            title: "TRIOVIBE for the ENCY Consumer Products Industry",
             content: "TRIOVIBE excels as a TRIOVIBE CAM solution for consumer products, offering by offering precise milling and efficient design to production workflows. By delivering top-tier surface finishes and supporting mass production, TRIOVIBE helps consumer product manufacturers meet demanding aesthetic and functional standards while maintaining cost-effective production cycles.",
             image: "https://triovibe.com/wp-content/uploads/2024/09/TRIOVIBE-Consumer-Products-480x347.png",
             points: [
@@ -57,7 +57,7 @@ const ConsumerProducts = ({ setCurrentPage }) => {
             ]
         },
         advantages: {
-            title: "TRIOVIBE Consumer Excellence",
+            title: "ENCY Consumer Excellence",
             items: [
                 {
                     title: "Scale & Quality",

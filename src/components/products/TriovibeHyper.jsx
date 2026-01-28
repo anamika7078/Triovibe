@@ -378,7 +378,7 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                     >
                         <div className="absolute inset-0 bg-blue-600/5 blur-3xl rounded-full" />
                         <p className="text-xl md:text-3xl text-white/90 font-medium leading-[1.6] relative z-10 max-w-5xl mx-auto italic">
-                            "TRIOVIBE Hyper keeps the user in the loop with the real robot — allowing the program to be executed and refined simultaneously. Platform connects to the robot controller online, enabling the engineer to test and adjust robot motions directly on the real robot while observing the results both in the virtual model and in the physical cell."
+                            "ENCY Hyper keeps the user in the loop with the real robot — allowing the program to be executed and refined simultaneously. Platform connects to the robot controller online, enabling the engineer to test and adjust robot motions directly on the real robot while observing the results both in the virtual model and in the physical cell."
                         </p>
                     </motion.div>
                 </div>
@@ -399,9 +399,9 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                             className="group bg-[#1E293B] rounded-[4rem] overflow-hidden p-10 md:p-16 relative flex flex-col justify-between min-h-[600px] shadow-4xl shadow-blue-900/10"
                         >
                             <div className="relative z-10">
-                                <h3 className="text-4xl font-black text-white mb-6">TRIOVIBE Hyper</h3>
+                                <h3 className="text-4xl font-black text-white mb-6">ENCY Hyper</h3>
                                 <p className="text-blue-300 text-xl mb-12 font-medium leading-relaxed">
-                                    TRIOVIBE Hyper can run completely independently — and this makes it perfect for everyday automation.
+                                    ENCY Hyper can run completely independently — and this makes it perfect for everyday automation.
                                 </p>
                                 <ul className="grid grid-cols-2 gap-6">
                                     {['pick-and-place', 'machine tending', 'palletizing', 'packaging', 'assembly', 'nailing'].map((item) => (
@@ -428,9 +428,9 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                             className="group bg-[#0F172A] rounded-[4rem] overflow-hidden p-10 md:p-16 relative flex flex-col justify-between min-h-[600px] shadow-4xl shadow-indigo-900/10"
                         >
                             <div className="relative z-10">
-                                <h3 className="text-4xl font-black text-white mb-6">TRIOVIBE Hyper <span className="text-blue-500 font-black">Max</span></h3>
+                                <h3 className="text-4xl font-black text-white mb-6">ENYC Hyper <span className="text-blue-500 font-black">Max</span></h3>
                                 <p className="text-indigo-300 text-xl mb-12 font-medium leading-relaxed">
-                                    TRIOVIBE Hyper acts as the operator interface, while TRIOVIBE Robot works in the background, handling heavy calculations and trajectory generation.
+                                    ENCY Hyper acts as the operator interface, while TRIOVIBE Robot works in the background, handling heavy calculations and trajectory generation.
                                 </p>
                                 <ul className="grid grid-cols-2 gap-6">
                                     {['milling', 'welding', 'polishing', 'coating', 'additive'].map((item) => (
@@ -515,7 +515,7 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                             whileInView={{ opacity: 1, y: 0 }}
                             className="text-4xl md:text-6xl font-black text-gray-900 mb-6"
                         >
-                            Who benefits from TRIOVIBE Hyper
+                            Who benefits from ENCY Hyper
                         </motion.h2>
                         <div className="w-24 h-2 bg-blue-600 mx-auto rounded-full" />
                     </div>
@@ -610,7 +610,7 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                         className="relative h-[600px] rounded-[4rem] overflow-hidden group shadow-4xl"
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1558981403-c5f97cbba6c1?w=1920&q=80"
+                            src="/bike.jpg"
                             alt="TRIOVIBE 2.0"
                             className="absolute inset-0 w-full h-full object-cover grayscale brightness-50 contrast-125 group-hover:scale-105 transition-transform duration-[3s]"
                         />
@@ -685,7 +685,7 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                                     className="p-3 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 shadow-4xl"
                                 >
                                     <img
-                                        src="https://encycam.com/wp-content/uploads/2024/07/Hardware-acceleration-1-1024x576.png"
+                                        src="https://encycam.com/wp-content/uploads/2025/08/State-of-art-UI-medium-480x270.png"
                                         alt="Software Interface"
                                         className="rounded-2xl shadow-2xl"
                                     />

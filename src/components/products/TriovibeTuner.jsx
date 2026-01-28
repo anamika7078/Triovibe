@@ -136,7 +136,7 @@ const TRIOVIBETuner = ({ setCurrentPage }) => {
                         animate={{ opacity: 1, y: 0 }}
                         className="text-5xl md:text-7xl font-bold mb-6 tracking-tight"
                     >
-                        TRIOVIBE Tuner: Shop-floor <br /> NC-code simulation software
+                        ENCY Tuner: Shop-floor <br /> NC-code simulation software
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -479,7 +479,7 @@ const TRIOVIBETuner = ({ setCurrentPage }) => {
                             </div>
                             <div className="relative mt-8 md:mt-0 md:ml-8 w-full md:w-[450px]">
                                 <img
-                                    src="https://encycam.com/wp-content/uploads/2024/07/Hardware-acceleration-1-1024x576.png"
+                                    src="https://encycam.com/wp-content/uploads/2025/08/State-of-art-UI-medium-480x270.png"
                                     alt="Software Interface"
                                     className="rounded-xl shadow-2xl transition-transform duration-500 group-hover:scale-105"
                                 />

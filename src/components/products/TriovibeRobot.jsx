@@ -14,50 +14,50 @@ const TRIOVIBERobot = ({ setCurrentPage }) => {
             icon: Zap,
             title: "Complex Toolpath calculation",
             description: "Advanced toolpath strategies for complex geometries and intricate robot movements",
-            image: "TRIOVIBE2024/07/3-axis-1536x863.jpg",
-            svg: "TRIOVIBE2024/08/3-axis.svg"
+            image: "https://encycam.com/wp-content/uploads/2024/07/Complex-Toolpath-calculation-robot-1024x576.jpg",
+            svg: "https://encycam.com/wp-content/uploads/2024/08/Complex-Toolpath-calculation-click.svg"
         },
         {
             icon: Activity,
             title: "Simple toolpath calculation",
             description: "Intuitive and fast toolpath creation for standard industrial robot applications",
-            image: "TRIOVIBE2024/07/HSM-1440x810.jpg",
-            svg: "TRIOVIBE2024/08/HSM.svg"
+            image: "https://encycam.com/wp-content/uploads/2024/07/Simple-toolpath-calculation-1024x574.jpg",
+            svg: "https://encycam.com/wp-content/uploads/2024/08/Simple-toolpath-calculation-click.svg"
         },
         {
             icon: RobotIcon,
             title: "Robot kinematics management",
             description: "Precise control of robot joints, limits, and movement constraints",
-            image: "TRIOVIBE2024/07/Multiaxis-1024x575.jpg",
-            svg: "TRIOVIBE2024/08/Multiaxis.svg"
+            image: "https://encycam.com/wp-content/uploads/2024/07/Robot-kinematics-management-1024x576.jpg",
+            svg: "https://encycam.com/wp-content/uploads/2024/08/Robot-kinematics-management.svg"
         },
         {
             icon: Monitor,
             title: "State-of-art UI",
             description: "Modern intuitive interface designed specifically for efficient robot programming",
-            image: "TRIOVIBE2024/07/State-of-art-UI-1024x576.jpg",
-            svg: "TRIOVIBE2024/08/State-of-art-UI.svg"
+            image: "https://encycam.com/wp-content/uploads/2024/07/State-of-art-UI-robot-1024x575.jpg",
+            svg: "https://encycam.com/wp-content/uploads/2024/08/State-of-art-UI.svgg"
         },
         {
             icon: Command,
             title: "External axes support",
             description: "Seamless integration with rotaries, linear rails, and additional robot axes",
-            image: "TRIOVIBE2024/07/Mill-Turn-1024x576.jpg",
-            svg: "TRIOVIBE2024/08/Mill-Turn.svg"
+            image: "https://encycam.com/wp-content/uploads/2024/07/External-axes-support-1024x576.jpg",
+            svg: "https://encycam.com/wp-content/uploads/2024/08/External-axes-support.svg"
         },
         {
             icon: Box,
             title: "Full robotic cell simulation",
             description: "Complete digital twin simulation of the entire robotic workcell environment",
-            image: "TRIOVIBE2024/07/Additive-1024x576.jpg",
-            svg: "TRIOVIBE2024/08/Additive.svg"
+            image: "https://encycam.com/wp-content/uploads/2024/07/Full-robotic-cell-simulation-1024x576.jpg",
+            svg: "https://encycam.com/wp-content/uploads/2024/08/Full-robotic-cell-simulation.svg"
         },
         {
             icon: Play,
             title: "Technology simulation",
             description: "Validation and verification of process-specific parameters like welding or cutting",
-            image: "TRIOVIBE2024/07/Machine-simulation-1024x576.jpg",
-            svg: "TRIOVIBE2024/08/Machine-simulation.svg"
+            image: "https://encycam.com/wp-content/uploads/2024/07/Tec…al-removal-additive-painting-welding-1024x574.jpg",
+            svg: "https://encycam.com/wp-content/uploads/2024/08/Technology-simulation.svg"
         }
     ];
 
@@ -117,7 +117,7 @@ const TRIOVIBERobot = ({ setCurrentPage }) => {
                         className="mb-8"
                     >
                         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-8">
-                            TRIOVIBE Robot: A complete offline <br /> robot programming solution
+                            ENCY Robot: A complete offline <br /> robot programming solution
                         </h1>
                     </motion.div>
 
@@ -202,7 +202,7 @@ const TRIOVIBERobot = ({ setCurrentPage }) => {
                             </div>
                             <div className="flex-1 text-center">
                                 <span className="text-[10px] text-gray-500 font-medium bg-[#0f1115] px-4 py-1 rounded-full border border-gray-800">
-                                    TRIOVIBE Robot - {features[selectedFeature].title}
+                                    ENCY Robot - {features[selectedFeature].title}
                                 </span>
                             </div>
                         </div>
@@ -281,7 +281,7 @@ const TRIOVIBERobot = ({ setCurrentPage }) => {
                                         <div className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
                                     </div>
                                     <img
-                                        src="TRIOVIBE2024/07/Build-Your-Robotic-Cell-Digital-Twin-640x371.jpg"
+                                        src="https://encycam.com/wp-content/uploads/2024/07/Build-Your-Robotic-Cell-Digital-Twin-1024x593.jpg"
                                         alt="Robot Programming Workflow"
                                         className="rounded-xl w-full"
                                         onError={(e) => { e.target.src = "https://picsum.photos/seed/workflow/800/500" }}
@@ -326,7 +326,7 @@ const TRIOVIBERobot = ({ setCurrentPage }) => {
                             </div>
                             <div className="lg:w-1/2">
                                 <img
-                                    src="TRIOVIBE2024/08/Zero-code-digital-twin-builder-480x356.jpg"
+                                    src="https://encycam.com/wp-content/uploads/2024/08/Zero-code-digital-twin-builder.jpg"
                                     alt="MachineMaker Interface"
                                     className="rounded-2xl shadow-xl bg-white p-2"
                                     onError={(e) => { e.target.src = "https://picsum.photos/seed/mm/700/500" }}
@@ -381,14 +381,14 @@ const TRIOVIBERobot = ({ setCurrentPage }) => {
                             {/* Kinematics-aware */}
                             <div className="bg-gray-50 rounded-2xl p-6 flex flex-col justify-between group overflow-hidden relative border border-gray-100">
                                 <h3 className="text-lg font-bold text-gray-800 z-10">Kinematics-aware <br />toolpath calculation</h3>
-                                <img src="https://triovibe.com/wp-content/uploads/2024/07/Kinematics-aware.png" alt="" className="absolute -bottom-4 -right-4 w-3/4 opacity-80 group-hover:scale-105 transition-transform" />
+                                <img src="https://encycam.com/wp-content/uploads/2024/08/Kinematics-aware-toolpath-calculation-480x247.png 480w" alt="" className="absolute -bottom-4 -right-4 w-3/4 opacity-80 group-hover:scale-105 transition-transform" />
                             </div>
 
                             {/* Interactive */}
                             <div className="bg-gray-50 rounded-2xl p-6 flex flex-col justify-between group overflow-hidden relative border border-gray-100">
                                 <h3 className="text-lg font-bold text-gray-800 z-10">Interactive</h3>
                                 <div className="absolute inset-0 flex items-center justify-center mt-8">
-                                    <img src="https://triovibe.com/wp-content/uploads/2024/07/Interactivity.png" alt="" className="w-4/5 group-hover:scale-110 transition-transform" />
+                                    <img src="https://encycam.com/wp-content/uploads/2024/07/Interactivity.png" alt="" className="w-4/5 group-hover:scale-110 transition-transform" />
                                 </div>
                             </div>
 
@@ -396,14 +396,14 @@ const TRIOVIBERobot = ({ setCurrentPage }) => {
                             <div className="md:row-span-2 bg-gray-50 rounded-2xl p-6 flex flex-col group overflow-hidden relative border border-gray-100">
                                 <h3 className="text-lg font-bold text-gray-800 mb-4">State-of-art interface</h3>
                                 <div className="flex-1 relative">
-                                    <img src="https://triovibe.com/wp-content/uploads/2024/07/State-of-art-interface.png" alt="" className="w-full h-full object-contain group-hover:scale-105 transition-transform" />
+                                    <img src="https://encycam.com/wp-content/uploads/2024/08/State-of-art-interface-robot.png" alt="" className="w-full h-full object-contain group-hover:scale-105 transition-transform" />
                                 </div>
                             </div>
 
                             {/* Parametric CAD */}
                             <div className="bg-gray-50 rounded-2xl p-6 flex flex-col justify-between group overflow-hidden relative border border-gray-100">
                                 <h3 className="text-lg font-bold text-gray-800 z-10">Parametric CAD</h3>
-                                <img src="https://triovibe.com/wp-content/uploads/2024/07/Parametric-CAD.png" alt="" className="absolute bottom-4 right-4 w-3/4 group-hover:translate-x-2 transition-transform" />
+                                <img src="https://encycam.com/wp-content/uploads/2024/07/G-code-simulation.svg" alt="" className="absolute bottom-4 right-4 w-3/4 group-hover:translate-x-2 transition-transform" />
                             </div>
 
                             {/* NC-code simulation */}
@@ -419,21 +419,21 @@ const TRIOVIBERobot = ({ setCurrentPage }) => {
                             {/* Crisp at 4K */}
                             <div className="bg-gray-50 rounded-2xl p-6 flex flex-col justify-between group overflow-hidden relative border border-gray-100">
                                 <h3 className="text-lg font-bold text-gray-800 z-10">Crisp at 4K screens</h3>
-                                <img src="TRIOVIBE2024/07/Crisp-and-crystal-clear-interface.png" alt="" className="absolute bottom-0 left-0 w-full group-hover:scale-105 transition-transform" />
+                                <img src="	https://encycam.com/wp-content/uploads/2024/08/Crisp-and-crystal-clear-interface-robot-240x122.png" alt="" className="absolute bottom-0 left-0 w-full group-hover:scale-105 transition-transform" />
                             </div>
 
                             {/* Open API */}
                             <div className="bg-gray-50 rounded-2xl p-6 flex flex-col justify-between group overflow-hidden relative border border-gray-100">
                                 <h3 className="text-lg font-bold text-gray-800 z-10">Open API</h3>
                                 <div className="absolute inset-0 flex items-center justify-center mt-8">
-                                    <img src="TRIOVIBE2024/07/Open-API.png" alt="" className="w-2/3 group-hover:rotate-12 transition-transform" />
+                                    <img src="https://encycam.com/wp-content/uploads/2024/07/Open-API.png" alt="" className="w-2/3 group-hover:rotate-12 transition-transform" />
                                 </div>
                             </div>
 
                             {/* Tech Independence */}
                             <div className="bg-gray-50 rounded-2xl p-6 flex flex-col group overflow-hidden relative border border-gray-100">
                                 <h3 className="text-lg font-bold text-gray-800 mb-4">Technological independence</h3>
-                                <img src="TRIOVIBE2024/07/Technological-independence.jpg" alt="" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform opacity-60" />
+                                <img src="https://encycam.com/wp-content/uploads/2024/07/Technological-independence.jpg" alt="" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform opacity-60" />
                             </div>
 
                             {/* Wide sections */}
@@ -443,7 +443,7 @@ const TRIOVIBERobot = ({ setCurrentPage }) => {
                                     <p className="text-sm text-gray-500">Fine-tune every aspect of robot movement from single joints to complex coordinated paths.</p>
                                 </div>
                                 <div className="flex-1">
-                                    <img src="TRIOVIBE2024/07/Kinematics-management-screen.png" alt="" className="rounded-lg shadow-lg group-hover:-translate-y-2 transition-transform" />
+                                    <img src="https://encycam.com/wp-content/uploads/2024/08/Comprehensive-toolset-for-robot-kinematic-management-480x210.png" alt="" className="rounded-lg shadow-lg group-hover:-translate-y-2 transition-transform" />
                                 </div>
                             </div>
 
@@ -451,7 +451,7 @@ const TRIOVIBERobot = ({ setCurrentPage }) => {
                                 <div className="z-10 relative">
                                     <h3 className="text-xl font-bold text-gray-800">Full robotic cell simulation</h3>
                                 </div>
-                                <img src="TRIOVIBE2024/07/Additive-1024x576.jpg" alt="" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform opacity-40" />
+                                <img src="https://encycam.com/wp-content/uploads/2024/08/Full-robotic-cell-simulation-480x211.png" alt="" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform opacity-40" />
                             </div>
                         </div>
                     </div>
@@ -466,14 +466,14 @@ const TRIOVIBERobot = ({ setCurrentPage }) => {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {[
-                                { title: "Robot milling", desc: "3—5D milling with redundant axes support", img: "TRIOVIBE2024/08/Milling-150x150.png" },
-                                { title: "Robot cutting", desc: "Multiaxis cutting with precise tool vector control", img: "TRIOVIBE2024/08/Cutting-150x150.png" },
-                                { title: "Additive", desc: "3—5D cladding with advanced layer thickness control", img: "TRIOVIBE2024/08/Additive-1-150x150.png" },
-                                { title: "Robot welding", desc: "Simple easy-to-use solution for welding programming", img: "TRIOVIBE2024/08/Welding-150x150.png" },
-                                { title: "Sculpture/Stone", desc: "Stone roughing, disk tool, advanced 5D finishing for mesh models", img: "TRIOVIBE2024/08/Sculpture-Stone-150x150.png" },
-                                { title: "Pick and place", desc: "Collision-free automatic pick-and-place", img: "TRIOVIBE2024/08/Pick-and-Place-1-150x150.png" },
-                                { title: "Spray painting", desc: "Simulate and test your painting on your PC", img: "TRIOVIBE2024/08/Paint-Spray-Coating-150x150.png" },
-                                { title: "Polishing", desc: "Tool-to-part and part-to-tool supported", img: "TRIOVIBE2024/08/Polishing-150x150.png" }
+                                { title: "Robot milling", desc: "3—5D milling with redundant axes support", img: "https://encycam.com/wp-content/uploads/2024/08/Milling-240x240.png" },
+                                { title: "Robot cutting", desc: "Multiaxis cutting with precise tool vector control", img: "https://encycam.com/wp-content/uploads/2024/08/Cutting-240x240.png" },
+                                { title: "Additive", desc: "3—5D cladding with advanced layer thickness control", img: "https://encycam.com/wp-content/uploads/2024/08/Additive-1-240x240.png" },
+                                { title: "Robot welding", desc: "Simple easy-to-use solution for welding programming", img: "https://encycam.com/wp-content/uploads/2024/08/Welding-240x240.png" },
+                                { title: "Sculpture/Stone", desc: "Stone roughing, disk tool, advanced 5D finishing for mesh models", img: "https://encycam.com/wp-content/uploads/2024/08/Sculpture-Stone-240x240.png" },
+                                { title: "Pick and place", desc: "Collision-free automatic pick-and-place", img: "https://encycam.com/wp-content/uploads/2024/08/Pick-and-Place-1-240x240.png" },
+                                { title: "Spray painting", desc: "Simulate and test your painting on your PC", img: "https://encycam.com/wp-content/uploads/2024/08/Paint-Spray-Coating-240x240.png" },
+                                { title: "Polishing", desc: "Tool-to-part and part-to-tool supported", img: "https://encycam.com/wp-content/uploads/2024/08/Polishing-240x240.png" }
                             ].map((app, i) => (
                                 <motion.div
                                     key={i}
@@ -581,7 +581,7 @@ const TRIOVIBERobot = ({ setCurrentPage }) => {
                                 </div>
                                 <div className="relative mt-8 md:mt-0 md:ml-8 w-full md:w-[450px]">
                                     <img
-                                        src="TRIOVIBE2024/07/Hardware-acceleration-1-1024x576.png"
+                                        src="https://encycam.com/wp-content/uploads/2025/08/State-of-art-UI-medium-480x270.png"
                                         alt="Software Interface"
                                         className="rounded-xl shadow-2xl transition-transform duration-500 group-hover:scale-105"
                                     />
