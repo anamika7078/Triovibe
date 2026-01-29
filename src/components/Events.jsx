@@ -30,7 +30,7 @@ const EventCard = ({ dateRange, month, title, image }) => {
     );
 };
 
-const Events = () => {
+const Events = ({ setCurrentPage }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [itemsPerPage, setItemsPerPage] = useState(3);
 
@@ -93,12 +93,12 @@ const Events = () => {
                         <h2 className="text-3xl md:text-4xl font-bold mb-2 text-gray-900">Events</h2>
                         <p className="text-gray-600 text-sm">Upcoming online and offline events</p>
                     </div>
-                    <a
-                        href="/events"
+                    <button
+                        onClick={() => setCurrentPage('events')}
                         className="text-sm font-semibold border border-gray-300 px-6 py-2 rounded-full hover:bg-white transition-colors text-gray-700"
                     >
                         View all
-                    </a>
+                    </button>
                 </div>
 
                 <div className="relative">

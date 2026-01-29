@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Play } from 'lucide-react';
 
-const Features = () => {
+const Features = ({ setCurrentPage }) => {
     return (
         <section className="py-16 bg-white">
             <div className="container mx-auto px-6">
@@ -31,10 +31,10 @@ const Features = () => {
                                 innovation and teamwork.
                             </p>
                         </div>
-                        <a href="#" className="inline-flex items-center gap-2 text-white font-bold mt-6 text-sm group">
+                        <button onClick={() => setCurrentPage('why-triovibe')} className="inline-flex items-center gap-2 text-white font-bold mt-6 text-sm group">
                             Learn more
                             <span className="group-hover:translate-x-1 transition-transform text-teal-400">→</span>
-                        </a>
+                        </button>
                     </div>
 
                     {/* Video Section */}

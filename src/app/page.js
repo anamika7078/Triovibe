@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
@@ -21,6 +21,7 @@ import Footer from '@/components/Footer';
 import AboutUs from '@/components/AboutUs';
 import PrivacyPolicy from '@/components/PrivacyPolicy';
 import TermsAndConditions from '@/components/TermsAndConditions';
+import CookiePolicy from '@/components/CookiePolicy';
 import SoftwareProductsDownload from '@/components/resources/SoftwareProductsDownload';
 import NewsPage from '@/components/resources/NewsPage';
 import EventsPage from '@/components/resources/EventsPage';
@@ -55,132 +56,166 @@ import Woodworking from '@/components/industries/Woodworking';
 export default function Home() {
   const [currentPage, setCurrentPage] = useState('home');
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
+
+  useEffect(() => {
+    // Set initial page from URL on mount
+    const path = window.location.hash.slice(1) || 'home';
+    setCurrentPage(path);
+
+    // Handle browser back/forward navigation
+    const handlePopState = () => {
+      const path = window.location.hash.slice(1) || 'home';
+      setCurrentPage(path);
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  const navigateToPage = (page) => {
+    setCurrentPage(page);
+    window.history.pushState(null, null, `#${page}`);
+  };
+
   return (
     <main className="min-h-screen bg-[#050505] text-white selection:bg-teal-500/30">
-      <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      <Navbar currentPage={currentPage} setCurrentPage={navigateToPage} />
       {currentPage === 'triovibex' ? (
-        <TriovibeX setCurrentPage={setCurrentPage} />
+        <TriovibeX setCurrentPage={navigateToPage} />
       ) : currentPage === 'triovibe' ? (
-        <Triovibe setCurrentPage={setCurrentPage} />
+        <Triovibe setCurrentPage={navigateToPage} />
       ) : currentPage === 'triovibe-robot' ? (
-        <TriovibeRobot setCurrentPage={setCurrentPage} />
+        <TriovibeRobot setCurrentPage={navigateToPage} />
       ) : currentPage === 'triovibe-tuner' ? (
-        <TriovibeTuner setCurrentPage={setCurrentPage} />
+        <TriovibeTuner setCurrentPage={navigateToPage} />
       ) : currentPage === 'triovibe-clouds' ? (
-        <TriovibeClouds setCurrentPage={setCurrentPage} />
+        <TriovibeClouds setCurrentPage={navigateToPage} />
       ) : currentPage === 'triovibe-machinemaker' ? (
-        <TriovibeMachineMaker setCurrentPage={setCurrentPage} />
+        <TriovibeMachineMaker setCurrentPage={navigateToPage} />
       ) : currentPage === 'triovibe-hyper' ? (
-        <TriovibeHyper setCurrentPage={setCurrentPage} />
+        <TriovibeHyper setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-aerospace' ? (
-        <Aerospace setCurrentPage={setCurrentPage} />
+        <Aerospace setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-architecture' ? (
-        <Architecture setCurrentPage={setCurrentPage} />
+        <Architecture setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-arts' ? (
-        <Arts setCurrentPage={setCurrentPage} />
+        <Arts setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-automotive' ? (
-        <Automotive setCurrentPage={setCurrentPage} />
+        <Automotive setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-automotosport' ? (
-        <Automotosport setCurrentPage={setCurrentPage} />
+        <Automotosport setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-bridge' ? (
-        <BridgeStructures setCurrentPage={setCurrentPage} />
+        <BridgeStructures setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-consumer' ? (
-        <ConsumerProducts setCurrentPage={setCurrentPage} />
+        <ConsumerProducts setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-diemold' ? (
-        <DieMold setCurrentPage={setCurrentPage} />
+        <DieMold setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-education' ? (
-        <Education setCurrentPage={setCurrentPage} />
+        <Education setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-electronics' ? (
-        <Electronics setCurrentPage={setCurrentPage} />
+        <Electronics setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-energy' ? (
-        <Energy setCurrentPage={setCurrentPage} />
+        <Energy setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-film' ? (
-        <FilmProduction setCurrentPage={setCurrentPage} />
+        <FilmProduction setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-mining' ? (
-        <Mining setCurrentPage={setCurrentPage} />
+        <Mining setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-machinery' ? (
-        <IndustrialMachinery setCurrentPage={setCurrentPage} />
+        <IndustrialMachinery setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-jobshop' ? (
-        <JobShop setCurrentPage={setCurrentPage} />
+        <JobShop setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-machinetool' ? (
-        <MachineTool setCurrentPage={setCurrentPage} />
+        <MachineTool setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-medical' ? (
-        <Medical setCurrentPage={setCurrentPage} />
+        <Medical setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-shipbuilding' ? (
-        <Shipbuilding setCurrentPage={setCurrentPage} />
+        <Shipbuilding setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-watchjewelry' ? (
-        <WatchJewelry setCurrentPage={setCurrentPage} />
+        <WatchJewelry setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-woodworking' ? (
-        <Woodworking setCurrentPage={setCurrentPage} />
+        <Woodworking setCurrentPage={navigateToPage} />
       ) : currentPage === 'contact' ? (
         <>
-          <Contact />
-          <Footer setCurrentPage={setCurrentPage} />
+          <Contact setCurrentPage={navigateToPage} />
+          <Footer setCurrentPage={navigateToPage} />
         </>
       ) : currentPage === 'about' ? (
         <>
-          <AboutUs setCurrentPage={setCurrentPage} />
-          <Footer setCurrentPage={setCurrentPage} />
+          <AboutUs setCurrentPage={navigateToPage} />
+          <Footer setCurrentPage={navigateToPage} />
         </>
       ) : currentPage === 'privacy-policy' ? (
         <>
-          <PrivacyPolicy setCurrentPage={setCurrentPage} />
-          <Footer setCurrentPage={setCurrentPage} />
+          <PrivacyPolicy setCurrentPage={navigateToPage} />
+          <Footer setCurrentPage={navigateToPage} />
         </>
       ) : currentPage === 'terms-and-conditions' ? (
         <>
-          <TermsAndConditions setCurrentPage={setCurrentPage} />
-          <Footer setCurrentPage={setCurrentPage} />
+          <TermsAndConditions setCurrentPage={navigateToPage} />
+          <Footer setCurrentPage={navigateToPage} />
+        </>
+      ) : currentPage === 'cookie-policy' ? (
+        <>
+          <CookiePolicy setCurrentPage={navigateToPage} />
+          <Footer setCurrentPage={navigateToPage} />
         </>
       ) : currentPage === 'software-products-download' ? (
         <>
           <SoftwareProductsDownload />
-          <Footer setCurrentPage={setCurrentPage} />
+          <Footer setCurrentPage={navigateToPage} />
         </>
       ) : currentPage === 'news' ? (
         <>
           <NewsPage />
-          <Footer setCurrentPage={setCurrentPage} />
+          <Footer setCurrentPage={navigateToPage} />
         </>
       ) : currentPage === 'events' ? (
         <>
           <EventsPage />
-          <Footer setCurrentPage={setCurrentPage} />
+          <Footer setCurrentPage={navigateToPage} />
         </>
       ) : currentPage === 'use-cases' ? (
         <>
           <UseCasesPage />
+          <Footer setCurrentPage={navigateToPage} />
         </>
       ) : currentPage === 'articles' ? (
         <>
           <ArticlesPage />
+          <Footer setCurrentPage={navigateToPage} />
         </>
       ) : currentPage === 'become-dealer' ? (
         <>
           <BecomeADealer />
+          <Footer setCurrentPage={navigateToPage} />
         </>
       ) : currentPage === 'why-triovibe' ? (
         <>
-          <WhyTriovibe />
+          <WhyTriovibe setCurrentPage={navigateToPage} />
+          <Footer setCurrentPage={navigateToPage} />
         </>
       ) : currentPage === 'all-industries' ? (
         <>
           <AllIndustries />
+          <Footer setCurrentPage={navigateToPage} />
         </>
       ) : currentPage === 'powered-by-ency' ? (
         <>
-          <PoweredByEncyPage setCurrentPage={setCurrentPage} />
+          <PoweredByEncyPage setCurrentPage={navigateToPage} />
         </>
       ) : (
         <>
-          <Hero />
-          <Features />
-          <Products setCurrentPage={setCurrentPage} />
-          <News />
-          <Events />
-          <PoweredByTriovibe setCurrentPage={setCurrentPage} />
+          <Hero setCurrentPage={navigateToPage} />
+          <Features setCurrentPage={navigateToPage} />
+          <Products setCurrentPage={navigateToPage} />
+          <News setCurrentPage={navigateToPage} />
+          <Events setCurrentPage={navigateToPage} />
+          <PoweredByTriovibe setCurrentPage={navigateToPage} />
           {/* <Contact /> */}
-          <Footer setCurrentPage={setCurrentPage} />
+          <Footer setCurrentPage={navigateToPage} />
         </>
       )}
     </main>

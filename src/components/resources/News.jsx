@@ -25,7 +25,7 @@ const NewsCard = ({ date, title, image }) => {
     );
 };
 
-const News = () => {
+const News = ({ setCurrentPage }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const itemsPerPage = 3;
 
@@ -85,12 +85,12 @@ const News = () => {
                         <h2 className="text-3xl md:text-4xl font-bold mb-2 text-gray-900">Latest News</h2>
                         <p className="text-gray-600 text-sm">Company and product news</p>
                     </div>
-                    <a
-                        href="/news"
+                    <button
+                        onClick={() => setCurrentPage('news')}
                         className="text-sm font-semibold border border-gray-300 px-6 py-2 rounded-full hover:bg-white transition-colors text-gray-700"
                     >
                         View all
-                    </a>
+                    </button>
                 </div>
 
                 <div className="relative">

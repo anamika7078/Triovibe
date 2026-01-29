@@ -35,9 +35,9 @@ const Footer = ({ setCurrentPage }) => {
                         <h4 className="text-gray-900 font-semibold mb-4 text-sm">TRIOVIBE</h4>
                         <ul className="space-y-2 text-sm text-gray-600">
                             <li><button onClick={() => setCurrentPage('about')} className="hover:text-teal-600 transition-colors">About Us</button></li>
-                            <li><a href="#" className="hover:text-teal-600 transition-colors">Why TRIOVIBE?</a></li>
-                            <li><a href="#" className="hover:text-teal-600 transition-colors">News</a></li>
-                            <li><a href="#" className="hover:text-teal-600 transition-colors">Articles</a></li>
+                            <li><button onClick={() => setCurrentPage('why-triovibe')} className="hover:text-teal-600 transition-colors">Why TRIOVIBE?</button></li>
+                            <li><button onClick={() => setCurrentPage('news')} className="hover:text-teal-600 transition-colors">News</button></li>
+                            <li><button onClick={() => setCurrentPage('articles')} className="hover:text-teal-600 transition-colors">Articles</button></li>
                         </ul>
                     </div>
 
@@ -45,10 +45,10 @@ const Footer = ({ setCurrentPage }) => {
                     <div>
                         <h4 className="text-gray-900 font-semibold mb-4 text-sm">Support</h4>
                         <ul className="space-y-2 text-sm text-gray-600">
-                            <li><a href="#" className="hover:text-teal-600 transition-colors">Get a quote</a></li>
-                            <li><a href="#" className="hover:text-teal-600 transition-colors">Find dealer</a></li>
-                            <li><a href="#" className="hover:text-teal-600 transition-colors">Download Trial</a></li>
-                            <li><a href="#" className="hover:text-teal-600 transition-colors">Contact us</a></li>
+                            <li><button onClick={() => setCurrentPage('contact')} className="hover:text-teal-600 transition-colors">Get a quote</button></li>
+                            <li><button onClick={() => setCurrentPage('become-dealer')} className="hover:text-teal-600 transition-colors">Find dealer</button></li>
+                            <li><button onClick={() => setCurrentPage('software-products-download')} className="hover:text-teal-600 transition-colors">Download Trial</button></li>
+                            <li><button onClick={() => setCurrentPage('contact')} className="hover:text-teal-600 transition-colors">Contact us</button></li>
                         </ul>
                     </div>
 
@@ -56,12 +56,12 @@ const Footer = ({ setCurrentPage }) => {
                     <div>
                         <h4 className="text-gray-900 font-semibold mb-4 text-sm">Our platform</h4>
                         <ul className="space-y-2 text-sm text-gray-600">
-                            <li><a href="#" className="hover:text-teal-600 transition-colors">TRIOVIBE</a></li>
-                            <li><a href="#" className="hover:text-teal-600 transition-colors">TRIOVIBE Robot</a></li>
-                            <li><a href="#" className="hover:text-teal-600 transition-colors">TRIOVIBE Tuner</a></li>
-                            <li><a href="#" className="hover:text-teal-600 transition-colors">TRIOVIBE Clouds</a></li>
-                            <li><a href="#" className="hover:text-teal-600 transition-colors">MachineMaker</a></li>
-                            <li><a href="#" className="hover:text-teal-600 transition-colors">TRIOVIBE Hyper</a></li>
+                            <li><button onClick={() => setCurrentPage('triovibe')} className="hover:text-teal-600 transition-colors">ENCY</button></li>
+                            <li><button onClick={() => setCurrentPage('triovibe-robot')} className="hover:text-teal-600 transition-colors">ENCY Robot</button></li>
+                            <li><button onClick={() => setCurrentPage('triovibe-tuner')} className="hover:text-teal-600 transition-colors">ENCY Tuner</button></li>
+                            <li><button onClick={() => setCurrentPage('triovibe-clouds')} className="hover:text-teal-600 transition-colors">ENCY Clouds</button></li>
+                            <li><button onClick={() => setCurrentPage('triovibe-machinemaker')} className="hover:text-teal-600 transition-colors">MachineMaker</button></li>
+                            <li><button onClick={() => setCurrentPage('triovibe-hyper')} className="hover:text-teal-600 transition-colors">ENCY Hyper</button></li>
                         </ul>
                     </div>
 
@@ -89,9 +89,9 @@ const Footer = ({ setCurrentPage }) => {
                 <div className="border-t border-gray-300 pt-6">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                         <div className="flex flex-wrap gap-6 text-sm text-gray-600">
-                            <a href="#" onClick={() => setCurrentPage('privacy-policy')} className="hover:text-teal-600 transition-colors">Privacy Policy</a>
-                            <a href="#" onClick={() => setCurrentPage('terms-and-conditions')} className="hover:text-teal-600 transition-colors">Terms and Conditions</a>
-                            <a href="#" className="hover:text-teal-600 transition-colors">Cookie Policy</a>
+                            <button onClick={() => setCurrentPage('privacy-policy')} className="hover:text-teal-600 transition-colors">Privacy Policy</button>
+                            <button onClick={() => setCurrentPage('terms-and-conditions')} className="hover:text-teal-600 transition-colors">Terms and Conditions</button>
+                            <button onClick={() => setCurrentPage('cookie-policy')} className="hover:text-teal-600 transition-colors">Cookie Policy</button>
                         </div>
                         <p className="text-sm text-gray-600">
                             © 2024 - 2026 TRIOVIBE Software Ltd. All rights reserved.

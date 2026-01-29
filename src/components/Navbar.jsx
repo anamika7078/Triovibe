@@ -173,8 +173,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                   <ChevronDown size={14} className={`transition-transform duration-200 ${((link.name === 'Products' && isProductsDropdownOpen) || (link.name === 'Industries' && isIndustriesDropdownOpen) || (link.name === 'Resources' && isResourcesDropdownOpen)) ? 'rotate-180' : ''}`} />
                 </button>
               ) : (
-                <a
-                  href={link.href}
+                <button
                   onClick={() => {
                     if (link.name === 'About Us') {
                       setCurrentPage('about');
@@ -185,7 +184,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                   className="text-sm font-semibold text-gray-800 flex items-center gap-1 hover:text-teal-600 transition-colors px-3 py-1.5"
                 >
                   {link.name}
-                </a>
+                </button>
               )}
             </div>
           ))}
@@ -225,9 +224,8 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
           >
             <div className="flex flex-col space-y-4">
               {navLinks.map((link) => (
-                <a
+                <button
                   key={link.name}
-                  href={link.href}
                   onClick={() => {
                     if (link.name === 'About Us') {
                       setCurrentPage('about');
@@ -237,10 +235,10 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                       setIsMobileMenuOpen(false);
                     }
                   }}
-                  className="text-lg font-bold text-gray-900"
+                  className="text-lg font-bold text-gray-900 text-left"
                 >
                   {link.name}
-                </a>
+                </button>
               ))}
               <hr className="border-gray-100" />
               <a href="#" className="text-lg text-gray-800">Sign in</a>

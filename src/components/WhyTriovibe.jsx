@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Play, Pause, Volume2, VolumeX, Maximize, ChevronRight, ArrowRight, CheckCircle, Zap, Shield, Globe, Users, Cpu } from 'lucide-react';
 
-const WhyTriovibe = () => {
+const WhyTriovibe = ({ setCurrentPage }) => {
     const [isPlaying, setIsPlaying] = useState(true);
     const [isMuted, setIsMuted] = useState(true);
     const [currentVideo, setCurrentVideo] = useState('main');
@@ -213,11 +213,11 @@ const WhyTriovibe = () => {
                         Join thousands of companies already using TRIOVIBE to streamline operations and accelerate growth
                     </p>
                     <div className="flex flex-wrap gap-4 justify-center">
-                        <button className="bg-white text-teal-600 font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2">
+                        <button onClick={() => setCurrentPage('contact')} className="bg-white text-teal-600 font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2">
                             Get Started Free
                             <ArrowRight className="w-5 h-5" />
                         </button>
-                        <button className="border-2 border-white text-white font-semibold px-8 py-4 rounded-lg hover:bg-white/10 transition-colors">
+                        <button onClick={() => setCurrentPage('contact')} className="border-2 border-white text-white font-semibold px-8 py-4 rounded-lg hover:bg-white/10 transition-colors">
                             Schedule Demo
                         </button>
                     </div>

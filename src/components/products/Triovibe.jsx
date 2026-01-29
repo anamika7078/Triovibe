@@ -11,14 +11,14 @@ const TRIOVIBE = ({ setCurrentPage }) => {
     const intervalRef = useRef(null);
 
     const features = [
-        { icon: Zap, title: "3-axis-toolpath", description: "High-speed machining optimization", image: "https://encycam.com/wp-content/uploads/2024/07/3-axis-1024x576.jpg", svg: "TRIOVIBE2024/08/3-axis.svg" },
-        { icon: Zap, title: "HSM", description: "High-speed machining optimization", image: "https://encycam.com/wp-content/uploads/2024/07/HSM-1024x576.jpg", svg: "TRIOVIBE2024/08/HSM.svg" },
-        { icon: Layers, title: "Multiaxis", description: "Complex multi-axis operations", image: "https://encycam.com/wp-content/uploads/2024/07/Multiaxis-1024x575.jpg", svg: "TRIOVIBE2024/08/Multiaxis.svg" },
-        { icon: Monitor, title: "State-of-art UI", description: "Modern intuitive interface", image: "https://encycam.com/wp-content/uploads/2024/07/State-of-art-UI-1024x576.jpg 1024w", svg: "TRIOVIBE2024/08/State-of-art-UI.svg" },
-        { icon: Settings, title: "Mill-Turn", description: "Combined milling and turning", image: "https://encycam.com/wp-content/uploads/2024/07/Mill-Turn-1024x576.jpg", svg: "TRIOVIBE2024/08/Mill-Turn.svg" },
-        { icon: Box, title: "Additive", description: "Hybrid manufacturing solutions", image: "https://encycam.com/wp-content/uploads/2024/07/Additive-1024x576.jpg", svg: "TRIOVIBE2024/08/Additive.svg" },
-        { icon: Play, title: "Machine simulation", description: "Advanced simulation technology", image: "https://encycam.com/wp-content/uploads/2024/07/Machine-simulation-1024x576.jpg", svg: "TRIOVIBE2024/08/Machine-simulation.svg" },
-        { icon: Cpu, title: "Material removal simulation", description: "Simulate material removal processes", image: "	https://encycam.com/wp-content/uploads/2024/07/Material-removal-simulation-1024x576.jpg", svg: "TRIOVIBE2024/08/Material-removal-simulation.svg" }
+        { icon: Zap, title: "3-axis-toolpath", description: "High-speed machining optimization", image: "https://encycam.com/wp-content/uploads/2024/07/3-axis-1024x576.jpg", svg: "https://encycam.com/wp-content/uploads/2024/08/3-axis.svg.svg" },
+        { icon: Zap, title: "HSM", description: "High-speed machining optimization", image: "https://encycam.com/wp-content/uploads/2024/07/HSM-1024x576.jpg", svg: "https://encycam.com/wp-content/uploads/2024/08/HSM.svg.svg" },
+        { icon: Layers, title: "Multiaxis", description: "Complex multi-axis operations", image: "https://encycam.com/wp-content/uploads/2024/07/Multiaxis-1024x575.jpg", svg: "https://encycam.com/wp-content/uploads/2024/08/Multiaxis.svg" },
+        { icon: Monitor, title: "State-of-art UI", description: "Modern intuitive interface", image: "https://encycam.com/wp-content/uploads/2024/07/State-of-art-UI-1024x576.jpg", svg: "https://encycam.com/wp-content/uploads/2024/08/State-of-art-UI.svg" },
+        { icon: Settings, title: "Mill-Turn", description: "Combined milling and turning", image: "https://encycam.com/wp-content/uploads/2024/07/Mill-Turn-1024x576.jpg", svg: "https://encycam.com/wp-content/uploads/2024/08/Mill-Turn.svg" },
+        { icon: Box, title: "Additive", description: "Hybrid manufacturing solutions", image: "https://encycam.com/wp-content/uploads/2024/07/Additive-1024x576.jpg", svg: "https://encycam.com/wp-content/uploads/2024/08/Additive.svg" },
+        { icon: Play, title: "Machine simulation", description: "Advanced simulation technology", image: "https://encycam.com/wp-content/uploads/2024/07/Machine-simulation-1024x576.jpg", svg: "https://encycam.com/wp-content/uploads/2024/08/Machine-simulation.svg" },
+        { icon: Cpu, title: "Material removal simulation", description: "Simulate material removal processes", image: "	https://encycam.com/wp-content/uploads/2024/07/Material-removal-simulation-1024x576.jpg", svg: "https://encycam.com/wp-content/uploads/2024/08/Material-removal-simulation.svg" }
     ];
 
     // Auto-slide functionality
@@ -244,7 +244,7 @@ const TRIOVIBE = ({ setCurrentPage }) => {
                             <div className="relative">
                                 <div className="aspect-video bg-transparent rounded-3xl overflow-hidden shadow-2xl">
                                     <img
-                                        src="TRIOVIBE2024/07/Machine-aware-toolpath-calculation-1200x695.jpg"
+                                        src="https://encycam.com/wp-content/uploads/2024/07/Machine-aware-toolpath-calculation-1024x593.jpg"
                                         alt="Machine-Aware Toolpath Calculation"
                                         className="w-full h-full object-contain p-8"
                                         onError={(e) => {

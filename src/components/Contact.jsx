@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, CheckCircle, ChevronDown, Globe } from 'lucide-react';
 
-const Contact = () => {
+const Contact = ({ setCurrentPage }) => {
     const [status, setStatus] = useState('idle'); // idle, loading, success, error
     const [formData, setFormData] = useState({
         enquiryType: 'Organization',
@@ -321,7 +321,7 @@ const Contact = () => {
                                             {formData.acceptPrivacy && <CheckCircle size={14} className="text-white" />}
                                         </div>
                                         <span className="text-sm font-bold text-slate-600">
-                                            I accept <a href="#" className="text-teal-600 hover:text-teal-700">privacy policy*</a>
+                                            I accept <button onClick={() => setCurrentPage('privacy-policy')} className="text-teal-600 hover:text-teal-700">privacy policy*</button>
                                         </span>
                                     </label>
 
