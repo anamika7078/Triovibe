@@ -17,7 +17,6 @@ import {
     Zap,
     Maximize2
 } from 'lucide-react';
-import Footer from '../Footer';
 
 const TRIOVIBEMachineMaker = ({ setCurrentPage }) => {
     const [selectedSlider, setSelectedSlider] = useState(0);
@@ -66,6 +65,10 @@ const TRIOVIBEMachineMaker = ({ setCurrentPage }) => {
             icon: Zap
         }
     ];
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     useEffect(() => {
         if (isAutoPlaying) {
@@ -488,7 +491,7 @@ const TRIOVIBEMachineMaker = ({ setCurrentPage }) => {
                 </div>
             </section>
 
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };

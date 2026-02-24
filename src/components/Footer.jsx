@@ -56,11 +56,12 @@ const Footer = ({ setCurrentPage }) => {
                     <div>
                         <h4 className="text-gray-900 font-semibold mb-4 text-sm">Our platform</h4>
                         <ul className="space-y-2 text-sm text-gray-600">
+                            <li><button onClick={() => setCurrentPage('triovibex')} className="hover:text-teal-600 transition-colors">ENCY X</button></li>
                             <li><button onClick={() => setCurrentPage('triovibe')} className="hover:text-teal-600 transition-colors">ENCY</button></li>
                             <li><button onClick={() => setCurrentPage('triovibe-robot')} className="hover:text-teal-600 transition-colors">ENCY Robot</button></li>
                             <li><button onClick={() => setCurrentPage('triovibe-tuner')} className="hover:text-teal-600 transition-colors">ENCY Tuner</button></li>
                             <li><button onClick={() => setCurrentPage('triovibe-clouds')} className="hover:text-teal-600 transition-colors">ENCY Clouds</button></li>
-                            <li><button onClick={() => setCurrentPage('triovibe-machinemaker')} className="hover:text-teal-600 transition-colors">MachineMaker</button></li>
+                            <li><button onClick={() => setCurrentPage('triovibe-machinemaker')} className="hover:text-teal-600 transition-colors">Machine Maker</button></li>
                             <li><button onClick={() => setCurrentPage('triovibe-hyper')} className="hover:text-teal-600 transition-colors">ENCY Hyper</button></li>
                         </ul>
                     </div>
@@ -69,17 +70,17 @@ const Footer = ({ setCurrentPage }) => {
                     <div>
                         <h4 className="text-gray-900 font-semibold mb-4 text-sm">Follow us:</h4>
                         <div className="flex space-x-3">
-                            <a href="#" className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 transition-colors">
-                                <Facebook size={18} className="text-gray-600" />
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center hover:opacity-90 transition-opacity" aria-label="Facebook">
+                                <Facebook size={18} className="text-white" />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 transition-colors">
-                                <Instagram size={18} className="text-gray-600" />
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full flex items-center justify-center hover:opacity-90 transition-opacity bg-gradient-to-br from-[#833AB4] via-[#FD1D1D] to-[#F77737]" aria-label="Instagram">
+                                <Instagram size={18} className="text-white" />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 transition-colors">
-                                <Youtube size={18} className="text-gray-600" />
+                            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#FF0000] flex items-center justify-center hover:opacity-90 transition-opacity" aria-label="YouTube">
+                                <Youtube size={18} className="text-white" />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 transition-colors">
-                                <Linkedin size={18} className="text-gray-600" />
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#0A66C2] flex items-center justify-center hover:opacity-90 transition-opacity" aria-label="LinkedIn">
+                                <Linkedin size={18} className="text-white" />
                             </a>
                         </div>
                     </div>

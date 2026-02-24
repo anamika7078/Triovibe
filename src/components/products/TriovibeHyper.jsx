@@ -21,7 +21,6 @@ import {
     MessageSquare,
     Video
 } from 'lucide-react';
-import Footer from '../Footer';
 
 const TRIOVIBEHyper = ({ setCurrentPage }) => {
     const [selectedFeature, setSelectedFeature] = useState(0);
@@ -111,6 +110,10 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
     ];
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    useEffect(() => {
         if (isAutoPlaying) {
             featureIntervalRef.current = setInterval(() => {
                 setSelectedFeature((prev) => (prev + 1) % features.length);
@@ -139,7 +142,7 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                         transition={{ duration: 0.8 }}
                     >
                         <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-8 tracking-tight leading-[1.1]">
-                            TRIOVIBE Hyper: hybrid programming <br />
+                            ENCY Hyper: hybrid programming <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-200 to-white drop-shadow-lg">
                                 of industrial robots
                             </span>
@@ -416,7 +419,7 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                                 <img
                                     src="https://encycam.com/wp-content/uploads/2025/11/Touchscreen-optimized-interface-1024x576.jpg"
                                     className="rounded-3xl shadow-2xl border border-white/10"
-                                    alt="TRIOVIBE Hyper UI"
+                                    alt="ENCY Hyper UI"
                                 />
                             </div>
                             <div className="absolute top-0 right-0 w-64 h-64 bg-teal-400/5 blur-[80px] rounded-full" />
@@ -430,7 +433,7 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                             <div className="relative z-10">
                                 <h3 className="text-4xl font-black text-white mb-6">ENYC Hyper <span className="text-blue-500 font-black">Max</span></h3>
                                 <p className="text-indigo-300 text-xl mb-12 font-medium leading-relaxed">
-                                    ENCY Hyper acts as the operator interface, while TRIOVIBE Robot works in the background, handling heavy calculations and trajectory generation.
+                                    ENCY Hyper acts as the operator interface, while ENCY Robotworks in the background, handling heavy calculations and trajectory generation.
                                 </p>
                                 <ul className="grid grid-cols-2 gap-6">
                                     {['milling', 'welding', 'polishing', 'coating', 'additive'].map((item) => (
@@ -445,7 +448,7 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                                 <img
                                     src="https://encycam.com/wp-content/uploads/2025/11/Real-time-robot-control-1024x576.jpg"
                                     className="rounded-3xl shadow-2xl border border-white/10"
-                                    alt="TRIOVIBE Hyper Max UI"
+                                    alt="ENCY Hyper Max UI"
                                 />
                             </div>
                             <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-600/5 blur-[80px] rounded-full" />
@@ -555,9 +558,9 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                                 reverse: false
                             },
                             {
-                                title: "For TRIOVIBE Robot users",
+                                title: "For ENCY Robotusers",
                                 points: [
-                                    "Serves as the perfect companion for users of TRIOVIBE Robot software",
+                                    "Serves as the perfect companion for users of ENCY Robotsoftware",
                                     "Enables fine-tuning, testing, and execution of projects directly next to the real robot — without loss of data or time",
                                     "Supports integration with computer vision and real-time feedback from sensors and external devices"
                                 ],
@@ -734,7 +737,7 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                 </div>
             </section>
 
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };
