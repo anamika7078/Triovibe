@@ -11,7 +11,7 @@ const Arts = ({ setCurrentPage }) => {
         introText: "The arts industry, traditionally rooted in manual craftsmanship and personal expression, has been undergoing a significant metamorphosis. TRIOVIBE contemporary artists are increasingly embracing robots, digital tools such as TRIOVIBE CAD CAM software and technologies to enhance their work, leading to a blend of traditional and modern methods. Trends such as digital art installations, virtual reality experiences, and interactive exhibitions are pushing the boundaries of what’s possible in the arts, redefining the relationship between the artist, the artwork, and the audience.",
         heroImage: "/art_industry_hero_machining_1768566371032.png", // This is the local path for the generated image
         description: {
-            title: "Artistic TRIOVIBE CAD/CAM software",
+            title: "Artistic ENCY CAD/CAM software",
             text: "Empowering artists with advanced robotic machining capabilities. Our software bridges the gap between digital sculpture and physical form, allowing for unprecedented detail and scale in artistic production."
         },
         galleryTitle: "Key Components in Modern Art",
@@ -22,8 +22,8 @@ const Arts = ({ setCurrentPage }) => {
             "https://encycam.com/wp-content/uploads/2024/08/Art-3-300x205.jpg"
         ],
         featured: {
-            title: "TRIOVIBE for the Arts Industry",
-            content: "TRIOVIBE's milling capabilities include an engraving strategy perfect for crafting detailed items such as medals, badges, coins, and various art pieces. With the help of TRIOVIBE Robot software for robot offline programming, hundreds of artistic installations have been completed, including columns, sculptures, and ornaments for some of Europe’s most renowned cathedrals.",
+            title: "ENCY for the Arts Industry",
+            content: "ENCY's milling capabilities include an engraving strategy perfect for crafting detailed items such as medals, badges, coins, and various art pieces. With the help of ENCY Robot software for robot offline programming, hundreds of artistic installations have been completed, including columns, sculptures, and ornaments for some of Europe’s most renowned cathedrals.",
             image: "https://encycam.com/wp-content/uploads/2024/09/Arts-480x347.png",
             points: [
                 "Engraving strategy for medals & coins",

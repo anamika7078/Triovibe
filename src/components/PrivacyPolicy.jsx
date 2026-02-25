@@ -62,12 +62,12 @@ const PrivacyPolicy = ({ setCurrentPage }) => {
                     <section className="mb-16">
                         <div className="prose prose-lg max-w-none">
                             <p className="text-gray-700 leading-relaxed mb-6">
-                                This Privacy Notice for <strong>ENCY SOFTWARE LTD.</strong> ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
+                                This Privacy Notice for <strong>TRIOVIIBE SOFTWARE LTD.</strong> ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
                             </p>
                             <ul className="space-y-2 text-gray-700 mb-6 ml-6">
                                 <li className="flex items-start gap-2">
                                     <CheckCircle className="text-teal-600 mt-1" size={16} />
-                                    <span>Visit our website at <a href="https://encycam.com" className="text-teal-600 hover:text-teal-700">https://encycam.com</a>, or any website of ours that links to this Privacy Notice</span>
+                                    <span>Visit our website at <a href="https://www.triovibesolutions.com " className="text-teal-600 hover:text-teal-700">https://encycam.com</a>, or any website of ours that links to this Privacy Notice</span>
                                 </li>
                                 <li className="flex items-start gap-2">
                                     <CheckCircle className="text-teal-600 mt-1" size={16} />

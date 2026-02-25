@@ -10,13 +10,13 @@ const ProductCard = ({ title, description, detailedDescription, borderColor, bgI
             transition={{ duration: 0.5, delay: index * 0.1 }}
             className="group relative h-[400px] rounded-3xl overflow-hidden cursor-pointer"
             onClick={() => {
-                if (title === 'Ency Robot') setCurrentPage('ency-robot');
-                else if (title === 'Ency') setCurrentPage('ency');
-                else if (title === 'Ency X') setCurrentPage('encyx');
-                else if (title === 'Ency Tuner') setCurrentPage('ency-tuner');
-                else if (title === 'Ency Clouds') setCurrentPage('ency-clouds');
-                else if (title === 'MachineMaker') setCurrentPage('ency-machinemaker');
-                else if (title === 'Ency Hyper') setCurrentPage('ency-hyper');
+                if (title === 'Ency Robot') setCurrentPage('triovibe-robot');
+                else if (title === 'Ency') setCurrentPage('triovibe');
+                else if (title === 'Ency X') setCurrentPage('triovibex');
+                else if (title === 'Ency Tuner') setCurrentPage('triovibe-tuner');
+                else if (title === 'Ency Clouds') setCurrentPage('triovibe-clouds');
+                else if (title === 'MachineMaker') setCurrentPage('triovibe-machinemaker');
+                else if (title === 'Ency Hyper') setCurrentPage('triovibe-hyper');
             }}
         >
             {/* Colored Border */}

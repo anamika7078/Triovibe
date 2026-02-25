@@ -59,7 +59,7 @@ const Hero = ({ setCurrentPage }) => {
                     className="flex flex-col sm:flex-row items-center gap-6"
                 >
                     <button onClick={() => setCurrentPage('why-triovibe')} className="group relative px-8 py-3.5 bg-transparent border-2 border-teal-400 text-white rounded-full overflow-hidden hover:bg-teal-400 hover:text-black transition-all shadow-[0_0_25px_rgba(45,212,191,0.3)]">
-                        <span className="relative z-10 font-bold text-sm tracking-wide">Why TRIOVIBE?</span>
+                        <span className="relative z-10 font-bold text-sm tracking-wide">Why ENCY?</span>
                     </button>
                     <button onClick={() => setCurrentPage('contact')} className="px-8 py-3.5 text-white/80 hover:text-white font-bold text-sm tracking-wide transition-colors">
                         Watch Demo

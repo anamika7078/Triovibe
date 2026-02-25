@@ -2,7 +2,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Cpu, Zap, Layers, Monitor, Settings, Box, Play, ChevronLeft, ChevronRight } from 'lucide-react';
-import Footer from '../Footer';
 
 const TRIOVIBE = ({ setCurrentPage }) => {
     const [selectedFeature, setSelectedFeature] = useState(3); // Mill-Turn (index 3) as default
@@ -100,7 +99,10 @@ const TRIOVIBE = ({ setCurrentPage }) => {
                         transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
                         className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-20"
                     >
-                        <button className="px-8 py-4 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition-all duration-200 text-lg flex items-center gap-2 group">
+                        <button 
+                            onClick={() => setCurrentPage('contact')}
+                            className="px-8 py-4 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition-all duration-200 text-lg flex items-center gap-2 group"
+                        >
                             Start for free
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </button>
@@ -869,7 +871,7 @@ const TRIOVIBE = ({ setCurrentPage }) => {
                 </div>
             </section>
 
-            <Footer />
+
         </>
 
     );

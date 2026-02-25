@@ -35,7 +35,7 @@ const Footer = ({ setCurrentPage }) => {
                         <h4 className="text-gray-900 font-semibold mb-4 text-sm">TRIOVIBE</h4>
                         <ul className="space-y-2 text-sm text-gray-600">
                             <li><button onClick={() => setCurrentPage('about')} className="hover:text-teal-600 transition-colors">About Us</button></li>
-                            <li><button onClick={() => setCurrentPage('why-triovibe')} className="hover:text-teal-600 transition-colors">Why TRIOVIBE?</button></li>
+                            <li><button onClick={() => setCurrentPage('why-triovibe')} className="hover:text-teal-600 transition-colors">Why ENCY?</button></li>
                             <li><button onClick={() => setCurrentPage('news')} className="hover:text-teal-600 transition-colors">News</button></li>
                             <li><button onClick={() => setCurrentPage('articles')} className="hover:text-teal-600 transition-colors">Articles</button></li>
                         </ul>

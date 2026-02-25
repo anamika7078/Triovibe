@@ -22,7 +22,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
   }, []);
 
   const navLinks = [
-    { name: 'Why TRIOVIBE?', href: '#', onClick: () => setCurrentPage('why-triovibe') },
+    { name: 'Why ENCY?', href: '#', onClick: () => setCurrentPage('why-triovibe') },
     // { name: 'About Us', href: '#about' },
     { name: 'Products', href: '#', hasDropdown: true },
     { name: 'Industries', href: '#', hasDropdown: true },
@@ -192,14 +192,17 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
 
         {/* Right Actions */}
         <div className="hidden lg:flex items-center space-x-6">
-          <a href="#" className="text-sm font-semibold text-gray-800 hover:text-teal-600">Sign in</a>
+          {/* <a href="#" className="text-sm font-semibold text-gray-800 hover:text-teal-600">Sign in</a> */}
           <button
             onClick={() => setCurrentPage('contact')}
             className="text-sm font-semibold text-gray-800 hover:text-teal-600 transition-colors"
           >
             Contact sales
           </button>
-          <button className="bg-slate-900 hover:bg-slate-800 text-white px-6 py-2 rounded-full text-sm font-semibold transition-all shadow-lg">
+          <button 
+            onClick={() => setCurrentPage('contact')}
+            className="bg-slate-900 hover:bg-slate-800 text-white px-6 py-2 rounded-full text-sm font-semibold transition-all shadow-lg"
+          >
             Start for free
           </button>
         </div>
@@ -251,7 +254,13 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
               >
                 Contact sales
               </button>
-              <button className="bg-gradient-to-r from-teal-600 to-blue-700 text-white px-6 py-3 rounded-full text-center font-bold">
+              <button 
+                onClick={() => {
+                  setCurrentPage('contact');
+                  setIsMobileMenuOpen(false);
+                }}
+                className="bg-gradient-to-r from-teal-600 to-blue-700 text-white px-6 py-3 rounded-full text-center font-bold"
+              >
                 Start for free
               </button>
             </div>
@@ -358,7 +367,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                     className="max-w-full h-auto mt-4"
                   />
                 </div>
-
+    
                 {/* Right Section */}
                 <div className="col-span-3">
                   <div className="bg-[#1A2B40] rounded-lg p-6">
@@ -567,10 +576,16 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                       <MessageSquare size={18} className="text-gray-400 group-hover:text-teal-600" />
                       Contact sales
                     </button>
-                    <a href="#" onClick={() => setIsIndustriesDropdownOpen(false)} className="flex items-center gap-3 text-gray-800 font-semibold hover:text-teal-600 transition-colors group">
+                    <button 
+                      onClick={() => {
+                        setCurrentPage('contact');
+                        setIsIndustriesDropdownOpen(false);
+                      }} 
+                      className="flex items-center gap-3 text-gray-800 font-semibold hover:text-teal-600 transition-colors group text-left w-full"
+                    >
                       <Download size={18} className="text-gray-400 group-hover:text-teal-600" />
                       Start for free
-                    </a>
+                    </button>
                     <a
                       href="#"
                       onClick={() => {
@@ -580,7 +595,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                       className="flex items-center gap-3 text-gray-800 font-semibold hover:text-teal-600 transition-colors group"
                     >
                       <Star size={18} className="text-gray-400 group-hover:text-teal-600" />
-                      Why TRIOVIBE?
+                      Why ENCY?
                     </a>
                   </div>
                 </div>
@@ -790,7 +805,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                   {/* Card */}
                   <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
                     <div className="p-5">
-                      <h4 className="text-[17px] font-bold text-teal-600 mb-4">What's new in ENCY 2.6</h4>
+                      <h4 className="text-[17px] font-bold text-teal-600 mb-4">What's new in TRIOVIBE 2.6</h4>
                       <ul className="space-y-2.5 mb-5">
                         {[
                           "Helical lines in Design",
@@ -837,7 +852,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                       className="flex items-center gap-3 text-gray-800 font-semibold hover:text-teal-600 transition-colors group"
                     >
                       <Star size={18} className="text-gray-400 group-hover:text-teal-600" />
-                      Why TRIOVIBE
+                      Why ENCY
                     </a>
                   </div>
                 </div>

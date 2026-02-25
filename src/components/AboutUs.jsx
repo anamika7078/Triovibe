@@ -55,10 +55,10 @@ const AboutUs = ({ setCurrentPage }) => {
                                     We started TRIOVIBE to rethink the journey from model to part. The idea behind 'Go beyond CAD/CAM' came from years on the shop floor. We saw how scattered tools and broken handoffs waste shifts and create errors, so we set out to stitch the process back together.
                                 </p>
                                 <p>
-                                    From day one, we've focused on technological independence and bringing programmers, operators, and integrators into one shared workspace. That's why everything we build runs on TRIOVIBE X - a platform that unites classic and AI-driven CAD/CAM, offline and real-time robot programming, NC code verification, and digital twin simulation.
+                                    From day one, we've focused on technological independence and bringing programmers, operators, and integrators into one shared workspace. That's why everything we build runs on ENCY X - a platform that unites classic and AI-driven CAD/CAM, offline and real-time robot programming, NC code verification, and digital twin simulation.
                                 </p>
                                 <p>
-                                    In September 2024, we launched our global brand with TRIOVIBE X, bringing our vision of seamless manufacturing to the world. In 2025, we're introducing TRIOVIBE 2.0, our next-generation platform that pushes the boundaries of what's possible in manufacturing technology.
+                                    In September 2024, we launched our global brand with ENCY X, bringing our vision of seamless manufacturing to the world. In 2025, we're introducing TRIOVIBE 2.0, our next-generation platform that pushes the boundaries of what's possible in manufacturing technology.
                                 </p>
                             </div>
                         </div>

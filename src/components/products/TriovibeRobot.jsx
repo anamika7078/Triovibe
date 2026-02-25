@@ -2,7 +2,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Cpu, Zap, Layers, Monitor, Settings, Box, Play, ChevronLeft, ChevronRight, Activity, Command, ShieldCheck, Cpu as RobotIcon } from 'lucide-react';
-import Footer from '../Footer';
 
 const TRIOVIBERobot = ({ setCurrentPage }) => {
     const [selectedFeature, setSelectedFeature] = useState(3); // State-of-art UI (index 3) as default
@@ -138,7 +137,10 @@ const TRIOVIBERobot = ({ setCurrentPage }) => {
                         transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
                         className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
                     >
-                        <button className="px-8 py-4 bg-gray-900/80 backdrop-blur-md text-white font-semibold rounded-full hover:bg-gray-800 transition-all duration-200 text-lg flex items-center gap-2 group">
+                        <button 
+                            onClick={() => setCurrentPage('contact')}
+                            className="px-8 py-4 bg-gray-900/80 backdrop-blur-md text-white font-semibold rounded-full hover:bg-gray-800 transition-all duration-200 text-lg flex items-center gap-2 group"
+                        >
                             Start for free
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </button>
@@ -615,7 +617,7 @@ const TRIOVIBERobot = ({ setCurrentPage }) => {
                 </section>
             </div>
 
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };

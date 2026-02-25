@@ -20,7 +20,7 @@ const Architecture = ({ setCurrentPage }) => {
         ],
         featured: {
             title: "TRIOVIBE for the Architecture & Construction Industry",
-            content: "The construction sector is witnessing a paradigm shift with 3D printing, and TRIOVIBE Robot software is at the forefront of this revolution. Catering to the architectural world, TRIOVIBE Robot facilitates the seamless 3D printing of entire buildings. Its advanced algorithms ensure precision and efficiency, translating digital models into tangible structures.",
+            content: "The construction sector is witnessing a paradigm shift with 3D printing, and ENCY Robot software is at the forefront of this revolution. Catering to the architectural world, ENCY Robot facilitates the seamless 3D printing of entire buildings. Its advanced algorithms ensure precision and efficiency, translating digital models into tangible structures.",
             image: "https://encycam.com/wp-content/uploads/2024/09/Architecture-Construction-480x347.png",
             points: [
                 "Robotic arm movement management",

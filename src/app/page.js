@@ -57,7 +57,17 @@ export default function Home() {
   const [currentPage, setCurrentPage] = useState('home');
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Scroll to top when page changes, with multiple attempts to ensure it works
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      requestAnimationFrame(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        setTimeout(() => {
+          window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        }, 50);
+      });
+    };
+    scrollToTop();
   }, [currentPage]);
 
   useEffect(() => {
@@ -83,19 +93,19 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#050505] text-white selection:bg-teal-500/30">
       <Navbar currentPage={currentPage} setCurrentPage={navigateToPage} />
-      {currentPage === 'triovibex' ? (
+      {(currentPage === 'triovibex' || currentPage === 'encyx' || currentPage === 'ency-x') ? (
         <TriovibeX setCurrentPage={navigateToPage} />
-      ) : currentPage === 'triovibe' ? (
+      ) : (currentPage === 'triovibe' || currentPage === 'ency') ? (
         <Triovibe setCurrentPage={navigateToPage} />
-      ) : currentPage === 'triovibe-robot' ? (
+      ) : (currentPage === 'triovibe-robot' || currentPage === 'ency-robot') ? (
         <TriovibeRobot setCurrentPage={navigateToPage} />
-      ) : currentPage === 'triovibe-tuner' ? (
+      ) : (currentPage === 'triovibe-tuner' || currentPage === 'ency-tuner') ? (
         <TriovibeTuner setCurrentPage={navigateToPage} />
-      ) : currentPage === 'triovibe-clouds' ? (
+      ) : (currentPage === 'triovibe-clouds' || currentPage === 'ency-clouds') ? (
         <TriovibeClouds setCurrentPage={navigateToPage} />
-      ) : currentPage === 'triovibe-machinemaker' ? (
+      ) : (currentPage === 'triovibe-machinemaker' || currentPage === 'ency-machinemaker') ? (
         <TriovibeMachineMaker setCurrentPage={navigateToPage} />
-      ) : currentPage === 'triovibe-hyper' ? (
+      ) : (currentPage === 'triovibe-hyper' || currentPage === 'ency-hyper') ? (
         <TriovibeHyper setCurrentPage={navigateToPage} />
       ) : currentPage === 'industry-aerospace' ? (
         <Aerospace setCurrentPage={navigateToPage} />
@@ -138,74 +148,33 @@ export default function Home() {
       ) : currentPage === 'industry-woodworking' ? (
         <Woodworking setCurrentPage={navigateToPage} />
       ) : currentPage === 'contact' ? (
-        <>
-          <Contact setCurrentPage={navigateToPage} />
-          <Footer setCurrentPage={navigateToPage} />
-        </>
+        <Contact setCurrentPage={navigateToPage} />
       ) : currentPage === 'about' ? (
-        <>
-          <AboutUs setCurrentPage={navigateToPage} />
-          <Footer setCurrentPage={navigateToPage} />
-        </>
+        <AboutUs setCurrentPage={navigateToPage} />
       ) : currentPage === 'privacy-policy' ? (
-        <>
-          <PrivacyPolicy setCurrentPage={navigateToPage} />
-          <Footer setCurrentPage={navigateToPage} />
-        </>
+        <PrivacyPolicy setCurrentPage={navigateToPage} />
       ) : currentPage === 'terms-and-conditions' ? (
-        <>
-          <TermsAndConditions setCurrentPage={navigateToPage} />
-          <Footer setCurrentPage={navigateToPage} />
-        </>
+        <TermsAndConditions setCurrentPage={navigateToPage} />
       ) : currentPage === 'cookie-policy' ? (
-        <>
-          <CookiePolicy setCurrentPage={navigateToPage} />
-          <Footer setCurrentPage={navigateToPage} />
-        </>
+        <CookiePolicy setCurrentPage={navigateToPage} />
       ) : currentPage === 'software-products-download' ? (
-        <>
-          <SoftwareProductsDownload />
-          <Footer setCurrentPage={navigateToPage} />
-        </>
+        <SoftwareProductsDownload />
       ) : currentPage === 'news' ? (
-        <>
-          <NewsPage />
-          <Footer setCurrentPage={navigateToPage} />
-        </>
+        <NewsPage />
       ) : currentPage === 'events' ? (
-        <>
-          <EventsPage />
-          <Footer setCurrentPage={navigateToPage} />
-        </>
+        <EventsPage />
       ) : currentPage === 'use-cases' ? (
-        <>
-          <UseCasesPage />
-          <Footer setCurrentPage={navigateToPage} />
-        </>
+        <UseCasesPage />
       ) : currentPage === 'articles' ? (
-        <>
-          <ArticlesPage />
-          <Footer setCurrentPage={navigateToPage} />
-        </>
+        <ArticlesPage />
       ) : currentPage === 'become-dealer' ? (
-        <>
-          <BecomeADealer />
-          <Footer setCurrentPage={navigateToPage} />
-        </>
+        <BecomeADealer />
       ) : currentPage === 'why-triovibe' ? (
-        <>
-          <WhyTriovibe setCurrentPage={navigateToPage} />
-          <Footer setCurrentPage={navigateToPage} />
-        </>
+        <WhyTriovibe setCurrentPage={navigateToPage} />
       ) : currentPage === 'all-industries' ? (
-        <>
-          <AllIndustries />
-          <Footer setCurrentPage={navigateToPage} />
-        </>
+        <AllIndustries />
       ) : currentPage === 'powered-by-ency' ? (
-        <>
-          <PoweredByEncyPage setCurrentPage={navigateToPage} />
-        </>
+        <PoweredByEncyPage setCurrentPage={navigateToPage} />
       ) : (
         <>
           <Hero setCurrentPage={navigateToPage} />
@@ -215,9 +184,9 @@ export default function Home() {
           <Events setCurrentPage={navigateToPage} />
           <PoweredByTriovibe setCurrentPage={navigateToPage} />
           {/* <Contact /> */}
-          <Footer setCurrentPage={navigateToPage} />
         </>
       )}
+      <Footer setCurrentPage={navigateToPage} />
     </main>
   );
 }

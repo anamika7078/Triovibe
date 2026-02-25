@@ -21,7 +21,7 @@ const FilmProduction = ({ setCurrentPage }) => {
         ],
         featured: {
             title: "TRIOVIBE for the Film Production Industry",
-            content: "Hundreds of companies from the entertainment and film production industry, including those in Hollywood, employ TRIOVIBE Robot for the creation of large-scale set designs, movie props, and stage elements. TRIOVIBE Robot stands as a unique OLP software solution, offering an integrated interface for milling operations, machining simulations, and a diverse range of post-processors for various industrial robot brands. TRIOVIBE Robot supports advanced Hot-Wire cutting techniques used to carve foam and similar materials. TRIOVIBE Robot is the prime choice if you require robotic milling for movie props or stage construction.",
+            content: "Hundreds of companies from the entertainment and film production industry, including those in Hollywood, employ ENCY Robot for the creation of large-scale set designs, movie props, and stage elements. ENCY Robotstands as a unique OLP software solution, offering an integrated interface for milling operations, machining simulations, and a diverse range of post-processors for various industrial robot brands. ENCY Robotsupports advanced Hot-Wire cutting techniques used to carve foam and similar materials. ENCY Robotis the prime choice if you require robotic milling for movie props or stage construction.",
             image: "https://encycam.com/wp-content/uploads/2024/09/Film-Production-Entertainment-480x347.png",
             points: [
                 "Large-scale set designs and movie props creation",

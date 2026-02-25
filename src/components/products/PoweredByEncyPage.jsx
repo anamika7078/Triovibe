@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 
 const PostCard = ({ image, category, date, title, index }) => {
     return (
@@ -758,7 +757,7 @@ const PoweredByEncyPage = ({ setCurrentPage }) => {
             category: 'POWERED BY ENCY',
             date: '8 Jan 2026',
             title: 'Advanced Robotic Milling in Plastic'
-        },{
+        }, {
             image: 'https://encycam.com/wp-content/uploads/pbe-rest-folder/tmp8h31noob-480x853.jpg',
             category: 'POWERED BY ENCY',
             date: '8 Jan 2026',
@@ -819,9 +818,9 @@ const PoweredByEncyPage = ({ setCurrentPage }) => {
                                     className="w-full bg-[#0a0b0e] border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-teal-500"
                                 >
                                     <option value="">All products</option>
-                                    <option value="triovibe">TRIOVIBE</option>
-                                    <option value="triovibex">TRIOVIBE X</option>
-                                    <option value="triovibe-robot">TRIOVIBE Robot</option>
+                                    <option value="triovibe">ENCY</option>
+                                    <option value="triovibex">ENCY X</option>
+                                    <option value="triovibe-robot">ENCY Robot</option>
                                 </select>
                             </div>
 
@@ -885,7 +884,7 @@ const PoweredByEncyPage = ({ setCurrentPage }) => {
                 </div>
             </section>
 
-            <Footer setCurrentPage={setCurrentPage} />
+            {/* <Footer setCurrentPage={setCurrentPage} /> */}
         </main>
     );
 };

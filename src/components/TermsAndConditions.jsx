@@ -75,7 +75,7 @@ const TermsAndConditions = ({ setCurrentPage }) => {
                             <div className="space-y-6 text-gray-700">
                                 <div>
                                     <p className="mb-4">
-                                        We are <strong>ENCY SOFTWARE LTD.</strong> ("Company," "we," "us," "our"). Our VAT number is <strong>CY 60079628L</strong>.
+                                        We are <strong>TRIOVIBE SOFTWARE LTD.</strong> ("Company," "we," "us," "our"). Our VAT number is <strong>CY 60079628L</strong>.
                                     </p>
                                     <p className="mb-4">
                                         We operate the website <a href="https://www.triovibesolutions.com" className="text-teal-600 hover:text-teal-700">https://www.triovibesolutions.com</a> (the "Site"), the mobile application <strong>ENCY Clouds</strong> (the "App"), as well as any other related products and services that refer or link to these legal terms (the "Legal Terms") (collectively, the "Services").
@@ -156,19 +156,19 @@ const TermsAndConditions = ({ setCurrentPage }) => {
                                 <ul className="space-y-2 ml-6">
                                     <li className="flex items-start gap-2">
                                         <CheckCircle className="text-teal-600 mt-1" size={16} />
-                                        <span>TRIOVIBE X - Advanced CAD/CAM platform</span>
+                                        <span>ENCY X - Advanced CAD/CAM platform</span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <CheckCircle className="text-teal-600 mt-1" size={16} />
-                                        <span>TRIOVIBE Robot - Robotic programming software</span>
+                                        <span>ENCY Robot - Robotic programming software</span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <CheckCircle className="text-teal-600 mt-1" size={16} />
-                                        <span>TRIOVIBE Tuner - Precision optimization tools</span>
+                                        <span>ENCY Tuner - Precision optimization tools</span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <CheckCircle className="text-teal-600 mt-1" size={16} />
-                                        <span>TRIOVIBE Clouds - Cloud-based collaboration platform</span>
+                                        <span>ENCY Clouds - Cloud-based collaboration platform</span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <CheckCircle className="text-teal-600 mt-1" size={16} />
@@ -176,7 +176,7 @@ const TermsAndConditions = ({ setCurrentPage }) => {
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <CheckCircle className="text-teal-600 mt-1" size={16} />
-                                        <span>TRIOVIBE Hyper - High-performance machining solutions</span>
+                                        <span>ENCY Hyper - High-performance machining solutions</span>
                                     </li>
                                 </ul>
                                 <p className="mt-4">

@@ -11,7 +11,7 @@ import {
     ShieldCheck,
     Activity
 } from 'lucide-react';
-import Footer from '../Footer';
+
 
 const BaseIndustryPage = ({
     title,
@@ -507,7 +507,7 @@ const BaseIndustryPage = ({
                 </div>
             </section>
 
-            <Footer />
+
         </div>
     );
 };

@@ -18,7 +18,6 @@ import {
     Clock,
     ExternalLink
 } from 'lucide-react';
-import Footer from '../Footer';
 
 const TRIOVIBEClouds = ({ setCurrentPage }) => {
     const [selectedFeature, setSelectedFeature] = useState(0);
@@ -86,14 +85,17 @@ const TRIOVIBEClouds = ({ setCurrentPage }) => {
                         transition={{ duration: 0.8 }}
                     >
                         <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight text-[#1a1d24]">
-                            TRIOVIBE Clouds: Cloud-based digital workspace for CAD/CAM programmers and machine operators
+                            ENCY Clouds: Cloud-based digital workspace for CAD/CAM programmers and machine operators
                         </h1>
                         <p className="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
                             Supercharge your CAD/CAM software with a cloud collaboration tool. Dramatically cut down on wasted time in workflow areas that involve external parties, such as NC-code fine-tuning, technical support, postprocessor customization, and collaboration with fellow CAD/CAM programmers.
                         </p>
 
                         <div className="flex flex-wrap justify-center gap-6 mb-20">
-                            <button className="px-10 py-4 bg-[#1a1d24] text-white font-bold rounded-full hover:bg-black transition-all shadow-xl">
+                            <button 
+                                onClick={() => setCurrentPage('contact')}
+                                className="px-10 py-4 bg-[#1a1d24] text-white font-bold rounded-full hover:bg-black transition-all shadow-xl"
+                            >
                                 Start for free
                             </button>
                             <button
@@ -156,7 +158,7 @@ const TRIOVIBEClouds = ({ setCurrentPage }) => {
                         <div>
                             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-[#1a1d24]">Naturally integrated into CAD/CAM interface</h2>
                             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                TRIOVIBE Clouds focuses on making the user experience simple and efficient. We design our UI and UX to make things clear and minimize mouse clicks, so that users can achieve more with less effort.
+                                ENCY Clouds focuses on making the user experience simple and efficient. We design our UI and UX to make things clear and minimize mouse clicks, so that users can achieve more with less effort.
                             </p>
                             <p className="text-lg text-gray-600 leading-relaxed mb-8">
                                 To ensure this level of simplicity, we've built an integrated ecosystem tailored to our users' needs. Instead of relying on third-party solutions, we've developed our own proprietary system to properly integrate into the CAD/CAM workflow, ensuring that we provide our users with the best possible experience.
@@ -199,7 +201,7 @@ const TRIOVIBEClouds = ({ setCurrentPage }) => {
                         >
                             <div>
                                 <h3 className="text-2xl font-bold mb-10 flex items-center gap-2">
-                                    Without TRIOVIBE Clouds 🐢
+                                    Without ENCY Clouds 🐢
                                 </h3>
                                 <ul className="space-y-6">
                                     {[
@@ -235,7 +237,7 @@ const TRIOVIBEClouds = ({ setCurrentPage }) => {
                         >
                             <div>
                                 <h3 className="text-2xl font-bold mb-10 flex items-center gap-2 text-blue-600">
-                                    With TRIOVIBE Clouds 🚀
+                                    With ENCY Clouds 🚀
                                 </h3>
                                 <ul className="space-y-8">
                                     {[
@@ -276,7 +278,7 @@ const TRIOVIBEClouds = ({ setCurrentPage }) => {
             <section className="py-24 bg-white px-6">
                 <div className="container mx-auto max-w-6xl">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-bold mb-4">TRIOVIBE Clouds benefits for</h2>
+                        <h2 className="text-4xl md:text-5xl font-bold mb-4"> benefits for</h2>
                         <p className="text-xl text-gray-400">Beyond traditional CAD/CAM workflow</p>
                     </div>
 
@@ -284,19 +286,19 @@ const TRIOVIBEClouds = ({ setCurrentPage }) => {
                         {[
                             {
                                 title: "NC code fine tuning",
-                                description: "Supercharge NC code fine tuning with TRIOVIBE X and dramatically reduce the preparation time for ready-to-run NC code.",
+                                description: "Supercharge NC code fine tuning with ENCY X and dramatically reduce the preparation time for ready-to-run NC code.",
                                 color: "bg-blue-600 shadow-blue-500/20",
                                 icon: <div className="p-3 bg-white/20 rounded-lg"><Monitor className="text-white" /></div>
                             },
                             {
                                 title: "CAD/CAM software implementation",
-                                description: "Streamline CAD/CAM software implementation with TRIOVIBE X and significantly reduce the time for postprocessor customization and test program runs.",
+                                description: "Streamline CAD/CAM software implementation with ENCY X and significantly reduce the time for postprocessor customization and test program runs.",
                                 color: "bg-teal-500 shadow-teal-400/20",
                                 icon: <div className="p-3 bg-white/20 rounded-lg"><Clock className="text-white" /></div>
                             },
                             {
                                 title: "Technical support",
-                                description: "Enhanced technical support with TRIOVIBE X, allowing software engineers to join your collaboration session instantly, understand the context rapidly, and provide real-time assistance on the spot.",
+                                description: "Enhanced technical support with ENCY X, allowing software engineers to join your collaboration session instantly, understand the context rapidly, and provide real-time assistance on the spot.",
                                 color: "bg-[#1a1d24] shadow-black/20",
                                 icon: <div className="p-3 bg-white/20 rounded-lg"><Users className="text-white" /></div>
                             }
@@ -438,7 +440,7 @@ const TRIOVIBEClouds = ({ setCurrentPage }) => {
                 </div>
             </section>
 
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };

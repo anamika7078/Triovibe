@@ -87,12 +87,9 @@ const Contact = ({ setCurrentPage }) => {
                             <div className="space-y-8">
                                 <div>
                                     <p className="text-xs font-black text-teal-400 uppercase tracking-widest mb-2 font-mono">Email</p>
-                                    <p className="text-white font-bold text-lg">info@triovibe.cam</p>
+                                    <p className="text-white font-bold text-lg">info@triovibe.com</p>
                                 </div>
-                                <div>
-                                    <p className="text-xs font-black text-teal-400 uppercase tracking-widest mb-2 font-mono">Support</p>
-                                    <p className="text-white font-bold text-lg">support@triovibe.cam</p>
-                                </div>
+                               
                             </div>
                         </div>
 

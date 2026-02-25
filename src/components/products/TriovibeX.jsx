@@ -1,7 +1,6 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
-import Footer from '../Footer';
 
 const TRIOVIBEX = ({ setCurrentPage }) => {
     return (
@@ -60,7 +59,10 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                         transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
                         className="flex flex-col sm:flex-row gap-4 justify-center items-center"
                     >
-                        <button className="px-8 py-4 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200 text-lg">
+                        <button 
+                            onClick={() => setCurrentPage('contact')}
+                            className="px-8 py-4 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200 text-lg"
+                        >
                             Start for free
                         </button>
                         <button
@@ -655,7 +657,7 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                 </div>
             </section>
 
-            <Footer />
+
 
         </>
     );

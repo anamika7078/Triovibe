@@ -6,25 +6,25 @@ const EventsPage = () => {
     const upcomingEvents = [
         {
             dateRange: '19 - 21 February 2026',
-            title: 'ENCY 2.0 AT FORNITORE OFFRESI 2026, ITALY',
+            title: 'TRIOVIBE 2.0 AT FORNITORE OFFRESI 2026, ITALY',
             location: 'Italy',
             image: 'https://encycam.com/wp-content/uploads/2025/02/Fornitore-Offresi-2026-640x360.jpg'
         },
         {
             dateRange: '10 - 13 March 2026',
-            title: 'ENCY AT TECHNISHOW, NETHERLANDS',
+            title: 'TRIOVIBE AT TECHNISHOW, NETHERLANDS',
             location: 'Netherlands',
             image: 'https://encycam.com/wp-content/uploads/2025/02/Technishow-2026-640x360.jpg'
         },
         {
             dateRange: '15 - 18 June 2026',
-            title: 'ENCY WORLD CONFERENCE 2026 - FORMULA CAD/CAM',
+            title: 'TRIOVIBE WORLD CONFERENCE 2026 - FORMULA CAD/CAM',
             location: 'Conference',
             image: 'https://encycam.com/wp-content/uploads/2025/12/ENCY-World-2026-2-640x329.jpg'
         },
         {
             dateRange: '14 - 19 September 2026',
-            title: 'ENCY SOFTWARE AT IMTS 2026, UNITED STATES',
+            title: 'TRIOVIBE SOFTWARE AT IMTS 2026, UNITED STATES',
             location: 'United States',
             image: 'https://encycam.com/wp-content/uploads/2025/10/IMTS-2026-640x360.jpg'
         }
@@ -33,55 +33,55 @@ const EventsPage = () => {
     const pastEvents = [
         {
             dateRange: '21 - 25 January 2026',
-            title: 'ENCY AT IMTEX 2026, INDIA',
+            title: 'TRIOVIBE AT IMTEX 2026, INDIA',
             location: 'India',
             image: 'https://encycam.com/wp-content/uploads/2026/01/IMTEX-2026-640x360.jpg'
         },
         {
             dateRange: '9 - 10 December 2025',
-            title: 'ENCY AT FANUC OPEN DAYS IN SLOVENIA',
+            title: 'TRIOVIBE AT FANUC OPEN DAYS IN SLOVENIA',
             location: 'Slovenia',
             image: 'https://encycam.com/wp-content/uploads/2025/12/FANUC-Open-Days-640x360.jpg'
         },
         {
             dateRange: '18 - 19 November 2025',
-            title: 'ENCY AT COMAC OPEN HOUSE, BRASIL',
+            title: 'TRIOVIBE AT COMAC OPEN HOUSE, BRASIL',
             location: 'Brasil',
             image: 'https://encycam.com/wp-content/uploads/2025/11/COMAC-Open-House-640x360.jpg'
         },
         {
             dateRange: '13 November 2025',
-            title: 'WEBINAR: DISCOVER ENCY HYPER – THE FUTURE OF HYBRID ROBOT PROGRAMMING',
+            title: 'WEBINAR: DISCOVER TRIOVIBE HYPER – THE FUTURE OF HYBRID ROBOT PROGRAMMING',
             location: 'Online',
             image: 'https://encycam.com/wp-content/uploads/2025/11/ENCY-Hyper-Webinar-640x360.jpg'
         },
         {
             dateRange: '13 - 14 November 2025',
-            title: 'ENCY AT IRONCAD 2025 TAIWAN USER CONFERENCE, TAIWAN',
+            title: 'TRIOVIBE AT IRONCAD 2025 TAIWAN USER CONFERENCE, TAIWAN',
             location: 'Taiwan',
             image: 'https://encycam.com/wp-content/uploads/2025/11/IronCAD-2025-640x360.jpg'
         },
         {
             dateRange: '12 November 2025',
-            title: 'ENCY SEMINAR IN PUNE, INDIA',
+            title: 'TRIOVIBE SEMINAR IN PUNE, INDIA',
             location: 'India',
             image: 'https://encycam.com/wp-content/uploads/2025/11/ENCY-Seminar-Pune-640x360.jpg'
         },
         {
             dateRange: '5 - 8 November 2025',
-            title: 'ENCY AT ROBOWORLD 2025, KOREA',
+            title: 'TRIOVIBE AT ROBOWORLD 2025, KOREA',
             location: 'Korea',
             image: 'https://encycam.com/wp-content/uploads/2025/11/Roboworld-2025-640x360.jpg'
         },
         {
             dateRange: '5 - 6 November 2025',
-            title: 'ENCY AT STAUBLI ROBOTICS TECHDAYS, NETHERLANDS',
+            title: 'TRIOVIBE AT STAUBLI ROBOTICS TECHDAYS, NETHERLANDS',
             location: 'Netherlands',
             image: 'https://encycam.com/wp-content/uploads/2025/11/Staubli-Techdays-640x360.jpg'
         },
         {
             dateRange: '4 - 7 November 2025',
-            title: 'ENCY AT VOLZ IN-HOUSE EXHIBITION 2025, GERMANY',
+            title: 'TRIOVIBE AT VOLZ IN-HOUSE EXHIBITION 2025, GERMANY',
             location: 'Germany',
             image: 'https://encycam.com/wp-content/uploads/2025/11/Volz-In-House-640x360.jpg'
         }

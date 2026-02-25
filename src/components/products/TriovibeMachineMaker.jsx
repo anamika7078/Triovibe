@@ -67,7 +67,27 @@ const TRIOVIBEMachineMaker = ({ setCurrentPage }) => {
     ];
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        // Scroll to top after component is fully mounted and rendered
+        const scrollToTop = () => {
+            // Immediate scroll
+            window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+            
+            // Use requestAnimationFrame to ensure DOM is ready
+            requestAnimationFrame(() => {
+                window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+                
+                // Double check after a small delay to ensure it worked
+                setTimeout(() => {
+                    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+                    // Also try scrolling to hero section if it exists
+                    const heroSection = document.getElementById('hero-section');
+                    if (heroSection) {
+                        heroSection.scrollIntoView({ behavior: 'instant', block: 'start' });
+                    }
+                }, 100);
+            });
+        };
+        scrollToTop();
     }, []);
 
     useEffect(() => {
@@ -111,7 +131,7 @@ const TRIOVIBEMachineMaker = ({ setCurrentPage }) => {
     return (
         <div className="bg-[#fcfcfc] min-h-screen font-sans selection:bg-orange-500 selection:text-white">
             {/* Hero Section */}
-            <section className="relative min-h-[90vh] bg-gradient-to-br from-[#FF9D00] via-[#FFB700] to-[#FF8000] overflow-hidden flex flex-col pt-24">
+            <section id="hero-section" className="relative min-h-[90vh] bg-gradient-to-br from-[#FF9D00] via-[#FFB700] to-[#FF8000] overflow-hidden flex flex-col pt-24">
                 {/* Background Shapes */}
                 <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 translate-x-1/4 pointer-events-none" />
                 <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none" />
@@ -142,7 +162,10 @@ const TRIOVIBEMachineMaker = ({ setCurrentPage }) => {
                         transition={{ duration: 0.5, delay: 0.4 }}
                         className="flex flex-col sm:flex-row gap-6 mb-20"
                     >
-                        <button className="px-12 py-5 bg-[#1F2937] text-white font-bold rounded-2xl hover:bg-gray-800 transition-all duration-300 shadow-xl hover:shadow-gray-900/20 text-lg">
+                        <button 
+                            onClick={() => setCurrentPage('contact')}
+                            className="px-12 py-5 bg-[#1F2937] text-white font-bold rounded-2xl hover:bg-gray-800 transition-all duration-300 shadow-xl hover:shadow-gray-900/20 text-lg"
+                        >
                             Start for free
                         </button>
                         <button
@@ -430,7 +453,10 @@ const TRIOVIBEMachineMaker = ({ setCurrentPage }) => {
                                 <p className="text-white/90 text-2xl mb-12 leading-relaxed font-medium">
                                     Free 30-day version with online onboarding
                                 </p>
-                                <button className="px-12 py-5 bg-[#1F2937] text-white font-bold rounded-2xl flex items-center gap-3 hover:bg-gray-800 transition-all shadow-2xl group/btn">
+                                <button 
+                                    onClick={() => setCurrentPage('contact')}
+                                    className="px-12 py-5 bg-[#1F2937] text-white font-bold rounded-2xl flex items-center gap-3 hover:bg-gray-800 transition-all shadow-2xl group/btn"
+                                >
                                     Get Started Free
                                     <ArrowRight className="w-6 h-6 group-hover/btn:translate-x-2 transition-transform" />
                                 </button>

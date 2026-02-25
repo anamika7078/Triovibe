@@ -99,7 +99,7 @@ const WhyTriovibe = ({ setCurrentPage }) => {
                 <div className="container mx-auto px-6 py-20 relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
                         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                            Why TRIOVIBE
+                            Why ENCY
                         </h1>
                         <p className="text-xl leading-relaxed text-gray-300 mb-8">
                             Discover the power of unified digital solutions that transform how businesses operate and grow

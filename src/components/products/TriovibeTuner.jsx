@@ -16,7 +16,6 @@ import {
     Shield,
     Zap
 } from 'lucide-react';
-import Footer from '../Footer';
 
 const TRIOVIBETuner = ({ setCurrentPage }) => {
     const [activeFeature, setActiveFeature] = useState(0);
@@ -153,7 +152,10 @@ const TRIOVIBETuner = ({ setCurrentPage }) => {
                         transition={{ delay: 0.2 }}
                         className="flex flex-wrap justify-center gap-4 mb-16"
                     >
-                        <button className="px-10 py-4 bg-slate-900/90 backdrop-blur-md text-white font-bold rounded-full hover:bg-slate-800 transition-all shadow-2xl">
+                        <button 
+                            onClick={() => setCurrentPage('contact')}
+                            className="px-10 py-4 bg-slate-900/90 backdrop-blur-md text-white font-bold rounded-full hover:bg-slate-800 transition-all shadow-2xl"
+                        >
                             Start for free
                         </button>
                         <button
@@ -512,7 +514,7 @@ const TRIOVIBETuner = ({ setCurrentPage }) => {
                 </div>
             </section>
 
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };

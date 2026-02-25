@@ -18,11 +18,11 @@ const Features = ({ setCurrentPage }) => {
                         <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white">Go beyond CAD/CAM</h2>
                         <div className="space-y-4 text-gray-300 leading-relaxed text-xs md:text-sm">
                             <p>
-                                TRIOVIBE combines powerful manufacturing technology with a clean, intuitive interface
+                                ENCY combines powerful manufacturing technology with a clean, intuitive interface
                                 that makes learning quick and daily work enjoyable.
                             </p>
                             <p>
-                                Through the TRIOVIBE X ecosystem, teams collaborate in real time, share projects,
+                                Through the ENCY X ecosystem, teams collaborate in real time, share projects,
                                 files, and messages via the built-in chat or mobile app, and access fast,
                                 convenient technical support.
                             </p>
