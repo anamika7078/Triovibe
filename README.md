@@ -2,7 +2,23 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+1. Make sure the backend server is running (see `../Backend/README.md`)
+2. Create a `.env.local` file in the Frontend directory:
+   ```env
+   NEXT_PUBLIC_BACKEND_URL=http://localhost:5000
+   ```
+
+### Running the Frontend
+
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -16,7 +32,23 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Admin Panel
+
+Access the admin panel at:
+- Login: [http://localhost:3000/admin/login](http://localhost:3000/admin/login)
+- Signup: [http://localhost:3000/admin/signup](http://localhost:3000/admin/signup)
+- Dashboard: [http://localhost:3000/admin/dashboard](http://localhost:3000/admin/dashboard)
+
+The admin panel allows you to:
+- Create admin accounts
+- View all contact form submissions
+- Search and filter submissions
+- Delete submissions
+- View detailed submission information
+
+### Contact Form
+
+The contact form on the main website now sends data to the backend API instead of using SMTP. All submissions are stored in the PostgreSQL database and can be viewed in the admin panel.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 

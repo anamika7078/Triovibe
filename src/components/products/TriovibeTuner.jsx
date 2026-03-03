@@ -152,18 +152,6 @@ const TRIOVIBETuner = ({ setCurrentPage }) => {
                         transition={{ delay: 0.2 }}
                         className="flex flex-wrap justify-center gap-4 mb-16"
                     >
-                        <button 
-                            onClick={() => setCurrentPage('contact')}
-                            className="px-10 py-4 bg-slate-900/90 backdrop-blur-md text-white font-bold rounded-full hover:bg-slate-800 transition-all shadow-2xl"
-                        >
-                            Start for free
-                        </button>
-                        <button
-                            onClick={() => setCurrentPage('contact')}
-                            className="px-10 py-4 bg-white text-blue-700 font-bold rounded-full hover:bg-blue-50 transition-all shadow-xl"
-                        >
-                            Talk to sales
-                        </button>
                     </motion.div>
                 </div>
 
@@ -457,62 +445,6 @@ const TRIOVIBETuner = ({ setCurrentPage }) => {
                 </div>
             </section>
 
-            {/* Get Started Section */}
-            <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-                <div className="max-w-7xl mx-auto">
-                    <h2 className="text-4xl font-bold text-gray-900 mb-12">Get started with TRIOVIBE</h2>
-
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                        {/* Download Trial Card */}
-                        <motion.div
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            className="lg:col-span-2 relative bg-gradient-to-r from-[#00c58e] to-[#2b89ff] rounded-[2rem] overflow-hidden p-8 md:p-12 flex flex-col md:flex-row items-center justify-between group"
-                        >
-                            <div className="relative z-10 max-w-sm">
-                                <h3 className="text-4xl font-bold text-white mb-4">Download Trial</h3>
-                                <p className="text-white/90 text-xl mb-10 leading-relaxed">
-                                    Free 30-day version with online onboarding
-                                </p>
-                                <button className="px-10 py-4 bg-white text-gray-900 font-bold rounded-full flex items-center gap-2 hover:bg-gray-100 transition-all">
-                                    Download <ArrowRight className="w-5 h-5" />
-                                </button>
-                            </div>
-                            <div className="relative mt-8 md:mt-0 md:ml-8 w-full md:w-[450px]">
-                                <img
-                                    src="https://encycam.com/wp-content/uploads/2025/08/State-of-art-UI-medium-480x270.png"
-                                    alt="Software Interface"
-                                    className="rounded-xl shadow-2xl transition-transform duration-500 group-hover:scale-105"
-                                />
-                            </div>
-                        </motion.div>
-
-                        {/* Get a Quote Card */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            className="relative bg-[#1e2229] p-8 md:p-12 flex flex-col justify-center min-h-[400px]"
-                            style={{
-                                borderRadius: '2rem',
-                                clipPath: 'polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%)'
-                            }}
-                        >
-                            <h3 className="text-4xl font-bold text-white mb-4">Get a Quote</h3>
-                            <p className="text-white/70 text-lg mb-10 leading-relaxed">
-                                Find a local dealer and request pricing
-                            </p>
-                            <button
-                                onClick={() => setCurrentPage('contact')}
-                                className="w-fit px-10 py-4 bg-gradient-to-r from-[#00c58e] to-[#2b89ff] text-white font-bold rounded-full flex items-center gap-2 hover:shadow-lg hover:shadow-[#00c58e]/20 transition-all"
-                            >
-                                Request <ArrowRight className="w-5 h-5" />
-                            </button>
-                        </motion.div>
-                    </div>
-                </div>
-            </section>
 
             {/* <Footer /> */}
         </div>

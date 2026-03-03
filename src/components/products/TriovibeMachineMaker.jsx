@@ -162,18 +162,6 @@ const TRIOVIBEMachineMaker = ({ setCurrentPage }) => {
                         transition={{ duration: 0.5, delay: 0.4 }}
                         className="flex flex-col sm:flex-row gap-6 mb-20"
                     >
-                        <button 
-                            onClick={() => setCurrentPage('contact')}
-                            className="px-12 py-5 bg-[#1F2937] text-white font-bold rounded-2xl hover:bg-gray-800 transition-all duration-300 shadow-xl hover:shadow-gray-900/20 text-lg"
-                        >
-                            Start for free
-                        </button>
-                        <button
-                            onClick={() => setCurrentPage('contact')}
-                            className="px-12 py-5 bg-white text-gray-900 font-bold rounded-2xl hover:bg-gray-50 transition-all duration-300 shadow-xl hover:shadow-white/20 text-lg"
-                        >
-                            Talk to sales
-                        </button>
                     </motion.div>
 
                     {/* Feature Quick Select Icons */}
@@ -429,93 +417,6 @@ const TRIOVIBEMachineMaker = ({ setCurrentPage }) => {
                 </div>
             </section>
 
-            {/* Get Started Section */}
-            <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#f8f9fb]">
-                <div className="max-w-7xl mx-auto">
-                    <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-                        <div>
-                            <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-4">Get started with TRIOVIBE</h2>
-                            <p className="text-xl text-gray-500">Choose your path to excellence.</p>
-                        </div>
-                        <div className="h-0.5 flex-1 bg-gray-200 hidden md:block mx-12 mb-6" />
-                    </div>
-
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                        {/* Download Trial Card */}
-                        <motion.div
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            className="lg:col-span-2 relative bg-gradient-to-br from-[#FF9D00] to-[#FF4500] rounded-[3rem] overflow-hidden p-8 md:p-16 flex flex-col md:flex-row items-center justify-between group shadow-3xl shadow-orange-500/20"
-                        >
-                            <div className="relative z-10 max-w-sm">
-                                <h3 className="text-5xl font-black text-white mb-6">Download Trial</h3>
-                                <p className="text-white/90 text-2xl mb-12 leading-relaxed font-medium">
-                                    Free 30-day version with online onboarding
-                                </p>
-                                <button 
-                                    onClick={() => setCurrentPage('contact')}
-                                    className="px-12 py-5 bg-[#1F2937] text-white font-bold rounded-2xl flex items-center gap-3 hover:bg-gray-800 transition-all shadow-2xl group/btn"
-                                >
-                                    Get Started Free
-                                    <ArrowRight className="w-6 h-6 group-hover/btn:translate-x-2 transition-transform" />
-                                </button>
-                            </div>
-                            <div className="relative mt-12 md:mt-0 md:ml-12 w-full md:w-[480px]">
-                                <motion.div
-                                    whileHover={{ rotate: -2, scale: 1.05 }}
-                                    className="p-3 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 shadow-4xl"
-                                >
-                                    <img
-                                        src="https://encycam.com/wp-content/uploads/2025/08/State-of-art-UI-medium-480x270.png"
-                                        alt="Software Interface"
-                                        className="rounded-2xl shadow-2xl"
-                                    />
-                                </motion.div>
-                            </div>
-                        </motion.div>
-
-                        {/* Get a Quote Card */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            className="relative bg-[#0F172A] p-8 md:p-14 flex flex-col justify-between group shadow-3xl overflow-hidden"
-                            style={{
-                                borderRadius: '3rem',
-                                clipPath: 'polygon(0 0, 100% 0, 100% 88%, 88% 100%, 0 100%)'
-                            }}
-                        >
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 blur-[60px] pointer-events-none" />
-
-                            <div>
-                                <h3 className="text-4xl font-black text-white mb-6">Get a Quote</h3>
-                                <p className="text-gray-400 text-xl mb-12 leading-relaxed">
-                                    Find a local dealer and request pricing
-                                </p>
-                            </div>
-
-                            <div className="space-y-8">
-                                <ul className="space-y-4">
-                                    {['Expert consultation', 'Custom pricing', 'Flexible licensing'].map((item, i) => (
-                                        <li key={i} className="flex items-center gap-3 text-white/60 text-sm font-bold uppercase tracking-widest">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-orange-500" />
-                                            {item}
-                                        </li>
-                                    ))}
-                                </ul>
-                                <button
-                                    onClick={() => setCurrentPage('contact')}
-                                    className="w-full px-12 py-5 bg-white text-gray-900 font-bold rounded-2xl flex items-center justify-center gap-3 hover:bg-orange-500 hover:text-white transition-all duration-500 group/quote"
-                                >
-                                    Request Pricing
-                                    <Maximize2 className="w-5 h-5 group-hover/quote:scale-125 transition-transform" />
-                                </button>
-                            </div>
-                        </motion.div>
-                    </div>
-                </div>
-            </section>
 
             {/* <Footer /> */}
         </div>

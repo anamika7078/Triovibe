@@ -110,12 +110,6 @@ const BaseIndustryPage = ({
                             </motion.p>
                         )}
                         <motion.div variants={itemVariant} className="flex flex-wrap gap-6">
-                            <button
-                                onClick={() => setCurrentPage('contact')}
-                                className="px-10 py-4 bg-teal-500 text-white font-bold rounded-2xl hover:bg-teal-400 transition-all shadow-xl shadow-teal-500/20 flex items-center gap-3 hover:translate-y-[-2px] active:scale-95"
-                            >
-                                Talk to sales <ArrowRight className="w-5 h-5" />
-                            </button>
                             <button className="px-10 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold rounded-2xl hover:bg-white/20 transition-all hover:translate-y-[-2px] active:scale-95">
                                 Download Trial
                             </button>

@@ -4,7 +4,6 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import Products from '@/components/products/Products';
-import CTA from '@/components/products/CTA';
 import TriovibeX from '@/components/products/TriovibeX';
 import Triovibe from '@/components/products/Triovibe';
 import TriovibeRobot from '@/components/products/TriovibeRobot';
@@ -23,11 +22,6 @@ import PrivacyPolicy from '@/components/PrivacyPolicy';
 import TermsAndConditions from '@/components/TermsAndConditions';
 import CookiePolicy from '@/components/CookiePolicy';
 import SoftwareProductsDownload from '@/components/resources/SoftwareProductsDownload';
-import NewsPage from '@/components/resources/NewsPage';
-import EventsPage from '@/components/resources/EventsPage';
-import UseCasesPage from '@/components/resources/UseCasesPage';
-import ArticlesPage from '@/components/resources/ArticlesPage';
-import BecomeADealer from '@/components/resources/BecomeADealer';
 import WhyTriovibe from '@/components/WhyTriovibe';
 import AllIndustries from '@/components/AllIndustries';
 
@@ -159,16 +153,6 @@ export default function Home() {
         <CookiePolicy setCurrentPage={navigateToPage} />
       ) : currentPage === 'software-products-download' ? (
         <SoftwareProductsDownload />
-      ) : currentPage === 'news' ? (
-        <NewsPage />
-      ) : currentPage === 'events' ? (
-        <EventsPage />
-      ) : currentPage === 'use-cases' ? (
-        <UseCasesPage />
-      ) : currentPage === 'articles' ? (
-        <ArticlesPage />
-      ) : currentPage === 'become-dealer' ? (
-        <BecomeADealer />
       ) : currentPage === 'why-triovibe' ? (
         <WhyTriovibe setCurrentPage={navigateToPage} />
       ) : currentPage === 'all-industries' ? (

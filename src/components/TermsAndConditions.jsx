@@ -75,7 +75,8 @@ const TermsAndConditions = ({ setCurrentPage }) => {
                             <div className="space-y-6 text-gray-700">
                                 <div>
                                     <p className="mb-4">
-                                        We are <strong>TRIOVIBE SOFTWARE LTD.</strong> ("Company," "we," "us," "our"). Our VAT number is <strong>CY 60079628L</strong>.
+                                        We are <strong>TRIOVIBE SOLUTION PVT LTD.
+.</strong> ("Company," "we," "us," "our"). Our VAT number is <strong>CY 60079628L</strong>.
                                     </p>
                                     <p className="mb-4">
                                         We operate the website <a href="https://www.triovibesolutions.com" className="text-teal-600 hover:text-teal-700">https://www.triovibesolutions.com</a> (the "Site"), the mobile application <strong>ENCY Clouds</strong> (the "App"), as well as any other related products and services that refer or link to these legal terms (the "Legal Terms") (collectively, the "Services").

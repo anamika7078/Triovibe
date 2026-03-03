@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const TRIOVIBEX = ({ setCurrentPage }) => {
     return (
-        <>
+        <div className='min-h-screen'>
             {/* Hero Section */}
             <section className="relative min-h-screen bg-black flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
                 {/* Background decorative elements */}
@@ -53,25 +53,6 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                         </p>
                     </motion.div>
 
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-                        className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-                    >
-                        <button 
-                            onClick={() => setCurrentPage('contact')}
-                            className="px-8 py-4 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200 text-lg"
-                        >
-                            Start for free
-                        </button>
-                        <button
-                            onClick={() => setCurrentPage('contact')}
-                            className="px-8 py-4 bg-transparent text-white font-semibold rounded-lg border border-white hover:bg-white hover:text-black transition-all duration-200 text-lg"
-                        >
-                            Talk to sales
-                        </button>
-                    </motion.div>
                 </div>
             </section>
 
@@ -169,7 +150,7 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                                         playsInline
                                         controls
                                     >
-                                        <source src="https://encycam.com/wp-content/uploads/2024/09/ENCY_X.mp4https://encycam.com/wp-content/uploads/2024/09/ENCY_X.mp4" type="video/mp4" />
+                                        <source src="https://encycam.com/wp-content/uploads/2024/09/ENCY_X.mp4" type="video/mp4" />
                                         Your browser does not support the video tag.
                                     </video>
                                 </div>
@@ -589,77 +570,7 @@ const TRIOVIBEX = ({ setCurrentPage }) => {
                 </div>
             </section>
 
-            {/* Get Started Section */}
-            <section className="bg-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-7xl mx-auto text-center">
-                    <motion.h2
-                        initial={{ opacity: 0, y: -50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, amount: 0.3 }}
-                        transition={{ duration: 0.6, ease: "easeOut" }}
-                        className="text-4xl font-extrabold text-gray-900 mb-12"
-                    >
-                        Get started with ENCY
-                    </motion.h2>
-
-                    <div className="flex flex-col lg:flex-row gap-8 justify-center items-stretch">
-                        {/* Download Trial Card */}
-                        <motion.div
-                            initial={{ opacity: 0, x: -50 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true, amount: 0.3 }}
-                            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-                            className="relative flex-1 bg-gradient-to-br from-green-400 to-blue-500 shadow-xl text-white flex flex-col justify-between items-start overflow-hidden lg:max-w-3xl"
-                            style={{
-                                clipPath: 'polygon(0% 0%, 100% 0%, 100% 85%, 95% 100%, 0% 100%)',
-                            }}
-                        >
-                            <div className="relative z-10 p-8">
-                                <h3 className="text-4xl font-bold mb-4">Download Trial</h3>
-                                <p className="text-lg mb-8">Free 30-day version with online onboarding</p>
-                                <button className="bg-white text-green-600 px-6 py-3 rounded-full text-lg font-semibold flex items-center space-x-2 transition-all duration-300 hover:bg-gray-100">
-                                    <span>Download</span>
-                                    <span>→</span>
-                                </button>
-                            </div>
-                            <img
-                                src="https://encycam.com/wp-content/uploads/2025/08/State-of-art-UI-medium-480x270.png"
-                                alt="ENCY Software Interface"
-                                className="absolute bottom-0 right-0 opacity-80 rounded-lg"
-                                style={{
-                                    transform: 'translateY(15%) translateX(10%)',
-                                    width: '80%',
-                                    height: 'auto',
-                                    objectFit: 'contain'
-                                }}
-                            />
-                        </motion.div>
-
-                        {/* Get a Quote Card */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 50 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true, amount: 0.3 }}
-                            transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-                            className="flex-1 bg-[#2A2A3E] rounded-3xl p-8 shadow-xl text-white flex flex-col justify-between items-start lg:max-w-md"
-                        >
-                            <h3 className="text-4xl font-bold mb-4">Get a Quote</h3>
-                            <p className="text-lg mb-8">Find a local dealer and request pricing</p>
-                            <button
-                                onClick={() => setCurrentPage('contact')}
-                                className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-6 py-3 rounded-full text-lg font-semibold flex items-center space-x-2 transition-all duration-300 hover:opacity-90"
-                            >
-                                <span>Request</span>
-                                <span>→</span>
-                            </button>
-                        </motion.div>
-                    </div>
-                </div>
-            </section>
-
-
-
-        </>
+        </div>
     );
 };
 

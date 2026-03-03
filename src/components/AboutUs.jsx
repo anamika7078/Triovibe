@@ -26,10 +26,12 @@ const AboutUs = ({ setCurrentPage }) => {
                                 Home
                             </button>
                             <span>/</span>
-                            <span className="text-white">About TRIOVIBE Software Ltd</span>
+                            <span className="text-white">About TRIOVIBE SOLUTION PVT LTD.
+</span>
                         </div>
                         <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                            About TRIOVIBE Software Ltd
+                            About TRIOVIBE SOLUTION PVT LTD.
+
                         </h1>
                         <p className="text-xl text-gray-300 leading-relaxed">
                             Pioneering the future of CAD/CAM and robotics software from Limassol, Cyprus.
@@ -48,17 +50,8 @@ const AboutUs = ({ setCurrentPage }) => {
                         <div>
                             <h2 className="text-4xl font-bold text-gray-900 mb-6">Company Story</h2>
                             <div className="space-y-4 text-gray-700 leading-relaxed">
-                                <p>
-                                    TRIOVIBE Software is an independent CAD/CAM and robotics software developer based in Limassol, Cyprus.
-                                </p>
-                                <p>
-                                    We started TRIOVIBE to rethink the journey from model to part. The idea behind 'Go beyond CAD/CAM' came from years on the shop floor. We saw how scattered tools and broken handoffs waste shifts and create errors, so we set out to stitch the process back together.
-                                </p>
-                                <p>
-                                    From day one, we've focused on technological independence and bringing programmers, operators, and integrators into one shared workspace. That's why everything we build runs on ENCY X - a platform that unites classic and AI-driven CAD/CAM, offline and real-time robot programming, NC code verification, and digital twin simulation.
-                                </p>
-                                <p>
-                                    In September 2024, we launched our global brand with ENCY X, bringing our vision of seamless manufacturing to the world. In 2025, we're introducing TRIOVIBE 2.0, our next-generation platform that pushes the boundaries of what's possible in manufacturing technology.
+                                <p className="font-medium text-gray-900">
+                                    TRIOVIBE SOLUTIONS proudly serves as an Authorized Distributor in India, ensuring genuine products and reliable support.
                                 </p>
                             </div>
                         </div>
@@ -68,10 +61,7 @@ const AboutUs = ({ setCurrentPage }) => {
                                 alt="TRIOVIBE Software Team"
                                 className="rounded-2xl shadow-2xl w-full h-auto object-cover"
                             />
-                            <div className="absolute -bottom-6 -left-6 bg-teal-600 text-white p-6 rounded-xl shadow-xl">
-                                <p className="text-2xl font-bold">Founded 2024</p>
-                                <p className="text-teal-100">Limassol, Cyprus</p>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -142,51 +132,61 @@ const AboutUs = ({ setCurrentPage }) => {
                 <div className="container mx-auto px-6">
                     <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Company Information</h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div className="grid grid-cols-1  gap-8 max-w-4xl mx-auto">
                         <div className="bg-gray-50 p-8 rounded-xl">
                             <h3 className="text-xl font-bold text-gray-900 mb-6">Contact Details</h3>
                             <div className="space-y-4">
-                                <div className="flex items-start gap-3">
-                                    <MapPin className="text-teal-600 mt-1" size={20} />
-                                    <div>
-                                        <p className="font-semibold text-gray-900">Address</p>
-                                        <p className="text-gray-600">9, Aiolou and Panagioti Diomidous, 3020, Limassol, Cyprus</p>
+                               
+                                {/* India Office / Authorized Distributor */}
+                                <div className="border-t border-gray-200 pt-4 mt-4 space-y-3">
+                                   
+                                    <div className="flex items-start gap-3">
+                                        <MapPin className="text-teal-600 mt-1" size={20} />
+                                        <div>
+                                            <p className="font-semibold text-gray-900">Address</p>
+                                            <p className="text-gray-600">
+                                                F-411, Siddharth Magnum Plus, Tarsali, Vadodara - 390009, Gujarat, INDIA
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <Phone className="text-teal-600 mt-1" size={20} />
-                                    <div>
-                                        <p className="font-semibold text-gray-900">Phone</p>
-                                        <p className="text-gray-600">+357 95 9007793</p>
+                                    <div className="flex items-start gap-3">
+                                        <Phone className="text-teal-600 mt-1" size={20} />
+                                        <div>
+                                            <p className="font-semibold text-gray-900">Phone</p>
+                                            <p className="text-gray-600">+91 9930181825</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <Mail className="text-teal-600 mt-1" size={20} />
-                                    <div>
-                                        <p className="font-semibold text-gray-900">Email</p>
-                                        <p className="text-gray-600">info@encycam.com</p>
+                                    <div className="flex items-start gap-3">
+                                        <Mail className="text-teal-600 mt-1" size={20} />
+                                        <div>
+                                            <p className="font-semibold text-gray-900">Email</p>
+                                            <a
+                                                href="mailto:info@triovibesolutions.com"
+                                                className="text-teal-700 hover:text-teal-800 hover:underline"
+                                            >
+                                                info@triovibesolutions.com
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-start gap-3">
+                                        <ArrowRight className="text-teal-600 mt-1" size={20} />
+                                        <div>
+                                            <p className="font-semibold text-gray-900">Website</p>
+                                            <a
+                                                href="https://www.triovibesolutions.com"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-teal-700 hover:text-teal-800 hover:underline break-all"
+                                            >
+                                                www.triovibesolutions.com
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="bg-gray-50 p-8 rounded-xl">
-                            <h3 className="text-xl font-bold text-gray-900 mb-6">Legal Information</h3>
-                            <div className="space-y-3">
-                                <div>
-                                    <p className="font-semibold text-gray-900">Registration No.</p>
-                                    <p className="text-gray-600">HE 460544</p>
-                                </div>
-                                <div>
-                                    <p className="font-semibold text-gray-900">VAT No.</p>
-                                    <p className="text-gray-600">CY 60079628L</p>
-                                </div>
-                                <div>
-                                    <p className="font-semibold text-gray-900">Director</p>
-                                    <p className="text-gray-600">Andrei Kharatsidi</p>
-                                </div>
-                            </div>
-                        </div>
+                      
                     </div>
 
                     {/* Certificates Section */}
@@ -224,13 +224,6 @@ const AboutUs = ({ setCurrentPage }) => {
                         Join the revolution in CAD/CAM technology and experience the future of manufacturing with TRIOVIBE.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button
-                            onClick={() => setCurrentPage('contact')}
-                            className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-full font-semibold transition-all flex items-center justify-center gap-2"
-                        >
-                            Contact Sales
-                            <ArrowRight size={20} />
-                        </button>
                         <button className="border border-white hover:bg-white hover:text-slate-900 text-white px-8 py-4 rounded-full font-semibold transition-all">
                             Start Free Trial
                         </button>

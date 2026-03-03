@@ -150,7 +150,7 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
     return (
         <div className="bg-[#050505] min-h-screen font-sans selection:bg-blue-500/30">
             {/* Hero Section */}
-            <section id="hero-section" className="relative min-h-screen bg-gradient-to-br from-[#1E3A8A] via-[#3B82F6] to-[#2DD4BF] overflow-hidden pt-24 flex flex-col items-center">
+            <section id="hero-section" className="relative min-h-screen bg-gradient-to-br from-[#1E3A8A] via-[#3B82F6] to-[#2DD4BF] overflow-visible pt-24 flex flex-col items-center pb-8">
                 {/* Background Shapes */}
                 <div className="absolute top-0 right-0 w-2/3 h-full bg-white/5 skew-x-[-15deg] translate-x-1/4 pointer-events-none" />
                 <div className="absolute -bottom-24 -left-24 w-[500px] h-[500px] bg-teal-400/20 rounded-full blur-[120px] pointer-events-none" />
@@ -178,18 +178,6 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                         transition={{ duration: 0.5, delay: 0.4 }}
                         className="flex flex-col sm:flex-row gap-6 mb-20"
                     >
-                        <button 
-                            onClick={() => setCurrentPage('contact')}
-                            className="px-12 py-5 bg-gray-900/90 text-white font-bold rounded-2xl hover:bg-black transition-all duration-300 shadow-2xl text-lg flex items-center gap-3"
-                        >
-                            Start for free <ArrowRight className="w-5 h-5 text-teal-400" />
-                        </button>
-                        <button
-                            onClick={() => setCurrentPage('contact')}
-                            className="px-12 py-5 bg-white text-blue-900 font-bold rounded-2xl hover:bg-blue-50 transition-all duration-300 shadow-xl text-lg"
-                        >
-                            Talk to sales
-                        </button>
                     </motion.div>
 
                     {/* Hero Feature Icons */}
@@ -217,7 +205,7 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                 </div>
 
                 {/* Showcase Screen */}
-                <div className="container mx-auto px-6 relative z-10 -mb-32 md:-mb-64">
+                <div className="container mx-auto px-6 relative z-10 mt-4">
                     <motion.div
                         key={selectedFeature}
                         initial={{ opacity: 0, scale: 0.95 }}
@@ -233,15 +221,19 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                             </div>
                             <div className="flex-1 text-center">
                                 <span className="text-xs text-teal-400 font-mono tracking-widest uppercase">
-                                    TRIOVIBE HYPER - {features[selectedFeature].title}
+                                    ENCY HYPER - {features[selectedFeature].title}
                                 </span>
                             </div>
                         </div>
-                        <div className="aspect-video bg-[#0f1115] pt-12">
+                        <div className="relative bg-[#0f1115] pt-12 min-h-[420px] md:min-h-[520px] flex items-center justify-center">
                             <img
                                 src={features[selectedFeature].image}
                                 alt={features[selectedFeature].title}
-                                className="w-full h-full object-cover"
+                                className="w-full h-auto max-h-[70vh] md:max-h-[75vh] object-contain"
+                                loading="lazy"
+                                onError={(e) => {
+                                    e.target.style.display = 'none';
+                                }}
                             />
                         </div>
                     </motion.div>
@@ -310,6 +302,10 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                                         src={workflowModes[activeWorkflowMode].image}
                                         alt={workflowModes[activeWorkflowMode].title}
                                         className="w-full h-auto rounded-[2.5rem] shadow-2xl transition-transform duration-1000 group-hover:scale-105"
+                                        loading="lazy"
+                                        onError={(e) => {
+                                            e.target.src = 'https://via.placeholder.com/1024x576?text=Image+Not+Available';
+                                        }}
                                     />
                                     <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
                                 </motion.div>
@@ -441,8 +437,12 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                             <div className="relative mt-12 group-hover:scale-105 transition-transform duration-[2s]">
                                 <img
                                     src="https://encycam.com/wp-content/uploads/2025/11/Touchscreen-optimized-interface-1024x576.jpg"
-                                    className="rounded-3xl shadow-2xl border border-white/10"
+                                    className="w-full h-auto rounded-3xl shadow-2xl border border-white/10"
                                     alt="ENCY Hyper UI"
+                                    loading="lazy"
+                                    onError={(e) => {
+                                        e.target.src = 'https://via.placeholder.com/1024x576?text=Image+Not+Available';
+                                    }}
                                 />
                             </div>
                             <div className="absolute top-0 right-0 w-64 h-64 bg-teal-400/5 blur-[80px] rounded-full" />
@@ -470,8 +470,12 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                             <div className="relative mt-12 group-hover:scale-105 transition-transform duration-[2s]">
                                 <img
                                     src="https://encycam.com/wp-content/uploads/2025/11/Real-time-robot-control-1024x576.jpg"
-                                    className="rounded-3xl shadow-2xl border border-white/10"
+                                    className="w-full h-auto rounded-3xl shadow-2xl border border-white/10"
                                     alt="ENCY Hyper Max UI"
+                                    loading="lazy"
+                                    onError={(e) => {
+                                        e.target.src = 'https://via.placeholder.com/1024x576?text=Image+Not+Available';
+                                    }}
                                 />
                             </div>
                             <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-600/5 blur-[80px] rounded-full" />
@@ -524,6 +528,10 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                                     src="https://encycam.com/wp-content/uploads/2024/08/Zero-code-digital-twin-builder.jpg"
                                     alt="MachineMaker interface"
                                     className="w-full h-auto rounded-2xl"
+                                    loading="lazy"
+                                    onError={(e) => {
+                                        e.target.src = 'https://via.placeholder.com/1024x576?text=Image+Not+Available';
+                                    }}
                                 />
                             </motion.div>
                             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-600/10 rounded-full blur-3xl" />
@@ -615,6 +623,10 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                                             src={item.image}
                                             alt={item.title}
                                             className="w-full h-[500px] object-cover"
+                                            loading="lazy"
+                                            onError={(e) => {
+                                                e.target.src = 'https://via.placeholder.com/1024x500?text=Image+Not+Available';
+                                            }}
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent mix-blend-overlay" />
                                     </div>
@@ -636,9 +648,13 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                         className="relative h-[600px] rounded-[4rem] overflow-hidden group shadow-4xl"
                     >
                         <img
-                            src="/bike.jpg"
+                            src="https://encycam.com/wp-content/uploads/2025/11/Cross-platform-solution-1-1024x576.jpg"
                             alt="TRIOVIBE 2.0"
                             className="absolute inset-0 w-full h-full object-cover grayscale brightness-50 contrast-125 group-hover:scale-105 transition-transform duration-[3s]"
+                            loading="lazy"
+                            onError={(e) => {
+                                e.target.src = 'https://via.placeholder.com/1920x600?text=TRIOVIBE+2.0';
+                            }}
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
 
@@ -677,91 +693,6 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                 </div>
             </section>
 
-            {/* Get Started Section */}
-            <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
-                <div className="max-w-7xl mx-auto">
-                    <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-                        <div>
-                            <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-4">Get started with TRIOVIBE</h2>
-                            <p className="text-xl text-gray-500">Transform your robotic manufacturing today.</p>
-                        </div>
-                        <div className="h-0.5 flex-1 bg-gray-200 hidden md:block mx-12 mb-6" />
-                    </div>
-
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                        {/* Download Trial Card */}
-                        <motion.div
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            className="lg:col-span-2 relative bg-gradient-to-br from-[#1E3A8A] to-[#10B981] rounded-[3rem] overflow-hidden p-8 md:p-16 flex flex-col md:flex-row items-center justify-between group shadow-3xl shadow-blue-500/20"
-                        >
-                            <div className="relative z-10 max-w-sm">
-                                <h3 className="text-5xl font-black text-white mb-6">Download Trial</h3>
-                                <p className="text-white/90 text-2xl mb-12 leading-relaxed font-medium">
-                                    Free 30-day version with online onboarding
-                                </p>
-                                <button 
-                                    onClick={() => setCurrentPage('contact')}
-                                    className="px-12 py-5 bg-white text-blue-900 font-bold rounded-2xl flex items-center gap-3 hover:bg-gray-100 transition-all shadow-2xl group/btn"
-                                >
-                                    Start Download <Download className="w-6 h-6 group-hover/btn:translate-y-1 transition-transform" />
-                                </button>
-                            </div>
-                            <div className="relative mt-12 md:mt-0 md:ml-12 w-full md:w-[480px]">
-                                <motion.div
-                                    whileHover={{ rotate: -2, scale: 1.05 }}
-                                    className="p-3 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 shadow-4xl"
-                                >
-                                    <img
-                                        src="https://encycam.com/wp-content/uploads/2025/08/State-of-art-UI-medium-480x270.png"
-                                        alt="Software Interface"
-                                        className="rounded-2xl shadow-2xl"
-                                    />
-                                </motion.div>
-                            </div>
-                        </motion.div>
-
-                        {/* Get a Quote Card */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            className="relative bg-[#0F172A] p-8 md:p-14 flex flex-col justify-between group shadow-3xl overflow-hidden"
-                            style={{
-                                borderRadius: '3rem',
-                                clipPath: 'polygon(0 0, 100% 0, 100% 88%, 88% 100%, 0 100%)'
-                            }}
-                        >
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-teal-500/10 blur-[60px] pointer-events-none" />
-
-                            <div>
-                                <h3 className="text-4xl font-black text-white mb-6">Get a Quote</h3>
-                                <p className="text-gray-400 text-xl mb-12 leading-relaxed">
-                                    Find a local dealer and request pricing
-                                </p>
-                            </div>
-
-                            <div className="space-y-8">
-                                <ul className="space-y-4">
-                                    {['Expert consultation', 'Custom pricing', 'Regional support'].map((item, i) => (
-                                        <li key={i} className="flex items-center gap-3 text-white/50 text-sm font-bold uppercase tracking-widest leading-none">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-teal-400" />
-                                            {item}
-                                        </li>
-                                    ))}
-                                </ul>
-                                <button
-                                    onClick={() => setCurrentPage('contact')}
-                                    className="w-full px-12 py-5 bg-blue-600 text-white font-bold rounded-2xl flex items-center justify-center gap-3 hover:bg-white hover:text-blue-900 transition-all duration-500 group/quote"
-                                >
-                                    Request Pricing <MessageSquare className="w-5 h-5 group-hover/quote:rotate-12 transition-transform" />
-                                </button>
-                            </div>
-                        </motion.div>
-                    </div>
-                </div>
-            </section>
 
             {/* <Footer /> */}
         </div>

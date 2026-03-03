@@ -30,7 +30,8 @@ const CookiePolicy = ({ setCurrentPage }) => {
                         </p>
                         <div className="bg-white rounded-2xl shadow-xl p-8 text-left">
                             <p className="text-gray-700 leading-relaxed mb-6">
-                                This Cookie Policy explains how TRIOVIBE SOFTWARE LTD. ('Company', 'we', 'us', and 'our') uses cookies and similar technologies to recognise you when you visit our website at https://encycam.com ('Website'). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
+                                This Cookie Policy explains how TRIOVIBE SOLUTION PVT LTD.
+. ('Company', 'we', 'us', and 'our') uses cookies and similar technologies to recognise you when you visit our website at https://encycam.com ('Website'). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
                             </p>
                             <p className="text-gray-700 leading-relaxed">
                                 In some cases we may use cookies to collect personal information, or that becomes personal information if we combine it with other information.
@@ -55,7 +56,8 @@ const CookiePolicy = ({ setCurrentPage }) => {
                                 Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners in order to make their websites work, or to work more efficiently, as well as to provide reporting information.
                             </p>
                             <p className="text-gray-700 leading-relaxed">
-                                Cookies set by the website owner (in this case, TRIOVIBE SOFTWARE LTD.) are called 'first-party cookies'. Cookies set by parties other than the website owner are called 'third-party cookies'. Third-party cookies enable third-party features or functionality to be provided on or through the website (e.g. advertising, interactive content, and analytics). The parties that set these third-party cookies can recognise your computer both when it visits the website in question and also when it visits certain other websites.
+                                Cookies set by the website owner (in this case, TRIOVIBE SOLUTION PVT LTD.
+.) are called 'first-party cookies'. Cookies set by parties other than the website owner are called 'third-party cookies'. Third-party cookies enable third-party features or functionality to be provided on or through the website (e.g. advertising, interactive content, and analytics). The parties that set these third-party cookies can recognise your computer both when it visits the website in question and also when it visits certain other websites.
                             </p>
                         </div>
 
