@@ -684,9 +684,6 @@ const TRIOVIBEHyper = ({ setCurrentPage }) => {
                                 <button className="px-10 py-4 bg-teal-500 text-white font-bold rounded-2xl hover:bg-teal-400 transition-all text-lg shadow-xl shadow-teal-500/20">
                                     Learn more
                                 </button>
-                                <button className="px-10 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold rounded-2xl hover:bg-white/20 transition-all text-lg">
-                                    Find a dealer
-                                </button>
                             </motion.div>
                         </div>
                     </motion.div>

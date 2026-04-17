@@ -53,10 +53,7 @@ const SoftwareProductsDownload = () => {
                     <span className="text-gray-700">Mill-Turn capabilities</span>
                   </li>
                 </ul>
-                <button className="w-full bg-teal-600 text-white py-3 rounded-lg font-semibold hover:bg-teal-700 transition-colors flex items-center justify-center gap-2">
-                  <Download size={18} />
-                  Download ENCY
-                </button>
+
               </div>
             </div>
 
@@ -85,10 +82,7 @@ const SoftwareProductsDownload = () => {
                     <span className="text-gray-700">Cobot programming</span>
                   </li>
                 </ul>
-                <button className="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors flex items-center justify-center gap-2">
-                  <Download size={18} />
-                  Download ENCY Robot
-                </button>
+
               </div>
             </div>
 
@@ -117,10 +111,7 @@ const SoftwareProductsDownload = () => {
                     <span className="text-gray-700">Quality improvement</span>
                   </li>
                 </ul>
-                <button className="w-full bg-orange-600 text-white py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors flex items-center justify-center gap-2">
-                  <Download size={18} />
-                  Download ENCY Tuner
-                </button>
+
               </div>
             </div>
 
@@ -149,10 +140,7 @@ const SoftwareProductsDownload = () => {
                     <span className="text-gray-700">Optimized toolpaths</span>
                   </li>
                 </ul>
-                <button className="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center gap-2">
-                  <Download size={18} />
-                  Download ENCY Hyper
-                </button>
+
               </div>
             </div>
 
@@ -181,10 +169,7 @@ const SoftwareProductsDownload = () => {
                     <span className="text-gray-700">Automation workflows</span>
                   </li>
                 </ul>
-                <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
-                  <Download size={18} />
-                  Download MachineMaker
-                </button>
+
               </div>
             </div>
 
@@ -213,36 +198,14 @@ const SoftwareProductsDownload = () => {
                     <span className="text-gray-700">Team workflows</span>
                   </li>
                 </ul>
-                <button className="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2">
-                  <Download size={18} />
-                  Download ENCY Clouds
-                </button>
+
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Account Section */}
-      <div className="bg-gray-50 py-16">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Get Access to All Downloads</h2>
-            <p className="text-gray-600 mb-8">
-              Sign in to your account or create a new one to access all ENCY software downloads and receive updates.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white border border-gray-300 text-gray-800 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors flex items-center justify-center gap-2">
-                Sign in
-              </button>
-              <button className="bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-700 transition-colors flex items-center justify-center gap-2">
-                Create an account
-                <ArrowRight size={18} />
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </div>
   );
 };

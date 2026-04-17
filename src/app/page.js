@@ -164,8 +164,7 @@ export default function Home() {
           <Hero setCurrentPage={navigateToPage} />
           <Features setCurrentPage={navigateToPage} />
           <Products setCurrentPage={navigateToPage} />
-          <News setCurrentPage={navigateToPage} />
-          <Events setCurrentPage={navigateToPage} />
+
           <PoweredByTriovibe setCurrentPage={navigateToPage} />
           {/* <Contact /> */}
         </>

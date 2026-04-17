@@ -297,9 +297,7 @@ const TRIOVIBE = ({ setCurrentPage }) => {
                                 <button className="px-10 py-3 bg-gradient-to-r from-teal-400 to-blue-600 text-white font-medium rounded-full hover:shadow-lg hover:shadow-teal-500/25 transition-all duration-300">
                                     Learn more
                                 </button>
-                                <button className="px-10 py-3 bg-white/10 hover:bg-white/20 text-white font-medium rounded-full border border-white/30 backdrop-blur-md transition-all duration-300">
-                                    Find a dealer
-                                </button>
+
                             </motion.div>
                         </div>
                     </motion.div>
@@ -313,23 +311,25 @@ const TRIOVIBE = ({ setCurrentPage }) => {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[280px]">
-                        {/* 1. A wide range of machining */}
+                        {/* 1. A wide range of machining - REDESIGNED FOR VISIBILITY */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="bg-gray-50 rounded-2xl overflow-hidden relative group p-8"
+                            className="bg-gray-50 rounded-2xl overflow-hidden relative group p-8 flex flex-col"
                         >
-                            <div className="relative z-10">
-                                <h3 className="text-xl font-semibold text-gray-800 leading-tight max-w-[200px]">
-                                    A wide range of machining strategies from 2D to 5D
+                            <div className="relative z-20 mb-auto">
+                                <h3 className="text-lg font-bold text-gray-900 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-sm border border-gray-100 inline-block">
+                                    A wide range of machining <br /> strategies from 2D to 5D
                                 </h3>
                             </div>
-                            <img
-                                src="https://encycam.com/wp-content/uploads/2025/01/A-wide-range-of-machining.png"
-                                alt="Machining strategies"
-                                className="absolute bottom-0 right-0 w-3/4 object-contain transition-transform duration-500 group-hover:scale-105"
-                            />
+                            <div className="absolute inset-0 flex items-end justify-end pointer-events-none p-4 z-10">
+                                <img
+                                    src="https://encycam.com/wp-content/uploads/2025/01/A-wide-range-of-machining.png"
+                                    alt="Machining strategies"
+                                    className="w-[85%] h-auto object-contain transition-transform duration-500 group-hover:scale-105 translate-y-12 translate-x-4"
+                                />
+                            </div>
                         </motion.div>
 
                         {/* 2. Interactive */}

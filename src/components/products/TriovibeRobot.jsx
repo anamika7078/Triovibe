@@ -350,9 +350,6 @@ const TRIOVIBERobot = ({ setCurrentPage }) => {
                                     <button className="px-10 py-4 bg-gradient-to-r from-teal-400 to-blue-600 text-white font-bold rounded-full shadow-xl hover:shadow-teal-500/20 transition-all">
                                         Learn more
                                     </button>
-                                    <button className="px-10 py-4 bg-white/10 backdrop-blur-md border border-white/30 text-white font-bold rounded-full hover:bg-white/20 transition-all">
-                                        Find a dealer
-                                    </button>
                                 </div>
                             </div>
                         </motion.div>

@@ -109,11 +109,7 @@ const BaseIndustryPage = ({
                                 {introText}
                             </motion.p>
                         )}
-                        <motion.div variants={itemVariant} className="flex flex-wrap gap-6">
-                            <button className="px-10 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold rounded-2xl hover:bg-white/20 transition-all hover:translate-y-[-2px] active:scale-95">
-                                Download Trial
-                            </button>
-                        </motion.div>
+
                     </motion.div>
                 </div>
             </section>
